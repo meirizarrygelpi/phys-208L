@@ -4,24 +4,310 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Preliminary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+In a previous lab, you studied RC and RL circuits with a battery as the source of power. Batteries provide \textbf{DC} or \textbf{Direct Currents}, meaning that the current does not change direction. So, strictly speaking the past circuits were DC circuits.
+
+When the current switches direction over time, you have an \textbf{AC} or \textbf{Alternating Current}. A circuit with an AC is called an AC circuit. An important parameter that describes how often an AC switches direction is the \textbf{frequency of oscillation} $f$. Recall that frequency is a quantity measured in \textbf{hertz} (Hz). One hertz is equivalent to 1 full oscillation per second. For an AC with a frequency of 1 Hz, this means that it takes 1 second for the current to do a full oscillation. Note that a full current oscillation involves two switches of current direction: the first switch changes the original direction and the second switch returns it to where it was originally. Another useful quantity is the \textbf{period of oscillation} $T$. The period $T$ is related to the frequency $f$ via
+\begin{equation} \label{eq.06.period}
+	T = \frac{1}{f}
+\end{equation}
+Sometimes it will be useful to use frequency and sometimes it will be useful to use period.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Reactance}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Resistors, capacitors and inductors behave differently in an AC circuit. Each of these components display an opposition to change in electric current called \textbf{reactance}. Thus, there is resistive reactance $X_{R}$, capacitive reactance $X_{C}$, and inductive reactance $X_{L}$. Each reactance is measured in units of ohms (same as resistance). For all practical purposes, the \textbf{resistive reactance} $X_{R}$ of a resistor is equivalent to the resistance $R$:
+\begin{equation} \label{eq.06.reactance.R}
+	X_{R} = R
+\end{equation}
+However, both capacitive and inductive reactance take into account the frequency of the AC. The \textbf{capacitive reactance} $X_{C}$ is given by
+\begin{equation} \label{eq.06.reactance.C}
+	X_{C} = \frac{1}{2 \pi f C} = \frac{T}{2 \pi C}
+\end{equation}
+Here $f$ is the frequency of oscillation of the AC, $T$ is the period of oscillation of the AC, and $C$ is the amount of capacitance of the capacitor. Note that $X_{C}$ is proportional to the period.
+
+The \textbf{inductive reactance} $X_{L}$ is defined as
+\begin{equation} \label{eq.06.reactance.L}
+	X_{L} = 2 \pi f L
+\end{equation}
+Here $f$ is the frequency of oscillation of the AC, $T$ is the period of oscillation of the AC, and $L$ is the amount of inductance of the inductor. Note that $X_{L}$ is proportional to the frequency.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Impedance}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Reactance is associated with an individual component of a circuit. To describe the entire circuit, you can use the \textbf{impedance} $Z$. Just like reactance and resistance, impedance is also measured in units of ohm. The exact definition of impedance depends on what are the components in a circuit. You are going to need the impedance for an RL and RLC circuit.
+
+An \textbf{RL AC circuit} consist of an AC source connected to a resistor and an inductor in series. Thus there is some amount of resistive and inductive reactance. The impedance $Z$ takes these two contributions into account:
+\begin{equation} \label{eq.06.impedance.RL}
+	Z = \sqrt{X_{R}^{2} + X_{L}^{2}} = \sqrt{R^{2} + 4 \pi^{2} f^{2} L^{2}}
+\end{equation}
+You can think of $Z$ as the hypotenuse of a triangle with $X_{R}$ and $X_{L}$ as sides. The squared impedance takes the form
+\begin{equation} \label{eq.06.impedance.squared}
+	Z^{2} = R^{2} + 4\pi^{2} f^{2} L^{2}
+\end{equation}
+Note that in this case, the squared impedance is \textbf{linear} in the squared frequency.
+
+An \textbf{RLC AC circuit} consist of an AC source connected to a resistor, a capacitor, and an inductor in series. Thus there is some amount of resistive, capacitive, and inductive reactance. The impedance $Z$ takes these three contributions into account:
+\begin{equation} \label{eq.06.eq.06.impedance.RLC}
+	Z = \sqrt{X_{R}^{2} + X_{L}^{2} - X_{C}^{2}} = \sqrt{R^{2} + 4 \pi^{2} f^{2} L^{2} - \frac{1}{4 \pi^{2} f^{2} C^{2}}}
+\end{equation}
+Something special happens when $X_{L} = X_{C}$:
+\begin{equation} \label{eq.06.resonant.frequency}
+	X_{L} = X_{C} \quad \Longrightarrow \quad 2\pi f_{r} L = \frac{1}{2\pi f_{r} C} \quad \Longrightarrow \quad f_{r} = \frac{1}{2 \pi \sqrt{LC}}
+\end{equation}
+That is, when the frequency takes the special value $f_{r}$ (that depends on the amount of inductance and capacitance), the impedance is given entirely by the amount of resistance. This situation is called \textbf{resonance} and $f_{r}$ is known as the \textbf{resonant frequency}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experiment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+There are four experiments:
+\begin{enumerate}
+	\item Capacitor in AC circuit
+	\item RL AC circuit
+	\item RLC AC circuit without the metallic core
+	\item RLC AC circuit with the metallic core
+\end{enumerate}
+In the first two experiments you measure the voltage and current as the frequency of the AC is changed. In the last two experiments, you see the effects of the resonance state.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Part 1: Capacitor AC Circuit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The circuit has \textbf{one capacitor} with $C = 10^{-5}$ F connected to an AC source whose frequency you can adjust. You make \textbf{seven} measurements of voltage and current over time. For each measurement you change the frequency of the AC source. The range of frequencies is from 100 Hz to 1000 Hz. Table \ref{table.capacitor} has the frequency values used for each run.
+
+Note that the voltage measured here is the \textbf{voltage across the capacitor}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+	\begin{center}
+		\begin{tabular}{|r|r|r|r|r|r|}\hline
+			Run & $f$ (Hz) & $1/f$ (s) & $V_{\text{max}}$ (V) & $I_{\text{max}}$ (A) & $V_{\text{max}}/I_{\text{max}}$ (ohm) \\
+			\hline
+			1 & 100 & & & & \\
+			2 & 250 & & & & \\
+			3 & 400 & & & & \\
+			4 & 550 & & & & \\
+			5 & 700 & & & & \\
+			6 & 850 & & & & \\
+			7 & 1000 & & & & \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Capacitor AC Circuit}
+	\label{table.capacitor}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Part 2: RL AC Circuit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The circuit has \textbf{one resistor} with $R = 10 $ ohm and \textbf{one inductor} with $L = 0.005$ H connected in series to an AC source whose frequency you can adjust. You make \textbf{seven} measurements of voltage and current over time. For each measurement you change the frequency of the AC source. The range of frequencies is from 100 Hz to 1000 Hz. Table \ref{table.RL} has the frequency values used for each run.
+
+Note that the voltage measured here is the \textbf{voltage across the resistor and inductor in series}. That is, between the input terminal of the resistor, and the output terminal of the inductor.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+	\begin{center}
+		\begin{tabular}{|r|r|r|r|r|r|}\hline
+			Run & $f$ (Hz) & $1/f$ (s) & $V_{\text{max}}$ (V) & $I_{\text{max}}$ (A) & $V_{\text{max}}/I_{\text{max}}$ (ohm) \\
+			\hline
+			1 & 100 & & & & \\
+			2 & 250 & & & & \\
+			3 & 400 & & & & \\
+			4 & 550 & & & & \\
+			5 & 700 & & & & \\
+			6 & 850 & & & & \\
+			7 & 1000 & & & & \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{RL AC Circuit}
+	\label{table.RL}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Part 3: RLC AC Circuit (without metallic core)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The circuit has \textbf{one resistor} (in the form of a light bulb), \textbf{one capacitor} with $C = 10^{-5}$ F, and \textbf{one inductor} with $L = 0.005$ H connected in series to an AC source whose frequency you can adjust. The metallic core is not used. You make \textbf{nine} measurements of current over time. For each measurement you change the frequency of the AC source. The range of frequencies is from 100 Hz to 1300 Hz. Table \ref{table.RLC} has the frequency values used for each run.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+	\begin{center}
+		\begin{tabular}{|r|r|r|}\hline
+			Run & $f$ (Hz) & $I_{\text{max}}$ (A) \\
+			\hline
+			1 & 100 & \\
+			2 & 250 & \\
+			3 & 400 & \\
+			4 & 550 & \\
+			5 & 700 & \\
+			6 & 850 & \\
+			7 & 1000 & \\
+			8 & 1150 & \\
+			9 & 1300 & \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{RLC AC Circuit without metallic core}
+	\label{table.RLC}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Part 4: RLC AC Circuit (with metallic core)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The circuit has \textbf{one resistor} (in the form of a light bulb), \textbf{one capacitor} with $C = 10^{-5}$ F, and \textbf{one inductor} using the metallic core connected in series to an AC source whose frequency you can adjust. You make \textbf{nine} measurements of current over time. For each measurement you change the frequency of the AC source. The range of frequencies is from 100 Hz to 550 Hz. Table \ref{table.RLCcore} has the frequency values used for each run.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+	\begin{center}
+		\begin{tabular}{|r|r|r|}\hline
+			Run & $f$ (Hz) & $I_{\text{max}}$ (A) \\
+			\hline
+			1 & 100 & \\
+			2 & 250 & \\
+			3 & 400 & \\
+			4 & 550 & \\
+			5 & 200 & \\
+			6 & 300 & \\
+			7 & 350 & \\
+			8 & 450 & \\
+			9 & 500 & \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{RLC AC Circuit with metallic core}
+	\label{table.RLCcore}
+\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+Here is what to do for each part.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Part 1: Capacitor AC Circuit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In this part you would like to check that the capacitive reactance $X_{C}$ is proportional to the inverse AC frequency, or equivalently, proportional to the AC period. You know the values of the frequencies used (and thus of the periods used), so you just need to find the experimental values of $X_{C}$. To find this, you use the voltage and current data. For each run, you find the maximum voltage $V_{\text{max}}$ and the maximum current in $I_{\text{max}}$. Then, the reactance is given by the ratio
+\begin{equation}
+	X_{C} = \frac{V_{\text{max}}}{I_{\text{max}}}
+\end{equation}
+To find the maximum values in the current and voltage columns, use the function \texttt{MAX}. For example, if the current data is in column \texttt{B} and between rows \texttt{8} and \texttt{208}, then the following command finds the maximum value:
+\begin{center}
+	\texttt{=MAX(B8:B208)}
+\end{center}
+In a similar way you can find the maximum in the voltage column.
+
+Once you have the capacitive reactance, you can check that the graph of $X_{C}$ versus $f$ is not linear, but the graph of $X_{C}$ versus $1/f$ is linear. You can then add a linear fit. As stated by (\ref{eq.06.reactance.C}), the slope is related to the amount of capacitance. You can calculate the expected slope and then calculate the percent difference:
+\begin{equation}
+	\text{Percent Difference} = 100 \times \left( \frac{\text{experimental } - \text{ theory}}{\text{theory}} \right)
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Part 2: RL AC Circuit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Since an RL AC circuit is used in this part, you can check the relationship between impedance $Z$ and frequency (that is, you are not measuring just the reactance). To get the experimental value of impedance, find the maximum current and voltage for each run (follow similar steps as in part 1), and then the ratio is the impedance:
+\begin{equation}
+	Z = \frac{V_{\text{max}}}{I_{\text{max}}}
+\end{equation}
+You can graph impedance versus frequency and the shape is almost linear. But there is no linear relationship between these two quantities! Looking at (\ref{eq.06.impedance.squared}), the expected linear relationship is between $Z^{2}$ and $f^{2}$. Make a second graph with these quantities and add a best-fit line. Compare the slope and intercept of the best-fit line to the expected values in (\ref{eq.06.impedance.squared}). The slope should be related to the inductance, and the intercept should be related to the total amount of resistance in the circuit. Recall that the inductor has some inherent amount of resistance, as was found in lab 5:
+\begin{equation}
+	r = 4.20 \text{ ohm}
+\end{equation}
+Adding this to the 10 ohm from the resistor, the total resistance is
+\begin{equation}
+	R_{\text{eq}} = R + r = 14.20 \text{ ohm}
+\end{equation}
+Use this value when calculating the expected value of the intercept.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Part 3: RLC AC Circuit (without metallic core)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For the RLC circuit, you can see what happens to the current in the circuit as the AC current approaches the value of the resonant frequency. To do this, find the maximum current for each run and then make a graph of $I_{\text{max}}$ versus frequency. There should be a peak. The peak corresponds to the resonant frequency. That is, at the resonant frequency, the current in the circuit oscillates with the largest amplitude.
+
+The expected resonant frequency is given by (\ref{eq.06.resonant.frequency}). Since the metallic core was not used, the inductance is given by $L = 0.005$ H.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Part 4: RLC AC Circuit (with metallic core)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In lab 5 you found that when the metallic core was used, the inductance is larger than the label. Indeed, you should have found a value of 0.0213 H. This makes the resonant frequency smaller. You can repeat the steps as in part 3 and confirm this.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{My Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+For parts 1 and 2, instead of seven runs I did ten runs. The results for part 1 are in Table \ref{table.results.C}. The results for part 2 are in Table \ref{table.results.RL}.
+
+For parts 3 and 4, instead of nine runs I did thirteen runs. The results for part 3 are in Table \ref{table.results.RLC}. The results for part 4 are in Table \ref{table.results.RLCcore}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+	\begin{center}
+		\begin{tabular}{|r|r|r|r|}
+			\hline
+			Quantity & Best-Fit & Expected & \% Difference \\
+			\hline
+			Slope (ohm/s) & 14683.34573 & 15915.49431 & -7.741817875 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Results for capacitor AC circuit}
+	\label{table.results.C}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+	\begin{center}
+		\begin{tabular}{|r|r|r|r|}
+			\hline
+			Quantity & Best-Fit & Expected & \% Difference \\
+			\hline
+			Slope (ohm$^{2}$/Hz$^{2}$) & 0.0009920753185 & 0.0009869604401 & 0.5182455354 \\
+			Intercept (ohm$^{2}$) & 199.7778333 & 201.64 & -0.9235105594 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Results for RL AC circuit}
+	\label{table.results.RL}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+	\begin{center}
+		\begin{tabular}{|r|r|}
+			\hline
+			Experimental Resonant Frequency (Hz) & Expected Resonant Frequency (Hz) \\
+			\hline
+			Between 700 Hz and 800 Hz & 711.7625434 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Results for RLC AC circuit (without metallic core)}
+	\label{table.results.RLC}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+	\begin{center}
+		\begin{tabular}{|r|r|}
+			\hline
+			Experimental Resonant Frequency (Hz) & Expected Resonant Frequency (Hz) \\
+			\hline
+			Between 300 Hz and 350 Hz & 344.8500791 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Results for RLC AC circuit (with metallic core)}
+	\label{table.results.RLCcore}
+\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Your Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+Your data for parts 1, 2, 3, and 4 is structured in the same way as Tables \ref{table.capacitor}, \ref{table.RL}, \ref{table.RLC}, and \ref{table.RLCcore}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Your Lab Report}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+For this lab the lab report will consist of an electronic submission of a spreadsheet with all your work. In your spreadsheet you should include the following.
+
+For \textbf{part 1}, you should include:
+\begin{itemize}
+	\item A graph with both \textbf{current and voltage} in the vertical axis and time in the horizontal axis for run 1. You will need to scale the current by a factor of 100 in order to get it inside the same viewing window as voltage. What can you say about the behavior of current and voltage at the same time? Do these two quantities peak at the same time? Do they cross the horizontal axis at the same time?
+	\item A table like Table \ref{table.capacitor} for the capacitor AC circuit with the seven values of the maximum voltage, maximum current, and capacitive reactance.
+	\item A graph of capacitive reactance $X_{C}$ versus frequency $f$, with $X_{C}$ in the vertical axis and $f$ in the horizontal axis. Is a linear fit appropriate?
+	\item A graph of capacitive reactance $X_{C}$ versus inverse frequency $1/f$ (i.e. period), with $X_{C}$ in the vertical axis and $1/f$ in the horizontal axis. Include the best-fit line and display the equation. Compare the slope of this with the expected result (\ref{eq.06.reactance.C}).
+	\item A table like Table \ref{table.results.C} with your results.
+\end{itemize}
+For \textbf{part 2}, you should include:
+\begin{itemize}
+	\item A graph with both \textbf{current and voltage} in the vertical axis and time in the horizontal axis for run 1. You will need to scale the current by a factor of 10 in order to get it inside the same viewing window as voltage. What can you say about the behavior of current and voltage at the same time? Do these two quantities peak at the same time? Do they cross the horizontal axis at the same time?
+	\item A table like Table \ref{table.RL} for the RL AC circuit with the seven values of the maximum voltage, maximum current, and impedance.
+	\item A graph of impedance $Z$ versus frequency $f$, with $Z$ in the vertical axis and $f$ in the horizontal axis. Include the best-fit line and display the equation. Compare the slope of this with the expected result (\ref{eq.06.reactance.L}). Is the linear fit appropriate?
+	\item A graph of square impedance versus square frequency $f^{2}$, with $Z^{2}$ in the vertical axis and $f^{2}$ in the horizontal axis. Include the best-fit line and display the equation. Compare the slope of this with the expected result (\ref{eq.06.impedance.squared}). Is the linear fit appropriate?
+	\item A table like Table \ref{table.results.RL} with your results.
+\end{itemize}
+For \textbf{part 3}, you should include:
+\begin{itemize}
+	\item A table like Table \ref{table.RLC} for the RLC AC circuit (without the metallic core) with the nine values of the maximum current.
+	\item A graph of maximum current $I_{\text{max}}$ versus frequency $f$, with $I_{\text{max}}$ in the vertical axis and $f$ in the horizontal axis. Estimate where the largest maximum frequency occurs. Compare this frequency to the expected value of the resonant frequency (\ref{eq.06.resonant.frequency}).
+	\item A table like Table \ref{table.results.RLC} with your results.
+\end{itemize}
+For \textbf{part 4}, you should include:
+\begin{itemize}
+	\item A table like Table \ref{table.RLCcore} for the RLC AC circuit (with the core included) with the nine values of the maximum current.
+	\item A graph of maximum current $I_{\text{max}}$ versus frequency $f$, with $I_{\text{max}}$ in the vertical axis and $f$ in the horizontal axis. Estimate where the largest maximum frequency occurs. Compare this frequency to the expected value of the resonant frequency (\ref{eq.06.resonant.frequency}). Use $L = 0.0213$ H for the inductance when the core is used.
+	\item A table like Table \ref{table.results.RLCcore} with your results.
+\end{itemize}

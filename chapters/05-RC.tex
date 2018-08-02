@@ -1,0 +1,112 @@
+\chapter{Capacitors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Preliminary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Resistance is a property of the components in an electric circuit. You can use units of ohm to measure electric resistance. One ohm of electric resistance is equivalent to
+\begin{equation}
+	1 \text{ ohm} = 1 \text{ V/A}
+\end{equation}
+Another property is capacitance. You can measure capacitance in units of farads (F). One farad of electric capacitance is equivalent to
+\begin{equation}
+	1 \text{ F} = 1 \text{ C/V}
+\end{equation}
+In some ways, capacitance measures the amount of electric charge per unit voltage.
+
+A component in a circuit with an electric resistance is called a \textbf{resistor}. Similarly, a component in a circuit with a capacitance is called a \textbf{capacitor}. A circuit with both capacitors and resistors is known as an RC circuit. The simplest RC circuit has one resistor and one capacitor connected in series to a battery (a DC source).
+
+A particular quantity $\tau_{C}$ is given by multiplying resistance by capacitance:
+\begin{equation}
+	\tau_{C} = R C
+	\label{eq.05C.tauC}
+\end{equation}
+This quantity is known as the \textbf{capacitive time constant}. If resistance is in ohms and capacitance is in farads, then $\tau_{C}$ is in seconds. The capacitive time constant is important because it describes how quickly voltage and current change in circuits with resistors and capacitors. During a \textbf{charging event}, the \textbf{electric current} drops in an exponential way:
+\begin{equation}
+	I(t) = I_{0} \exp{\left(- \frac{t}{\tau_{C}} \right)}
+	\label{eq.05C.It}
+\end{equation}
+During a \textbf{discharging event}, the \textbf{voltage} drops in an exponential way:
+\begin{equation}
+	V(t) = V_{0} \exp{\left(- \frac{t}{\tau_{C}} \right)}
+	\label{eq.05C.Vt}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experiment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+There are two kinds of experiments: the charging event and the discharging event. In each experiment you measure the current flowing between the resistor and the capacitor, and the voltage across the capacitor.
+
+For the \textbf{charging event}, the data collection is started with the switch off (i.e. incomplete circuit) and shortly after turned on. You should analyze the \textbf{current} data for such events, as it follows the behavior in (\ref{eq.05C.It}).
+
+For the \textbf{discharging event}, the data collection is started with the switch on (i.e. complete circuit) and shortly after turned off. You should analyze the \textbf{voltage} data for such events, as it follows the behavior in (\ref{eq.05C.Vt}).
+
+There are 9 runs of data:
+\begin{enumerate}
+	\item Charging capacitor with $R = 10$ ohm and $C = 0.025$ F.
+	\item Discharging capacitor with $R = 10$ ohm and $C = 0.025$ F.
+	\item Charging capacitor with $R = 51$ ohm and $C = 0.025$ F.
+	\item Discharging capacitor with $R = 51$ ohm and $C = 0.025$ F.
+	\item Charging capacitor with $R = 68$ ohm and $C = 0.025$ F.
+	\item Discharging capacitor with $R = 68$ ohm and $C = 0.025$ F.
+	\item Discharging capacitor with $R = 22 \times 10^{3}$ ohm and $C = 10^{-5}$ F.
+	\item Discharging capacitor with $R = 47 \times 10^{3}$ ohm and $C = 10^{-5}$ F.
+	\item Discharging capacitor with $R = 100 \times 10^{3}$ ohm and $C = 10^{-5}$ F.
+\end{enumerate}
+Each time the resistance or the capacitance changes, the time constant $\tau_{C}$ will also change.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analysis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The analysis is pretty simple: you need to make a graph of the desired quantity versus time and then include an \textbf{exponential} fit. The exponential fit is of the form:
+\begin{equation}
+	y = A e^{-Bx}
+	\label{eq.05C.exp.fit}
+\end{equation}
+Comparing (\ref{eq.05C.exp.fit}) with (\ref{eq.05C.It}) and also (\ref{eq.05C.Vt}) leads to identifying the experimental estimate of $\tau_{C}$ with $1 / B$.
+
+The trouble is that it takes some effort to prepare the data in such a way that the exponential fit is appropriate and accurate. You need to do two things:
+\begin{enumerate}
+	\item Truncate the time region before the switch is turned on/off.
+	\item Truncate the long time tail after the exponential drop.
+\end{enumerate}
+For the first truncation, just find the time value where the voltage (in discharging events) or the current (in charging events) suddenly jumps. Remove all the values before this time and perhaps one or two events right after the exponential drop begins.
+
+For the second truncation, one good rule of thump is to use the expected value of $\tau_{C}$. You should keep a time region that is about $5\tau_{C}$ long in time, starting from the beginning of the exponential drop.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{My Data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the spreadsheet that I shared with you, there is a sheet called ``Results''. This sheet has a table with eight columns and nine rows. Each of the rows corresponds to one of the nine runs mentioned above. Here are the columns:
+\begin{itemize}
+	\item Column 1: run label.
+	\item Column 2: value of resistance (in ohm) for the resistor used.
+	\item Column 3: value of the capacitance (in F) for the capacitor used.
+	\item Column 4: Expected value of $\tau_{C}$ (in s). Use (\ref{eq.05C.tauC}) with columns 2 and 3 to calculate these values.
+	\item Column 5: Expected value of $1 / \tau_{C}$ (in 1/s). Just take the reciprocal of the values in column 4.
+	\item Column 6: Fit value of $1 / \tau_{C}$ (in 1/s). This correspond to the $B$ value in the exponential fit. See (\ref{eq.05C.exp.fit}).
+	\item Column 7: Fit value of $\tau_{C}$ (in s). This is just the reciprocal of the values in column 6.
+	\item Column 8: The percent difference between the theoretical values in column 4 and the experimental values in column 7.
+\end{itemize}
+For the percent difference, use
+\begin{equation}
+	\text{Percent Difference } = 100 \times (\text{experiment } - \text{ theory}) / \text{theory}
+\end{equation}
+In my case I found mixed agreement, with the largest disagreements not being larger than 20\%.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Your Data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Your data is structured in the same way as my data, but the time delay for turning on/off the switch is different.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Your Lab Report}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In your lab report you should include:
+\begin{enumerate}
+	\item One voltage versus time graph. Choose one from runs 2, 4, or 6. Include the exponential fit line, and also the equation.
+	\item One current versus time graph. Choose one from runs 1, 3, or 5. Include the exponential fit line, and also the equation.
+	\item Another voltage versus time graph. Choose one from runs 7, 8, or 9. Include the exponential fit line, and also the equation.
+	\item A table in your printed lab report similar to my table in the ``Results'' sheet from the shared spreadsheet.
+\end{enumerate}
+You should also include answers to the following questions:
+\begin{enumerate}
+	\item Are the fit values for $\tau_{C}$ for runs 1, 3, and 5 consistent with the corresponding values for runs 2, 4, and 6?
+	\item Note that some runs involve current measurements and the other runs involve voltage measurements. In general, which runs give fit values for $\tau_{C}$ that are closer to the expected values: charging events (current) or discharging events (voltage)?
+	\item Why are the current measurements in runs 7, 8 and 9 so small?
+\end{enumerate}

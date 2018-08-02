@@ -1,0 +1,164 @@
+\chapter{Inductors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Preliminary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Resistance is a property of the components in an electric circuit. You can use units of ohm to measure electric resistance. One ohm of electric resistance is equivalent to
+\begin{equation}
+	1 \text{ ohm} = 1 \text{ V/A}
+\end{equation}
+Another property is inductance, which is like a magnetic cousin of capacitance. You can measure inductance in units of henrys (H). One henry of inductance is equivalent to
+\begin{equation}
+	1 \text{ H} = 1 \text{ T m}^{2}\text{/A}
+\end{equation}
+In some ways, inductance measures the amount of magnetic flux per unit current.
+
+A component in a circuit with an electric resistance is called a \textbf{resistor}. Similarly, a component in a circuit with a inductance is called an \textbf{inductor}. A circuit with both inductors and resistors is known as an RL circuit. The simplest RL circuit has one resistor and one inductor connected in series to a battery (a DC source).
+
+A particular quantity $\tau_{L}$ is given by dividing the inductance by the resistance:
+\begin{equation}
+	\tau_{L} = \frac{L}{R}
+	\label{eq.05L.tauL}
+\end{equation}
+This quantity is known as the \textbf{inductive time constant}. If resistance is in ohms and inductance is in henrys, then $\tau_{L}$ is in seconds. The inductive time constant is important because it describes how quickly voltage and current change in circuits with resistors and inductors. During the events that we will record, the voltage rises very suddenly and decreases in an exponential drop to a transient value:
+\begin{equation}
+	V(t) = V_{\infty} + (V_{0} - V_{\infty}) \exp{\left( - \frac{t}{\tau_{L}} \right)}
+	\label{eq.05L.Vt}
+\end{equation}
+Here $V_{0}$ is the voltage when $t = 0$, and $V_{\infty}$ is the transient value of the voltage ($t \longrightarrow \infty$). The behavior of the voltage is slightly more complicated than what we observed for capacitors, and introduces difficulties when finding the exponential fit. In order to be able to find the exponential fit, it is convenient to work with
+\begin{equation}
+	\Delta(t) = V(t) - V_{\infty} = (V_{0} - V_{\infty}) \exp{\left( - \frac{t}{\tau_{L}} \right)}
+	\label{eq.05L.Delta.t}
+\end{equation}
+The quantity $\Delta$ (``Delta'') has the canonical form of the exponential fit
+\begin{equation}
+	y = A \exp{(-Bx)}
+\end{equation}
+so fitting $\Delta$ gives an estimate of the time constant for voltage.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experiment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Each experiment consist of using the triggering feature to collect voltage and current data as soon as the switch is turned on.
+
+There are 8 runs of data:
+\begin{enumerate}
+	\item $R = 10$ ohm, without metallic core ($L = 0.005$ H).
+	\item $R = 10$ ohm, with metallic core ($L$ is unknown).
+	\item $R = 5$ ohm, without metallic core ($L = 0.005$ H).
+	\item $R = 5$ ohm, with metallic core ($L$ is unknown).
+	\item $R = 8.360655738$ ohm, without metallic core ($L = 0.005$ H).
+	\item $R = 8.360655738$ ohm, with metallic core ($L$ is unknown).
+	\item $R = 8.717948718$ ohm, without metallic core ($L = 0.005$ H).
+	\item $R = 8.717948718$ ohm, with metallic core ($L$ is unknown).
+\end{enumerate}
+For runs 1 and 2 you use a single resistor with 10 ohm resistance. For runs 3 and 4 you use two 10 ohm resistors in parallel, giving
+\begin{equation}
+	R_{\text{eq}} = \frac{10 \times 10}{10 + 10} \text{ ohm} = 5 \text{ ohm}
+\end{equation}
+For runs 5 and 6 you use one 10 ohm resistor and one 51 ohm resistor in parallel, giving
+\begin{equation}
+	R_{\text{eq}} = \frac{10 \times 51}{10 + 51} \text{ ohm} = 8.360655738 \text{ ohm}
+\end{equation}
+For runs 7 and 8 you use one 10 ohm resistor and one 68 ohm resistor in parallel, giving
+\begin{equation}
+	R_{\text{eq}} = \frac{10 \times 68}{10 + 68} \text{ ohm} = 8.717948718 \text{ ohm}
+\end{equation}
+Note that the metallic core increases the value of the inductance by an unknown amount, and thus changes the value of the inductive time constant.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analysis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Just like for capacitors and RC circuits, the analysis for RL circuits is pretty simple: you need to make a graph of voltage versus time and then include an \textbf{exponential} fit. The exponential fit is of the form:
+\begin{equation}
+	y = A e^{-Bx}
+	\label{eq.05L.exp.fit}
+\end{equation}
+Comparing (\ref{eq.05L.exp.fit}) with (\ref{eq.05L.Delta.t}) leads to identifying the experimental estimate of $\tau_{L}$ with $1 / B$.
+\newpage
+However, some steps must be taken in order to prepare the data for the exponential fit:
+\begin{enumerate}
+	\item Truncate any triggering artifacts.
+	\item Truncate the long time tail after the exponential drop.
+	\item Shift the data vertically towards the horizontal axis such that the voltage settles near 0.
+\end{enumerate}
+The first truncation involves removing the first few values before the voltage begins to drop exponentially. The amount of data removed in this step is very small compared to the amount removed for capacitors.
+
+For the second truncation, one good rule of thump is to use the expected value of $\tau_{L}$. You should keep a time region that is about $5\tau_{L}$ long in time, starting from the beginning of the exponential drop. For the runs with the metallic core inside the inductor, we do not know the exact value of the inductance, so we do not know the expected value for $\tau_{L}$. In this case use a time region that is about $23\tau_{L}$ with $\tau_{L}$ the time constant without the metallic core.
+
+In order for the exponential fit to be accurate, the data needs to drop to zero. If you look at all the voltage versus time graphs, after the exponential drop the voltage settles on a non-zero value. You need to calculate $\Delta$ given by (\ref{eq.05L.Delta.t}). In a separate column, calculate the value of the voltage column minus the minimum value in the voltage column. If the voltage is in column \texttt{B} and the values begin in row \texttt{6}, then you should use a command like
+\begin{center}
+	\texttt{=B6 - MIN(B:B)}
+\end{center}
+to calculate the first value of $\Delta$. Apply this to the entire column. The statement \texttt{MIN(B:B)} finds the minimum value in column \texttt{B}. Make sure that your graph is $\Delta$ versus time and not voltage versus time. The exponential fit for the $\Delta$ should be more accurate and appropriate than the exponential fit for voltage.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{My Data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the spreadsheet that I shared with you, there are two results sheets: ``Results 1'' and ``Results 2''. In ``Results 1'' there is a table with ten columns and eight rows. Each of the rows corresponds to one of the eight runs mentioned above. Here are the columns:
+\begin{itemize}
+	\item Column A: run label.
+	\item Column B: value of resistor resistance (in ohm).
+	\item Column C: value of inductance (in H), if known.
+	\item Column D: Expected value of $\tau_{L}$ (in s). Use (\ref{eq.05L.tauL}) with columns B and C, if the values are known, to calculate these expected values.
+	\item Column E: Expected value of $1 / \tau_{L}$ (in 1/s). Just take the reciprocal of the values in column D.
+	\item Column F: Fit value of $1 / \tau_{L}$ (in 1/s). This correspond to the $B$ value in the exponential fit. See (\ref{eq.05L.exp.fit}).
+	\item Column G: Fit value of $\tau_{L}$ (in s). This is just the reciprocal of the values in column F.
+	\item Column H: The percent difference between the theoretical values in column D and the experimental values in column G. This only works if the theoretical value is known.
+	\item Column I: Fit value of inductance, found by multiplying the fit value of $\tau_{L}$ in column G by the resistor resistance in column B.
+	\item Column J: The ratio of fit inductance, with and without the metallic core, for fixed resistance.
+\end{itemize}
+For the percent difference, use
+\begin{equation}
+	\text{Percent Difference } = 100 \times (\text{experiment } - \text{ theory}) / \text{theory}
+\end{equation}
+As you can see, the percent differences are very large. This indicates a major problem. In particular, the fit values for $\tau_{L}$ are always much smaller than the expected values. Looking at the values in column I, for the inductance from the fit $\tau_{L}$, you can see that when the metallic core is not used, the measured values of the inductance are smaller than the expected 0.005 H.
+
+In order to fix our results, we need to account for the inherent resistance in the inductor. The inductor is just a wire in coil form, but it has a non-negligible amount of resistance. How can we estimate this value?
+
+For lab 3 on circuits in parallel and series, we measured the resistance $R$ for each resistor by measuring the amount of current $I$ coming into the resistor and the voltage $V$ across the resistor. Then
+\begin{equation}
+	R = \frac{V}{I}
+\end{equation}
+In this current experiment we measured the current between the resistor and the inductor, and also the voltage across the inductor. Thus, we can estimate the \textbf{resistance of the inductor} $r$ by dividing the voltage by the current. In the sheet ``Ohm Resistance'' I did this for all eight runs using the full raw data, in an additional column (column D). Both voltage and current change with time, and you can see that the resistance also changes with time. But, both voltage and current settle to non-zero transient values, and thus the resistance also. As you can see, in general for all runs the transient value of the inductor resistance is close to 4.20 ohm. Thus, we are going to declare that the resistance of the inductor is
+\begin{equation}
+	r = 4.20 \text{ ohm}
+\end{equation}
+How do we incorporate the resistance of the inductor into our results? Well, the resistor and the inductor are connected in \textbf{series}. When two resistors are connected in series, the equivalent resistance is given by the \textbf{sum} of the individual resistances. So we can try to do the same here: the equivalent resistance of a circuit consisting of a resistor with resistance $R$ connected in series with an inductor with resistance $r$ is given by
+\begin{equation}
+	R_{\text{eq}} = R + r
+\end{equation}
+Then we used this value to calculate the expected time constant:
+\begin{equation}
+	\tau_{L} = \frac{L}{R_{\text{eq}}} = \frac{L}{R + r}
+\end{equation}
+This changes the expectations by a lot and actually makes the expected values much closer to the experimental values. In the sheet ``Results 2'' I calculated the equivalent resistance in column C and then used that to compute the expected time constant in column E and also to compute the experimental inductance in column J. Now the percent difference are much smaller!
+
+Just to clarify: the disagreement between theory and experiment in ``Results 1'' is due to bad theory and not to a bad experiment. The only change in ``Results 2'' is in the expected values of the time constant due to the (correct) use of the equivalent resistance accounting for the resistance of the inductor.
+
+Finally, a comment about the use of the metallic core. Keeping the resistance fixed, you can calculate the ratio of the observed inductance with the core and without the core:
+\begin{equation}
+	\text{Inductance Ratio} = \frac{L \text{ with core}}{L \text{ without core}}
+\end{equation}
+You can calculate this ratio for runs 1 and 2; runs 3 and 4; runs 5 and 6; and runs 7 and 8. As you can see from my results, this ratio is somewhat consistent across the four values and suggest that the inductance with the core is about 4.48 times the value of the inductance without the core.
+
+Note that my run 7 and 8 are swapped: run 7 is with the core and run 8 is without the core.
+
+In my spreadsheet I also analyzed the current data and showed that you can also get the time constant. This is in ``Run 1 Current''. You do not have to do this.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Your Data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Your Lab Report}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In your lab report you should include:
+\begin{enumerate}
+	\item Two voltage versus time graphs. Choose any two of the eight runs. Include the exponential fit line, and also the equation.
+	\item A table in your printed lab report similar to my table in the ``Results 2'' sheet from the shared spreadsheet.
+\end{enumerate}
+You should also
+\begin{enumerate}
+	\item Confirm that the inductor resistance is approximately 4.20 ohm by choosing one run, dividing the voltage by the current, and looking at the late time values of this ratio.
+	\item Confirm that, for a given resistor, the measured time constant $\tau_{L}$ is larger when the core is used than when the core is not used.
+	\item Confirm that, when the core is not used, the measured values for the inductance are close to the expected value of 0.005 H.
+	\item Confirm that, when the core is used, the measured values of the inductance are close to almost 5 times the value of the inductance without the core.
+\end{enumerate}

@@ -12,7 +12,44 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+Here is what to do for runs 1, 2, 3, 4, and 5.
+\begin{enumerate}
+	\item Make sure that you convert the length to meters (from cm), and the electric potential to volts (from mV).
+	\item Use Ohm's law to calculate the electric resistance $R$ with the electric potential $V$ and electric current $I$:
+	\begin{equation}
+		R = \frac{V}{I}	
+	\end{equation}
+	\item Make a scatter plot graph with length in the horizontal axis, and electric resistance in the vertical axis. Confirm that the data has a linear shape. Add the best-fit line and get the equation for this fit.
+	\item Compute the slope of this best fit line with the \texttt{SLOPE} function.
+	\item Convert the diameter of the rod to meters (from mm). Calculate the cross-sectional area $A$ of this rod from the diameter $d$:
+	\begin{equation}
+		A = \frac{1}{4} \pi d^2
+	\end{equation}
+	\item Find an estimate for the resistivity of the material by multiplying the slope by the cross-sectional area of the rod.
+\end{enumerate}
+According to this \href{http://www.radio-electronics.com/info/formulae/resistance/resistivity-table.php}{website} the resistivity for some of the materials that we used is:
+\begin{itemize}
+	\item Brass: $6 \times 10^{-8}$ ohm*m to $9 \times 10^{-8}$ ohm*m
+	\item Copper: $1.7 \times 10^{-8}$ ohm*m
+	\item Aluminum: $2.8 \times 10^{-8}$ ohm*m
+\end{itemize}
+From \href{https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity}{Wikipedia} you get that:
+\begin{itemize}
+	\item Stainless steel: $6.90 \times 10^{-7}$ ohm*m
+\end{itemize}
+Indeed, Wikipedia has estimates for copper and aluminum too. Music wire is a bit more tricky to find. Some kinds of music wire are made of carbon steel. From the Wikipedia article, you can see that:
+\begin{itemize}
+	\item Carbon Steel: $1.43 \times 10^{-7}$ ohm*m
+\end{itemize}
+Here is what to do with the data from runs 6, 7, and 8.
+\begin{enumerate}
+	\item Make a column with the four different values of the diameter (in mm) for the brass rod. Convert the diameter to meters.
+	\item Compute the area and also the inverse of the area.
+	\item Use the value at length 20 cm from run 1, and the single value in each of run 6, 7, and 8, to find the resistance with Ohm's law.
+	\item Make a scatter plot with 1/area in the horizontal axis, and resistance in the vertical axis. Confirm that the data has a linear shape. Add the best-fit line and get the equation for this fit.
+	\item Compute the slope of this best fit line with the \texttt{SLOPE} function.
+	\item Find an estimate for the resistivity of brass by dividing the slope by the length of the measurement (0.2 m).
+\end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{My Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -24,4 +61,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Your Lab Report}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+In your lab report you should include:
+\begin{enumerate}
+	\item Answers to the questions above.
+	\item A table summarizing your results for resistivity. One column should be the name of the material. Another column should be the values of the resistivity that you found from the slope. Another column should be the value of the resistivity in the literature (for brass you can use $7.5 \times 10^{-8}$ ohm*m, for the rest I used the ones in Wikipedia; for musical wire, use carbon steel). The last column should have the percent difference:
+	\begin{equation}
+		\text{Percent Difference } = 100 \times \left( \frac{\text{experimental } - \text{ literature}}{\text{literature}} \right)
+	\end{equation}
+	\item One scatter plot with length in the horizontal axis and resistance in the vertical axis, for each material. Include the best-fit line, along with the equation.
+	\item One scatter plot with 1/Area in the horizontal axis and resistance in the vertical axis, for each material. Include the best-fit line, along with the equation.
+\end{enumerate}
