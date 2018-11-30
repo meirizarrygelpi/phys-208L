@@ -1,5 +1,6 @@
+% Copyright 2018-2019 Melvin Eloy Irizarry-Gelpí
 \documentclass[letterpaper, 12pt]{report}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{fullpage}
@@ -8,7 +9,10 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{graphicx}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{placeins}
+\usepackage{appendix}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\chaptername}{Laboratory}
 \newcommand{\red}[1]{{\color{red} #1}}
 \newcommand{\blue}[1]{{\color{blue} #1}}
 \newcommand{\green}[1]{{\color{ForestGreen} #1}}
@@ -17,29 +21,31 @@
 \newcommand{\yellow}[1]{{\color{Dandelion} #1}}
 \newcommand{\black}[1]{{\color{black} #1}}
 \newcommand{\gray}[1]{{\color{Gray} #1}}
-\renewcommand{\thechapter}{\Alph{chapter}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{\textsc{PHYS 208L Data Analysis Guides}}
-\author{M.E. Irizarry-Gelp\'{i}}
-\date{\today}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{M.E. Irizarry-Gelp\'{i}\\College of Mount Saint Vincent}
+\date{Updated: \today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \maketitle
 \tableofcontents
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{chapters/00-review}
-\input{chapters/01-electro}
-\input{chapters/02-resistance}
-\input{chapters/03-serial-parallel}
-\input{chapters/04-faraday}
-\input{chapters/05-RC}
-\input{chapters/05-RL}
-\input{chapters/06-RLC}
-\input{chapters/07-mirrors}
-\input{chapters/08-lenses}
-\input{chapters/09-aperture}
-\input{chapters/10-interference}
-\input{chapters/11-diffraction}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{chapter/01-electro.tex}
+\input{chapter/02-resistance.tex}
+\input{chapter/03-serial-parallel.tex}
+\input{chapter/04-faraday.tex}
+\input{chapter/05-RC.tex}
+\input{chapter/05-RL.tex}
+\input{chapter/06-RLC.tex}
+\input{chapter/07-mirrors.tex}
+\input{chapter/08-lenses.tex}
+\input{chapter/09-aperture.tex}
+\input{chapter/10-interference.tex}
+\input{chapter/11-diffraction.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appendices}
+    \input{chapter/00-review.tex}
+\end{appendices}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
