@@ -2,68 +2,69 @@
 \setcounter{chapter}{3}
 \chapter{Faraday's Law}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+In this experiment you will learn about Faraday's law of induction and a relationship between electric and magnetic phenomena.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Preliminary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Faraday's Law is a statement relating one electric phenomenon to one magnetic phenomenon. It states that a certain amount of voltage $\mathcal{E}$ is equal to the rate of change of the magnetic flux $\Phi_{B}$ with time:
 \begin{equation}
-	\mathcal{E} = \frac{d \Phi_{B}}{d t}
+	\mathcal{E} = \frac{\Delta \Phi_{B}}{\Delta t}
 	\label{eq.04.faradays.law}
 \end{equation}
-Here $\mathcal{E}$ is known as the \textbf{electro-motive force} or EMF. This quantity has units of volts.
+Here $\mathcal{E}$ is known as the \textbf{electro-motive force} or EMF. Although ``force'' is part of its name, an EMF quantity has nothing to do with force (which is measured in newtons): an EMF quantity has units of volts.
 
 The \textbf{magnetic flux} is defined as the product of the amount of \textbf{magnetic field} $B$ and the amount of \textbf{area} $A$ in a surface where the magnetic field lines pass through:
 \begin{equation}
 	\Phi_{B} = B A
 \end{equation}
-Magnetic field is measured in units of tesla (T). Area is measured in units of square meters (m$^{2}$). Thus, magnetic flux is measured in units of T m$^{2}$.
+Magnetic field is measured in units of tesla (T). Area is measured in units of square meters (m$^{2}$). Thus, magnetic flux is measured in units of T$\cdot$m$^{2}$.
 
-In this experiment we are going to keep the area fixed and let the magnetic field change with time. Thus, the rate of change of the magnetic flux is proportional to the rate of change of the magnetic field:
+In this experiment you are going to keep the \textbf{area fixed} and let the \textbf{magnetic field change with time}. Thus, the rate of change of the magnetic flux is proportional to the rate of change of the magnetic field:
 \begin{equation}
-	\frac{d \Phi_{B}}{d t} = \frac{d B}{d t} A
+	\frac{\Delta \Phi_{B}}{\Delta t} = \frac{\Delta B}{\Delta t} A
 	\label{eq.04.flux.rate}
 \end{equation}
-The rate of change of magnetic flux is measured in units of T m$^{2}$/s. But according to Faraday's law, these units are the same as the units for voltage (volts), so we must have the equivalence:
+The rate of change of magnetic flux is measured in units of T$\cdot$m$^{2}$/s. But according to Faraday's law, these units are the same as the units for EMF (volts), so you must have the equivalence:
 \begin{equation}
-	1 \text{ V} = 1 \text{ T m}^{2}\text{/s}
+	1 \text{ V} = 1 \text{ T} \cdot \text{m}^{2}\text{/s}
 \end{equation}
 This allows you to define the tesla in terms of volts, meters, and seconds:
 \begin{equation}
-	1 \text{ T} = 1 \text{ V s/m}^2
+	1 \text{ T} = 1 \text{ V} \cdot \text{s/m}^2
 \end{equation}
 
-Wires with electric current produce magnetic fields. We are going to use a particular wire called a solenoid coil. The \textbf{magnetic field} inside the cylindrical space of a solenoid coil is (almost) uniform and is directly proportional to the amount of current flowing through the coil:
+Wires with electric current produce magnetic fields. You are going to use a particular wire called a solenoid coil. The \textbf{magnetic field} inside the cylindrical space of a solenoid coil is (almost) uniform and is directly proportional to the amount of current flowing through the coil:
 \begin{equation}
 	B = \frac{\mu_{0} N_{1} I}{L}
 	\label{eq.04.B.coil}
 \end{equation}
 Here
 \begin{itemize}
-	\item $\mu_{0} = 4 \pi \times 10^{-7}$ T m/A  is a universal physical constant
+	\item $B$ is the amount of magnetic field
+	\item $\mu_{0} = 4 \pi \times 10^{-7}$ T$\cdot$m/A  is a universal physical constant
 	\item $N_{1}$ is the number of turns in the coil
 	\item $L$ is the length of the coil
 	\item $I$ is the amount of electric current
 \end{itemize}
-For a given coil we are going to keep the number of turns $N_{1}$ fixed, and the length $L$ fixed, but we are going to use a current that changes with time. In this case, the rate of change of the magnetic field is proportional to the rate of change of the current:
+For a given coil you are going to keep the number of turns $N_{1}$ fixed, and the length $L$ fixed, but you are going to use a current that changes with time. In this case, the rate of change of the magnetic field is proportional to the rate of change of the current:
 \begin{equation}
-	\frac{d B}{d t} = \left( \frac{\mu_{0} N_{1}}{L} \right) \frac{d I}{d t}
+	\frac{\Delta B}{\Delta t} = \left( \frac{\mu_{0} N_{1}}{L} \right) \frac{\Delta I}{\Delta t}
 	\label{eq.04.B.rate}
 \end{equation}
 Using (\ref{eq.04.B.rate}) in (\ref{eq.04.flux.rate}) gives
 \begin{equation}
-	\frac{d \Phi_{B}}{d t} = \left( \frac{\mu_{0} N_{1} A}{L} \right) \frac{d I}{d t}
+	\frac{\Delta \Phi_{B}}{\Delta t} = \left( \frac{\mu_{0} N_{1} A}{L} \right) \frac{\Delta I}{\Delta t}
 \end{equation}
-Thus, according to Faraday's Law, for a solenoid coil we should have
+Thus, according to Faraday's Law, for a solenoid coil you should have
 \begin{equation}
-	\mathcal{E} = \left( \frac{\mu_{0} N_{1} A}{L} \right) \frac{d I}{d t}
+	\mathcal{E} = \left( \frac{\mu_{0} N_{1} A}{L} \right) \frac{\Delta I}{\Delta t}
 	\label{eq.04.emf.solenoid}
 \end{equation}
 That is, the EMF associated with the area $A$ is proportional to the rate of change of the electric current with respect to time.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experiment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The goal of the experiment is to check that the EMF behaves like the rate of change of the electric current. To do this you need to measure the EMF voltage and the current. From the current you can estimate the rate of change and confirm that it agrees with the EMF data. We are going to look at \textbf{four ways for the current to change with time}:
+The goal of the experiment is to check that the EMF behaves like the rate of change of the electric current. To do this you need to measure the EMF voltage and the current. From the current you can estimate the rate of change and confirm that it agrees with the EMF data. You are going to look at \textbf{four ways for the current to change with time}:
 \begin{enumerate}
 	\item Triangular: the current will increase \textbf{linearly}, then decrease \textbf{linearly}.
 	\item Sinusoidal: the current will change according to a \textbf{sine or cosine} profile.
@@ -73,7 +74,7 @@ The goal of the experiment is to check that the EMF behaves like the rate of cha
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Rates of Change}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The rate of change of a \textbf{constant quantity} is \textbf{zero}. That is, if the quantity is not changing, then nothing is being gained or lost.
+The rate of change of a \textbf{constant quantity} is \textbf{zero}. That is, if the quantity is not changing, then no amount is being gained or lost.
 
 The rate of change of a \textbf{quantity that increases linearly with time} is a \textbf{constant}. Increasing linearly is the same as being proportional to time. So this means that the slope is constant. Moreover, since the quantity is increasing, the \textbf{slope is positive}.
 
@@ -81,30 +82,30 @@ The rate of change of a \textbf{quantity that decreases linearly with time} is a
 
 The rate of change of the \textbf{sine function} is a cosine function:
 \begin{equation}
-	\frac{d}{dt} \sin{(t)} = \cos{(t)}
+	\frac{\Delta \sin{(t)}}{\Delta t} = \cos{(t)}
 \end{equation}
 Similarly, the rate of change of the \textbf{cosine function} is proportional to a sine function:
 \begin{equation}
-	\frac{d}{dt} \cos{(t)} = -\sin{(t)}
+	\frac{\Delta \cos{(t)}}{\Delta t} = -\sin{(t)}
 \end{equation}
 Here the sign is not important. What is important is to remember that sine and cosine are very similar functions and that a cosine is the same as a sine function shifted by 90 deg (or $\pi/2$ rad):
-\begin{equation}
-	\cos{(t)} = \sin{(t + 90^{\circ})}, \qquad \sin{(t)} = \cos{(t - 90^{\circ})}
-\end{equation}
+\begin{align}
+	\cos{(t)} = \sin{(t + 90^{\circ})}, && \sin{(t)} = \cos{(t - 90^{\circ})}
+\end{align}
 Thus, if the quantity is sinusoidal, then the rate of change will also be sinusoidal but shifted by 90 deg. In particular, when $\sin{(t)}$ is at a peak or valley, then $\cos{(t)}$ is crossing the horizontal axis (i.e. close to zero), and when $\sin{(t)}$ is crossing the horizontal axis (i.e. close to zero), then $\cos{(t)}$ is either at a valley or a peak.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Solenoid Coils}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-We are going to use two solenoid coils. The smaller one fits inside the larger one. The smaller one is called the secondary coil. This is the coil used to measure the EMF value. The larger coil is called the primary coil. This coil is the one with the current and the one that produces the magnetic field.
+You are going to use two solenoid coils. The smaller one fits inside the larger one. The smaller one is called the \textbf{secondary coil}. This is the coil used to measure the EMF value. The larger coil is called the \textbf{primary coil}. This coil is the one with the current and the one that produces the magnetic field.
 
 The \textbf{primary coil} has a length of 10 cm and 3,300 turns. Thus,
-\begin{equation}
-	L = 10 \text{ cm} = 0.1 \text{ m}, \qquad N_{1} = 3,300
-\end{equation}
-The \textbf{secondary coil} has 150 turns and an outer diameter of 1.8 cm. The inner diameter I measured it to be 1.1 cm. The average of these two diameters correspond to the diameter half-way between these two. This average is 1.45 cm. Since the wire was very thick, I think it is more accurate to use the average of the diameters to calculate the area of each loop. Thus,
-\begin{equation}
-	d = 1.45 \text{ cm} = 0.0145 \text{ m}, \qquad N_{2} = 150
-\end{equation}
+\begin{align}
+	L = 10 \text{ cm} = 0.1 \text{ m}, && N_{1} = 3,300
+\end{align}
+The \textbf{secondary coil} has 150 turns and an outer diameter of 1.8 cm. The inner diameter I measured it to be close to 1.1 cm. The average of these two diameters correspond to the diameter half-way between these two. This average is 1.45 cm. Since the wire was very thick, I think it is more accurate to use the average of the diameters to calculate the area of each loop. Thus,
+\begin{align}
+	d = 1.45 \text{ cm} = 0.0145 \text{ m}, && N_{2} = 150
+\end{align}
 The area of a circle with diameter $d$ is given by
 \begin{equation}
 	A_{\text{loop}} = \frac{1}{4} \pi d^{2} = \frac{1}{4} \pi (0.0145 \text{ m})^2 = 1.65 \times 10^{-4} \text{ m}^{2}
@@ -113,7 +114,7 @@ This is the amount of \textbf{area-per-loop} in the secondary coil. The \textbf{
 \begin{equation}
 	A = N_{2} A_{\text{loop}} = 150 \times (1.65 \times 10^{-4} \text{ m}^{2}) = 2.48 \times 10^{-2} \text{ m}^{2}
 \end{equation}
-This is the amount of area that we will use to measure the magnetic flux.
+This is the amount of area that you will use to measure the magnetic flux.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,17 +123,17 @@ According to (\ref{eq.04.emf.solenoid}), the amount of EMF is directly proportio
 	C = \frac{\mu_{0} N_{1} A}{L} = 1.03 \times 10^{-3} \text{ V s/A}
 	\label{eq.04.slope}
 \end{equation}
-This is the expected value. In principle, if you could graph $\mathcal{E}$ versus $dI/dt$, the slope should correspond to this value. We can only do this for run 1 (with the triangular shape current).
+This is the expected value. In principle, if you could chart $\mathcal{E}$ versus $\Delta I / \Delta t$, the slope should correspond to this value. You can only do this for run 1 (with the triangular shape current).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Triangular Current}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-For the triangular current, the graph of current versus time has regions of increasing current and regions of decreasing current. In the same time regions, the EMF voltage is approximately constant but either positive or negative.
+For the triangular current, the chart of current versus time has regions of increasing current and regions of decreasing current. In the same time regions, the EMF voltage is approximately constant but either positive or negative.
 
-You can isolate a time region of linear increase of current and find the slope. (Use \texttt{=SLOPE(Y,X)} with \texttt{Y} the current and \texttt{X} the time). This slope is a value for the rate of change of current with respect to time ($dI/dt$). The slope should be \textbf{positive} since the current is increasing. In approximately the same time region the EMF voltage is constant (make sure you only include the region where the EMF is approximately flat and not suddenly rising or falling). You can calculate the time-average of the EMF in this time region. This time average value corresponds to the best direct estimate for the EMF ($\mathcal{E}$).
+You can isolate a time region of linear increase of current and find the slope. (Use \texttt{=SLOPE(Y,X)} with \texttt{Y} the current and \texttt{X} the time). This slope is a value for the rate of change of current with respect to time ($\Delta I / \Delta t$). The slope should be \textbf{positive} since the current is increasing. In approximately the same time region the EMF voltage is constant (make sure you only include the region where the EMF is approximately flat and not suddenly rising or falling). You can calculate the time-average of the EMF in this time region. This time average value corresponds to the best direct estimate for the EMF ($\mathcal{E}$).
 
 In a similar way, you can analyze the time regions where the current decreases in a linear way. Now the rate of change of the current will be \textbf{negative}. The EMF should also be almost flat and \textbf{negative}.
 
-After finding \textbf{at least six pairs} of EMF and rate of change of current with respect to time, you can plot these quantities to test the relation (\ref{eq.04.emf.solenoid}) and find the slope. Then you can compare this value with the expected slope (\ref{eq.04.slope}). The graph should have two clusters of points. In my case, the percent difference between the slope from the graph and the expected slope was almost 17\%, which is large but not terrible.
+After finding \textbf{at least six pairs} of EMF and rate of change of current with respect to time, you can plot these quantities to test the relation (\ref{eq.04.emf.solenoid}) and find the slope. Then you can compare this value with the expected slope (\ref{eq.04.slope}). The chart should have two clusters of points. In my case, the percent difference between the slope from the chart and the expected slope was almost 17\%, which is large but not terrible.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sinusoidal Current}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,7 +146,7 @@ If the above is true, then the EMF behaves in the same way as the rate of change
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Ramp-Up and Ramp-Down Currents}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-For the ramp-up current, the current only increases linearly. This means that the rate of change of the current should be a positive constant always. You can repeat the steps followed above with the triangular current and find the rate of change for the current and also the time-average EMF. However, we cannot plot $\mathcal{E}$ and $dI/dt$ anymore, so instead just calculate the ratio
+For the ramp-up current, the current only increases linearly. This means that the rate of change of the current should be a positive constant always. You can repeat the steps followed above with the triangular current and find the rate of change for the current and also the time-average EMF. However, you cannot plot $\mathcal{E}$ and $dI/dt$ anymore, so instead just calculate the ratio
 \begin{equation}
 	\text{ratio } = \frac{\mathcal{E}}{dI/dt}
 \end{equation}
@@ -169,33 +170,44 @@ For each run you should have three columns of data: time, voltage (electric pote
 	1 \text{ mV} = 0.001 \text{ V}
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Your Lab Report}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 For \textbf{run 1}, your lab report should include:
-\begin{enumerate}
-	\item Graph of \textbf{voltage} versus time.
-	\item Graph of \textbf{current} versus time.
+\begin{itemize}
+	\item Chart of \textbf{voltage} versus time.
+	\item Chart of \textbf{current} versus time.
 	\item A brief argument discussing whether the voltage that you measured behaves \textbf{qualitatively} like the rate of change of current with time.
 	\item A table with the \textbf{six values} that you found for the average EMF, and also for the rate of change of current with respect to time. Choose three values with positive current slope (and EMF), and three values with negative current slope.
-	\item Graph of \textbf{average EMF} versus \textbf{rate of change of current with respect to time}, with $\mathcal{E}$ in the vertical axis and $dI/dt$ in the horizontal axis.
+	\item Chart of \textbf{average EMF} versus \textbf{rate of change of current with respect to time}, with $\mathcal{E}$ in the vertical axis and $dI/dt$ in the horizontal axis.
 	\item The slope of \textbf{average EMF} versus \textbf{rate of change of current with respect to time}, and the percent difference when compared to the expected value (\ref{eq.04.slope}).
-\end{enumerate}
+\end{itemize}
 For \textbf{run 2}, your lab report should include:
-\begin{enumerate}
-	\item A joint graph with time in the horizontal axis, and both \textbf{voltage} (in V \textbf{not} mV) and \textbf{current} in the vertical axis.
+\begin{itemize}
+	\item A joint chart with time in the horizontal axis, and both \textbf{voltage} (in V \textbf{not} mV) and \textbf{current} in the vertical axis.
 	\item A brief argument discussing whether the voltage that you measured behaves \textbf{qualitatively} like the rate of change of current with time.
-\end{enumerate}
+\end{itemize}
 For \textbf{run 3}, your lab report should include:
-\begin{enumerate}
-	\item Graph of \textbf{voltage} versus time.
-	\item Graph of \textbf{current} versus time.
+\begin{itemize}
+	\item Chart of \textbf{voltage} versus time.
+	\item Chart of \textbf{current} versus time.
 	\item A brief argument discussing whether the voltage that you measured behaves \textbf{qualitatively} like the rate of change of current with time.
 	\item A table with \textbf{three values} (for three distinct time regions) of average EMF, the rate of change of current with respect to time, and the ratio of these two quantities.
 	\item Calculate the average ratio and compare the ratios to the expected value of the slope (\ref{eq.04.slope}).
-\end{enumerate}
+\end{itemize}
 For \textbf{run 4}, your lab report should include:
-\begin{enumerate}
-	\item Graph of \textbf{voltage} versus time.
-	\item Graph of \textbf{current} versus time.
+\begin{itemize}
+	\item Chart of \textbf{voltage} versus time.
+	\item Chart of \textbf{current} versus time.
 	\item A brief argument discussing whether the voltage that you measured behaves \textbf{qualitatively} like the rate of change of current with time.
-\end{enumerate}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Tables}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Figures}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+...
