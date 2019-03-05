@@ -320,6 +320,8 @@ Before dealing with the inductive time constant experiments, you have to determi
     r = \frac{V_{r}(t)}{I(t)}
 \end{equation}
 should provide the observed value of the resistance of the non-ideal inductor over time. This value should be steady and almost constant, so take a time average to get the best estimate.
+
+For two non-ideal inductors in series, you should find that the resistance is close to double the resistance for a single non-ideal inductor in series. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{RL Circuits: Inductive Time Constant}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -381,19 +383,19 @@ For the RC circuits, your data will consist of the following runs:
 \end{itemize}
 For the inductor resistance part, your data will consist of the following runs:
 \begin{itemize}
-    \item Run 1: $R = 10$ ohm, one inductor without metallic core.
-    \item Run 2: $R = 10$ ohm, one inductor with metallic core.
-    \item Run 3: $R = 10$ ohm, two inductors in series without metallic cores.
-    \item Run 4: $R = 10$ ohm, two inductors in series with metallic cores.
+    \item Run 1: One inductor without metallic core.
+    \item Run 2: One inductor with metallic core.
+    \item Run 3: Two inductors in series without metallic cores.
+    \item Run 4: Two inductors in series with metallic cores.
 \end{itemize}
 For the RL circuits, your data will consist of the following runs:
 \begin{itemize}
     \item Run 1: One $R = 10$ ohm resistor, and one inductor without metallic core.
     \item Run 2: One $R = 10$ ohm resistor, and one inductor with metallic core.
-    \item Run 3: Two $R = 10$ ohm resistors in parallel, and one inductor without metallic core.
-    \item Run 4: Two $R = 10$ ohm resistors in parallel, and one inductor with metallic core.
-    \item Run 5: One $R = 10$ ohm resistor, and two inductors in series without metallic core.
-    \item Run 6: One $R = 10$ ohm resistor, and two inductors in series with metallic core.
+    \item Run 3: One $R = 10$ ohm resistor, and two inductors in series without metallic core.
+    \item Run 4: One $R = 10$ ohm resistor, and two inductors in series with metallic core.
+    \item Run 5: Two $R = 10$ ohm resistors in parallel, and one inductor without metallic core.
+    \item Run 6: Two $R = 10$ ohm resistors in parallel, and one inductor with metallic core.
     \item Run 7: Two $R = 10$ ohm resistors in parallel, and two inductors in series without metallic core.
     \item Run 8: Two $R = 10$ ohm resistors in parallel, and two inductors in series with metallic core.
 \end{itemize}
@@ -417,6 +419,8 @@ You should answer the following questions:
     \item Are the experimental values of $\tau_{C}$ from $V_{R}(t)$ and $I(t)$ consistent in a charging event?
     \item Is the value of $\tau_{C}$ from $V_{C}(t)$ in a discharging event consistent with the values obtained in the charging event with same resistor and capacitor?
     \item Why is the current data not usable when the resistors with thousands of ohms worth of resistance used?
+    \item What is the resistance value for one non-ideal inductor?
+    \item Does the metallic core change substantially the value of the resistance of a non-ideal inductor?
     \item What happens to the value of $\tau_{L}$ when the metallic core is used?
     \item What happens to the value of $\tau_{L}$ when the two resistors are connected in series, but one inductor is used?
     \item What happens to the value of $\tau_{L}$ when one resistor is used, but the two inductors are connected in series?
