@@ -2,28 +2,133 @@
 \setcounter{chapter}{8}
 \chapter{Aperture and Depth of Field}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+In this experiment you will learn about the effect of aperture on depth of field.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Preliminary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+Given an object in position $x_{O}$ and a convex lens in position $x_{L}$ with focal length $f$, a perfectly sharp image will form in position $x_{I}$. As found in the previous experiment, the three positions and the focal length are related via:
+\begin{equation}
+    \frac{1}{d_{O}} + \frac{1}{d_{I}} = \frac{1}{\vert x_{O} - x_{L} \vert} + \frac{1}{\vert x_{I} - x_{L} \vert} = \frac{1}{f}
+\end{equation}
+Indeed, there is some wiggle room around the position of the perfectly sharp image where the image is still relatively in focus. The \textbf{depth of field} is defined as the range of positions where a real image from a convex lens is reasonably focused, according to some specific criterion. In this experiment you will use the following criterion: can two distinct lines in an image be distinguished?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Near Limit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The \textbf{near limit} $D_{N}$ is the distance between the object and the lens when the lens is as \textbf{near} to the object as possible and features in the image are close to being blurred.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Far Limit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The \textbf{far limit} $D_{F}$ is the distance between the object and the lens when the lens is as \textbf{far} from the object as possible and features in the image are close to being blurred.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Depth of Field}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The near and far limits tell you how close or how far away can and object be while still being relatively in focus. The size of this region in space is known as the depth of field. Given the values of the near limit $D_{N}$ and the far limit $D_{F}$, you can find the depth of field via:
+\begin{equation}
+    \text{depth of field} = D_{F} - D_{N}
+    \label{eq.09.dof}
+\end{equation}
+It turns out that the value of the near limit, the far limit, and the depth of field can all be changed by using different apertures. An \textbf{aperture} is a space opening between the lens and the image. For example, the pupil of the eye serves as the aperture for the eye. As the pupil changes size, the eye's depth of field changes: near objects can come to sharp focus or vice versa.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{f-Numbers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The f-number $N_{f}$ is a value used to describe an aperture of a lens:
+\begin{equation}
+    N_{f} = \frac{f}{d}
+\end{equation}
+Here $f$ is the focal length of the lens, and $d$ is the diameter of the aperture.
+
+In photography, it is common to find combinations of lens ($f$) and aperture ($d$) that produce certain values of f-number. More information about f-numbers can be found in Wikipedia:
+\begin{center}
+    \url{https://en.wikipedia.org/wiki/F-number}
+\end{center}
+In this experiment you will have five different apertures available. Each aperture is labeled with a number from 1 to 5, and has a different diameter. Hence, each aperture will have a different f-number. You can check that the following ratios are fixed:
+\begin{equation}
+    \frac{N_{4}}{N_{5}} = \frac{N_{3}}{N_{4}} = \frac{N_{2}}{N_{3}} = \frac{N_{1}}{N_{2}} = \sqrt{2} \approx 1.4142\ldots
+\end{equation}
+Here $N_{5}$ is the f-number for the aperture labeled with 5, and so on.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experiment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+You used the 20 cm double convex lens and five different apertures. For each aperture you measured the diameter. You also found the near and far limits for each aperture.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+Instead of measuring the near and far limits directly, you measured the positions of the object and lens. The near and far limits can be found in the same way that the object distance is calculated:
+\begin{equation}
+    \vert x_{O} - x_{L} \vert
+\end{equation}
+Once the near and far limits are obtained, you can find the depth of field using Equation \ref{eq.09.dof}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{My Data}
+\section{Your Report}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+Your report should include the following:
+\begin{itemize}
+    \item A table like Table \ref{table.09.fnumbers} with the diameter measurements and the values of the f-Number determined.
+    \item A table like Table \ref{table.09.ratios} with the ratios of consecutive f-numbers. Include the percent difference found by comparing each ratio with the expected value $\sqrt{2} \approx 1.4142$.
+    \item A table like Table \ref{table.09.results} with the rest of the results: include the near and far limits, and also the depth of field for each aperture.
+    \item A scatter chart with depth of field in the vertical axis, and aperture diameter in the horizontal axis. Make sure you label each axis.
+\end{itemize}
+You should answer the following questions:
+\begin{enumerate}
+    \item Which aperture has the largest near limit?
+    \item Which aperture has the largest far limit?
+    \item Which aperture has the largest depth of field?
+    \item Looking at your chart of depth of field versus diameter, what happens to the values of depth of field as you make the diameter smaller?
+\end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Your Data}
+\newpage
+\section{Tables}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+\begin{table}[ht]
+    \begin{center}
+        \begin{tabular}{|l|r|r|}
+            \hline
+            Aperture Label & Diameter (cm) & f-Number \\
+            \hline
+            5 & & \\
+            4 & & \\
+            3 & & \\
+            2 & & \\
+            1 & & \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{f-Numbers for apertures with 20 cm double convex lens}
+    \label{table.09.fnumbers}
+\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Your Lab Report}
+\begin{table}[ht]
+    \begin{center}
+        \begin{tabular}{|l|r|r|r|}
+            \hline
+            Ratio & Observed Value & Expected Value & P.D. (\%) \\
+            \hline
+            $N_{4} / N_{5}$ & & 1.4142 & \\
+            $N_{3} / N_{4}$ & & 1.4142 & \\
+            $N_{2} / N_{3}$ & & 1.4142 & \\
+            $N_{1} / N_{2}$ & & 1.4142 & \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{Ratios of consecutive f-numbers}
+    \label{table.09.ratios}
+\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+\begin{table}[ht]
+    \begin{center}
+        \begin{tabular}{|l|r|r|r|}
+            \hline
+            Aperture Label & $D_{N}$ (cm) & $D_{F}$ (cm) & $D_{F} - D_{N}$ (cm) \\
+            \hline
+            5 & & & \\
+            4 & & & \\
+            3 & & & \\
+            2 & & & \\
+            1 & & & \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{Results}
+    \label{table.09.results}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
