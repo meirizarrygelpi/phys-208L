@@ -2,7 +2,7 @@
 \setcounter{chapter}{9}
 \chapter{Interference}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+In this experiment you will learn about interference in light from a laser due to a double slit.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Preliminary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -12,7 +12,7 @@ Thinking of the interference pattern as a wave, the bright regions would corresp
 \begin{equation} \label{y.eq}
 	y \approx \frac{D \lambda}{d}
 \end{equation}
-Note that this relation does not depend on the width $a$. The \textbf{wavelength of the red laser} used in class is 635 nm or 0.000635 mm. Make sure that you are consistent with the units for distance.
+Note that this relation does not depend on the width $a$. The \textbf{wavelength of the red laser} used in class is 635 nm (recall that 1 nm is equivalent to $10^{-9}$ m) or $6.35 \times 10^{-4}$ mm (recall that 1 mm is equivalent to $10^{-3}$ m). Make sure that you are consistent with the units for distance.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experiment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -39,59 +39,16 @@ For part 2 you are only using double slits. Here is what to do.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Make an graph with intensity in the vertical axis and position in the horizontal axis. Instead of using the familiar ``scatter plot'', use the ``line chart'' type. Initially, your graph should look like Figure \ref{chart1}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[scale=0.77]{image/10-interference/chart1.png}
-	\caption{Intensity from interference pattern; no truncation.}
-	\label{chart1}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Truncate the left and right tails}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 As you can see in Figure \ref{chart1}, most of the data is just flat noise. In order to better study the central region, it is good to remove the left and right tails. For the first double slit ($a = 0.08$ mm and $d = 0.25$ mm), you can remove all the data before the pair of short peaks before the central region, and all the data after the pair of short peaks after the central region. After removing the left tail your graph will look like Figure \ref{chart2}. After removing the right tail, the graph will look like Figure \ref{chart3}. After these truncations, the data is ready for analysis.
 
 For the other double slit configurations (runs 3, 4, 5, and 6), you can truncate enough to leave just the central region. Counting the central (tallest) peak, your graphs should each have 11 peaks.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[scale=0.77]{image/10-interference/chart2.png}
-	\caption{Intensity from interference pattern; left truncation.}
-	\label{chart2}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[scale=0.77]{image/10-interference/chart3.png}
-	\caption{Intensity from interference pattern; left and right truncation.}
-	\label{chart3}
-\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Locate the position of the peaks}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Looking at Figure \ref{chart3}, you can clearly see a tall peak in the center. I am going to label this peak ``0C''. On each side of 0C you can see 3 peaks of decreasing height (the third peak is very short), and a pair of peaks that appear to have the same height. I am going to label these peaks with numbers from 1 to 5 and with L if they are on the left of 0C or R if they are on the right of 0C. For Figure \ref{chart3}, the position of these 11 peaks is in Table \ref{table.pos}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht!]
-	\centering
-	\begin{tabular}{|r|r|} \hline
-		Peak Label & Position (mm) \\
-		\hline
-		5L & 66.55 \\
-		4L & 68.66 \\
-		3L & 71.12 \\
-		2L & 72.81 \\
-		1L & 74.76 \\
-		0C & 76.75 \\
-		1R & 78.7 \\
-		2R & 80.64 \\
-		3R & 82.465 \\
-		4R & 84.96 \\
-		5R & 86.765 \\
-		\hline
-	\end{tabular}
-	\caption{Positions of Peaks}
-	\label{table.pos}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Calculate the distance from 0C to each peak}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 By taking the difference between the position $x_{p}$ of a given peak, and the position $x_{c}$ of the central peak, you can find the distance from that peak to the central peak 0C:
@@ -100,55 +57,10 @@ By taking the difference between the position $x_{p}$ of a given peak, and the p
 \end{equation}
 With this definition, the distance comes out negative for the left peaks, and positive for the right peaks. My results are in Table \ref{table.disC}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht!]
-	\centering
-	\begin{tabular}{|r|r|} \hline
-		Peak Label & Distance to 0C (mm) \\
-		\hline
-		5L & $-10.2$ \\
-		4L & $-8.09$ \\
-		3L & $-5.63$ \\
-		2L & $-3.94$ \\
-		1L & $-1.99$ \\
-		0C & 0 \\
-		1R & 1.95 \\
-		2R & 3.89 \\
-		3R & 5.715 \\
-		4R & 8.21 \\
-		5R & 10.015 \\
-		\hline
-	\end{tabular}
-	\caption{Distance to 0C peak}
-	\label{table.disC}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Calculate the distance between adjacent peaks}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Another useful thing to look at is the distance between consecutive peaks. My results are in Table \ref{table.disA}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht!]
-	\centering
-	\begin{tabular}{|r|r|} \hline
-		Pair of peaks & Distance between peaks (mm) \\
-		\hline
-		4L - 5L & 2.11 \\
-		3L - 4L & 2.46 \\
-		2L - 3L & 1.69 \\
-		1L - 2L & 1.95 \\
-		0C - 1L & 1.99 \\
-		1R - 0C & 1.95 \\
-		2R - 1R & 1.94 \\
-		3R - 2R & 1.825 \\
-		4R - 3R & 2.495 \\
-		5R - 4R & 1.805 \\
-		\hline
-		Average & 2.0215 \\
-		\hline
-	\end{tabular}
-	\caption{Distance between adjacent peaks}
-	\label{table.disA}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Compare to  predictions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The data that I have been using so far was obtained with a green laser (you used the red laser). The wavelength of the green laser is 532 nm or $\lambda = 0.000532$ mm. The distance between the slit mount and the sensor is $D = 960$ mm. For this particular run, the double slit used had $a = 0.08$ mm and $d = 0.25$ mm. With this information, the predicted separation between the peaks (\ref{y.eq}) takes the following value:
@@ -161,28 +73,6 @@ You can compare this expected value to the average distance between adjacent pea
 \end{equation}
 However, for this particular run, the distance between adjacent peaks in Table \ref{table.disA} varies considerably. One thing you can do is to compare the position of the peaks in Table \ref{table.pos} with the expected position given by multiples of the theoretical distance $y$. These results are in Table \ref{compa}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht!]
-	\centering
-	\begin{tabular}{|r|r|r|r|r|} \hline
-		Peak Label & $n$ & $n y$ (mm) & Observed Peak Position (mm) & \% Difference \\
-		\hline
-		5L & $-5$ & $-10.2144$ & $-10.2$ & $-0.141$ \\
-		4L & $-4$ & $-8.17152$ & $-8.09$ & $-0.998$ \\
-		3L & $-3$ & $-6.12864$ & $-5.63$ & $-8.136$ \\
-		2L & $-2$ & $-4.08576$ & $-3.94$ & $-3.568$ \\
-		1L & $-1$ & $-2.04288$ & $-1.99$ & $-2.589$ \\
-		0C & $0$ & 0 & 0 & NA \\
-		1R & $1$ & 2.04288 & 1.95 & $-4.547$ \\
-		2R & $2$ & 4.08576 & 3.89 & $-4.791$ \\
-		3R & $3$ & 6.12864 & 5.715 & $-6.749$ \\
-		4R & $4$ & 8.17152 & 8.21 & $0.471$ \\
-		5R & $5$ & 10.2144 & 10.015 & $-1.952$ \\
-		\hline
-	\end{tabular}
-	\caption{Comparison of expected and observed peak positions}
-	\label{compa}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{My Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Tables \ref{part1.single} and \ref{part1.double} have the data for part 1. My intensity data contains a grand total of 15 runs. The first few runs use the green laser and I am not going to discuss them. Runs 9 to 15 use the red laser. Here is the breakdown:
@@ -192,34 +82,6 @@ Tables \ref{part1.single} and \ref{part1.double} have the data for part 1. My in
 	\item Run 13 and 14: $a = 0.08$ mm and $d = 0.50$ mm
 \end{itemize}
 The shared spreadsheet has the analysis for runs 9 through 14. The run that I used in the text above is run 1.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht!]
-	\centering
-	\begin{tabular}{|r|r|} \hline
-		Distance & Measurement \\
-		\hline
-		$y_{01}$ & 6 mm \\
-		$y_{02}$ & 12 mm \\
-		$y_{11}$ & 12 mm \\
-		\hline
-	\end{tabular}
-	\caption{Distance measurements for the single slit for $a = 0.08$ mm.}
-	\label{part1.single}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht!]
-	\centering
-	\begin{tabular}{|r|r|} \hline
-		Distance & Measurement \\
-		\hline
-		$y_{01}$ & 6 mm \\
-		$y_{02}$ & 12 mm \\
-		$y_{11}$ & 12 mm \\
-		\hline
-	\end{tabular}
-	\caption{Distance measurements for the double slit for $a = 0.08$ mm and $d = 0.25$ mm.}
-	\label{part1.double}
-\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Your Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -256,3 +118,148 @@ You should also answer the following questions:
 	\item What do you think would happen to the interference pattern if you use a triple slit instead of a double slit?
 	\item In general, are the values in your tables like Table \ref{compa} symmetric between left or right? That is, are both sides almost equally accurate? Or is one side closer to the expected values than the other?
 \end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Tables}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|r|r|} \hline
+		Peak Label & Position (mm) \\
+		\hline
+		5L & 66.55 \\
+		4L & 68.66 \\
+		3L & 71.12 \\
+		2L & 72.81 \\
+		1L & 74.76 \\
+		0C & 76.75 \\
+		1R & 78.7 \\
+		2R & 80.64 \\
+		3R & 82.465 \\
+		4R & 84.96 \\
+		5R & 86.765 \\
+		\hline
+	\end{tabular}
+	\caption{Positions of Peaks}
+	\label{table.pos}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|r|r|} \hline
+		Peak Label & Distance to 0C (mm) \\
+		\hline
+		5L & $-10.2$ \\
+		4L & $-8.09$ \\
+		3L & $-5.63$ \\
+		2L & $-3.94$ \\
+		1L & $-1.99$ \\
+		0C & 0 \\
+		1R & 1.95 \\
+		2R & 3.89 \\
+		3R & 5.715 \\
+		4R & 8.21 \\
+		5R & 10.015 \\
+		\hline
+	\end{tabular}
+	\caption{Distance to 0C peak}
+	\label{table.disC}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|r|r|} \hline
+		Pair of peaks & Distance between peaks (mm) \\
+		\hline
+		4L - 5L & 2.11 \\
+		3L - 4L & 2.46 \\
+		2L - 3L & 1.69 \\
+		1L - 2L & 1.95 \\
+		0C - 1L & 1.99 \\
+		1R - 0C & 1.95 \\
+		2R - 1R & 1.94 \\
+		3R - 2R & 1.825 \\
+		4R - 3R & 2.495 \\
+		5R - 4R & 1.805 \\
+		\hline
+		Average & 2.0215 \\
+		\hline
+	\end{tabular}
+	\caption{Distance between adjacent peaks}
+	\label{table.disA}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|r|r|r|r|r|} \hline
+		Peak Label & $n$ & $n y$ (mm) & Observed Peak Position (mm) & \% Difference \\
+		\hline
+		5L & $-5$ & $-10.2144$ & $-10.2$ & $-0.141$ \\
+		4L & $-4$ & $-8.17152$ & $-8.09$ & $-0.998$ \\
+		3L & $-3$ & $-6.12864$ & $-5.63$ & $-8.136$ \\
+		2L & $-2$ & $-4.08576$ & $-3.94$ & $-3.568$ \\
+		1L & $-1$ & $-2.04288$ & $-1.99$ & $-2.589$ \\
+		0C & $0$ & 0 & 0 & NA \\
+		1R & $1$ & 2.04288 & 1.95 & $-4.547$ \\
+		2R & $2$ & 4.08576 & 3.89 & $-4.791$ \\
+		3R & $3$ & 6.12864 & 5.715 & $-6.749$ \\
+		4R & $4$ & 8.17152 & 8.21 & $0.471$ \\
+		5R & $5$ & 10.2144 & 10.015 & $-1.952$ \\
+		\hline
+	\end{tabular}
+	\caption{Comparison of expected and observed peak positions}
+	\label{compa}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|r|r|} \hline
+		Distance & Measurement \\
+		\hline
+		$y_{01}$ & 6 mm \\
+		$y_{02}$ & 12 mm \\
+		$y_{11}$ & 12 mm \\
+		\hline
+	\end{tabular}
+	\caption{Distance measurements for the single slit for $a = 0.08$ mm.}
+	\label{part1.single}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|r|r|} \hline
+		Distance & Measurement \\
+		\hline
+		$y_{01}$ & 6 mm \\
+		$y_{02}$ & 12 mm \\
+		$y_{11}$ & 12 mm \\
+		\hline
+	\end{tabular}
+	\caption{Distance measurements for the double slit for $a = 0.08$ mm and $d = 0.25$ mm.}
+	\label{part1.double}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Figures}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.77]{image/10-interference/chart1.png}
+	\caption{Intensity from interference pattern; no truncation.}
+	\label{chart1}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.77]{image/10-interference/chart2.png}
+	\caption{Intensity from interference pattern; left truncation.}
+	\label{chart2}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.77]{image/10-interference/chart3.png}
+	\caption{Intensity from interference pattern; left and right truncation.}
+	\label{chart3}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
