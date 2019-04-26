@@ -6,11 +6,28 @@ In this experiment you will learn about interference in light from a laser due t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Preliminary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-A double slit is characterized by two distances: $a$ (the \textbf{slit width}) and $d$ (the amount of \textbf{separation} between the two slits). When light goes through a double slit, an \textbf{interference pattern} is produced. The interference pattern consist of a series of dark and bright regions, with a very bright region in the center. The dark regions result when two waves oscillating in opposite ways meet at the same point in space (i.e. they can cancel each other, also known as \textbf{destructive} interference). The bright regions result when the two waves are oscillating in the same way (i.e. they can add to each other, also known as \textbf{constructive} interference).
+In the previous three experiments you studied phenomena like reflection and refraction that can be explained with the \textbf{ray} model of light. Interference and diffraction are two phenomena that are easier to explain with the \textbf{wave} model of light. Both of these have to do with light passing throw an opening or openings. But unlike the apertures you used before, the openings in this experiment and the next one are much smaller in size.
 
-Thinking of the interference pattern as a \textbf{wave}, the bright regions would correspond to peaks. The distance $y$ between peaks is related to the distance $D$ between the screen where the pattern appears and the double slit, and the wavelength $\lambda$ of the light. In our experiment, the distance $D$ between the slit mount and the screen is very large compared to the distance $d$ between peaks. This fact allows for a certain approximation to hold. Under this condition, the distance between peaks $y$ is given by
-\begin{equation} \label{y.eq}
-	y \approx \frac{D \lambda}{d}
+A \textbf{slit} is a very thin opening. When light goes through a single slit that is particularly narrow, a \textbf{diffraction pattern} is produced. You are going to cover diffraction in more detail in the next experiment.
+
+A \textbf{double slit} is characterized by two distances: $a$ (the \textbf{slit width}) and $d$ (the \textbf{separation} between the two slits). When light goes through a double slit, an \textbf{interference pattern} is produced. The interference pattern consist of a series of dark and bright regions, with a very bright region in the center. The dark regions result when two waves oscillating in opposite ways meet at the same point in space (i.e. they can cancel each other, also known as \textbf{destructive} interference). The bright regions result when the two waves are oscillating in the same way (i.e. they can add to each other, also known as \textbf{constructive} interference).
+
+Thinking of the interference pattern itself as a \textbf{wave}, the bright regions would correspond to peaks. The distance from the center of the interference pattern to the $n$-th peak is denoted by $y_{n}$. This distance $y_{n}$ is related to the distance $D$ between the screen and the double slit, the slit separation $d$, and the wavelength of the light $\lambda$ vias the relation
+\begin{equation}
+	\frac{y_{n} d}{\sqrt{D^{2} + y_{n}^{2}}} = n \lambda
+\end{equation}
+Here $n = 0$ corresponds to the central peak, $n = 1$ corresponds to the first peak, and so on. In your experiment you have the distance $D$ being much larger than the distance $y_{n}$, so you can use the following approximation:
+\begin{equation}
+	\sqrt{D^{2} + y_{n}^{2}} \approx D
+\end{equation}
+Hence it follows that the distance to a peak is given by
+\begin{equation}
+	y_{n} \approx \frac{n D \lambda}{d}
+\end{equation}
+The distance between consecutive peaks is given by
+\begin{equation}
+	\Delta y = y_{n+1} - y_{n} \approx \frac{D \lambda}{d}
+	\label{eq.10.y}
 \end{equation}
 Note that this relation does not depend on the slit width $a$. The \textbf{wavelength of the red laser} used in class is 635 nm (recall that 1 nm is equivalent to $10^{-9}$ m) or $6.35 \times 10^{-4}$ mm (recall that 1 mm is equivalent to $10^{-3}$ m). Make sure that you are consistent with the units for distance.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -43,7 +60,7 @@ For part 2 you are only using double slits.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Visualize the data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Make a chart with intensity in the vertical axis and position in the horizontal axis. Instead of using the familiar ``scatter plot'', use the ``line chart'' type. Initially, your graph should look like Figure \ref{chart1}.
+Make a chart with intensity in the vertical axis and position in the horizontal axis. Instead of using the familiar ``scatter chart'', use the ``line chart'' type. Initially, your graph should look like Figure \ref{chart1}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Truncate the left and right tails}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,15 +86,15 @@ Another useful thing to look at is the distance between consecutive peaks. My re
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Compare to predictions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The data that I have been using so far was obtained with a green laser (you used the red laser). The wavelength of the green laser is 532 nm or $\lambda = 0.000532$ mm. The distance between the slit mount and the sensor is $D = 960$ mm. For this particular run, the double slit used had $a = 0.08$ mm and $d = 0.25$ mm. With this information, the predicted separation between the peaks (\ref{y.eq}) takes the following value:
+The data that I have been using so far was obtained with a green laser (you used the red laser). The wavelength of the green laser is 532 nm or $\lambda = 0.000532$ mm. The distance between the slit mount and the sensor is $D = 960$ mm. For this particular run, the double slit used had $a = 0.08$ mm and $d = 0.25$ mm. With this information, the predicted separation between the peaks (\ref{eq.10.y}) takes the following value:
 \begin{equation}
-	y = \frac{D \lambda}{d} = \frac{(960 \text{ mm}) \times (0.000532 \text{ mm})}{(0.25 \text{ mm})} = 2.04288 \text{ mm}
+	\Delta y = \frac{D \lambda}{d} = \frac{(960 \text{ mm}) \times (0.000532 \text{ mm})}{(0.25 \text{ mm})} = 2.04288 \text{ mm}
 \end{equation}
 You can compare this expected value to the average distance between adjacent peaks found in Table \ref{table.disA}. The percent difference is
 \begin{equation}
 	\text{Percent Difference} = 100 \times \frac{2.0215 \text{ mm} - 2.04288 \text{ mm}}{2.04288 \text{ mm}} = -1.046561717 \%
 \end{equation}
-However, for this particular run, the distance between adjacent peaks in Table \ref{table.disA} varies considerably. One thing you can do is to compare the position of the peaks in Table \ref{table.pos} with the expected position given by multiples of the theoretical distance $y$. These results are in Table \ref{compa}.
+However, for this particular run, the distance between adjacent peaks in Table \ref{table.disA} varies considerably. One thing you can do is to compare the position of the peaks in Table \ref{table.pos} with the expected position given by multiples of the theoretical distance $\Delta y$. These results are in Table \ref{compa}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{My Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,10 +108,10 @@ The shared spreadsheet has the analysis for runs 9 through 14. The run that I us
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Your Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In part 1 you have five distance measurements. Three measurements are for the \textbf{single slit} with $a = 0.08$ mm:
+In part 1 you have six distance measurements. Three measurements are for the \textbf{single slit} with $a = 0.08$ mm:
 \begin{itemize}
-	\item The distance $y_{01}$ from the middle of the central bright region to the middle of the first dark region (both left and right).
-	\item The distance $y_{02}$ from the middle of the central bright region to the middle of the second dark region (both left and right).
+	\item The distance $y_{01}$ from the middle of the central bright region to the middle of the first dark region (both left and right; take the average).
+	\item The distance $y_{02}$ from the middle of the central bright region to the middle of the second dark region (both left and right; take the average).
 	\item The distance $y_{11}$ from the middle of the first dark region in the left to the middle of the first dark region in the right.
 \end{itemize}
 The other three measurements are for the \textbf{double slit} with $a = 0.08$ mm and $d = 0.25$ mm.
@@ -106,6 +123,7 @@ In part 2 you have six intensity measurements:
 	\item Two runs for the $a = 0.08$ and $d = 0.50$ double slit (runs 5 and 6).
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Your Lab Report}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In your lab report you should include:
@@ -128,7 +146,7 @@ You should also answer the following questions:
 \newpage
 \section{Tables}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht]
+\begin{table}[ht!]
 	\centering
 	\begin{tabular}{|r|r|} \hline
 		Peak Label & Position (mm) \\
@@ -150,7 +168,7 @@ You should also answer the following questions:
 	\label{table.pos}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht]
+\begin{table}[ht!]
 	\centering
 	\begin{tabular}{|r|r|} \hline
 		Peak Label & Distance to 0C (mm) \\
@@ -172,7 +190,7 @@ You should also answer the following questions:
 	\label{table.disC}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht]
+\begin{table}[ht!]
 	\centering
 	\begin{tabular}{|r|r|} \hline
 		Pair of peaks & Distance between peaks (mm) \\
@@ -195,7 +213,7 @@ You should also answer the following questions:
 	\label{table.disA}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht]
+\begin{table}[ht!]
 	\centering
 	\begin{tabular}{|r|r|r|r|r|} \hline
 		Peak Label & $n$ & $n y$ (mm) & Observed Peak Position (mm) & \% Difference \\
@@ -217,7 +235,7 @@ You should also answer the following questions:
 	\label{compa}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht]
+\begin{table}[ht!]
 	\centering
 	\begin{tabular}{|r|r|} \hline
 		Distance & Measurement \\
@@ -231,7 +249,7 @@ You should also answer the following questions:
 	\label{part1.single}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht]
+\begin{table}[ht!]
 	\centering
 	\begin{tabular}{|r|r|} \hline
 		Distance & Measurement \\
