@@ -2,28 +2,333 @@
 \setcounter{chapter}{10}
 \chapter{Diffraction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+In this experiment you will learn about diffraction of light from a laser due to a single slit.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Preliminary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+When light passes through a double slit, an interference pattern is produced. The physical mechanism responsible for this is \textbf{diffraction}. The interference pattern arises as the combination of the diffraction pattern from each slit in the double slit.
+
+You looked at interference patterns from a double slit in the previous experiment: A collection of dark and bright fringes. A diffraction pattern is similar, but has less structure (e.g. no ``internal'' fringes). For the interference pattern, you found that the distance between nearby \textbf{peaks} was almost constant and close to the theoretical value
+\begin{equation}
+    \Delta y \approx \frac{D \lambda}{d}
+\end{equation}
+Here $D$ is the longitudinal distance between the slit and the screen where the pattern appears, $\lambda$ is the wavelength of the laser light, and $d$ is the separation between the two slits. If the distance between nearby peaks is the same, then it follows that the distance $y_{n}$ from the central peak to the $n$-th peak is given by
+\begin{equation}
+    y_{n} \approx \frac{n D \lambda}{d}
+\end{equation}
+There is an analogous result for a diffraction pattern from a single slit. However, for a single slit there is no slit separation $d$, so instead the \textbf{slit width} $a$ plays a role:
+\begin{equation}
+    x_{n} \approx \frac{n D \lambda}{a}
+\end{equation}
+The interpretation is also different: $x_{n}$ is now the distance from the central peak to the $n$-th dark region (valley). In order to emphasize this subtle difference, I encourage you to use $y$ for distance from the center to a bright peak, and $x$ for distance from the center to a dark valley.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Intensity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Since the interference and diffraction patterns involve dark and bright regions, it is useful to measure the brightness. In your experiment this is done with a light intensity sensor. For practical purposes, light intensity is measured in units of percentage (\%). Dark regions have small percentage of intensity, and bright regions have large percentages. One observation about the intensity of the many bright regions in a pattern is that the intensity appears to change from peak to peak. For single slit diffraction there is a particular prediction for the ratio of the intensity of bright peaks. Let $I_{0}$ be the intensity of the central bright peak, $I_{1}$ be the intensity of the first bright peak, and $I_{2}$ be the intensity of the second bright peak. Then you expect that
+\begin{align}
+    \frac{I_{1}}{I_{0}} = 0.045 && \frac{I_{2}}{I_{0}} = 0.016
+\end{align}
+That is, the intensity of the first bright peak away from the center should be about 4.5\% the intensity of the central bright peak. Similarly, the intensity of the second bright peak away from the center should be about 1.6\% the intensity of the central bright peak. These relations should hold for bright peaks on both sides.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experiment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+The experiment consisted of collecting light intensity data for diffraction patterns from different single slits:
+\begin{itemize}
+    \item Single slit with $a = 0.08$ mm
+    \item Single slit with $a = 0.04$ mm
+    \item Single slit with $a = 0.16$ mm
+\end{itemize}
+For each single slit configuration you should have two runs, for consistency.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+The analysis for this experiment is very similar to the analysis in the previous experiment with the interference pattern. The main difference is that you need to find the position of dark valleys now, instead of bright peaks before.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{My Data}
+% \section{My Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+% ...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Your Data}
+% \section{Your Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+% ...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Your Lab Report}
+\newpage
+\section{Your Report}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-...
+Your report should include the following:
+\begin{itemize}
+    \item A table like Table \ref{table.11.results.12} with the distance values for the $a = 0.08$ mm slit (either run 1 or run 2).
+    \item A table like Table \ref{table.11.results.34} with the distance values for the $a = 0.04$ mm slit (either run 4 or run 4).
+    \item A table like Table \ref{table.11.results.56} with the distance values for the $a = 0.16$ mm slit (either run 5 or run 6).
+    \item A table like Table \ref{table.11.intensity.8} with the intensity ratios for the $a = 0.08$ mm slit (either run 1 or run 2).
+    \item A table like Table \ref{table.11.intensity.4} with the intensity ratios for the $a = 0.04$ mm slit (either run 3 or run 4).
+    \item A table like Table \ref{table.11.intensity.16} with the intensity ratios for the $a = 0.16$ mm slit (either run 5 or run 6).
+    \item A chart like Figure \ref{figure.11.chart1} with the intensity profile for the $a = 0.08$ mm slit (either run 1 or run 2).
+    \item A chart like Figure \ref{figure.11.chart2} with the intensity profile for the $a = 0.04$ mm slit (either run 3 or run 4).
+    \item A chart like Figure \ref{figure.11.chart3} with the intensity profile for the $a = 0.16$ mm slit (either run 5 or run 6).
+    \item Which diffraction slit yields the dark valleys that are closest to the central bright peak?
+    \item Which diffraction slit yields the dark valleys that are farthest to the central bright peak?
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Tables}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        Feature & Position (mm) \\
+        \hline
+        Valley 3L & \\
+        Valley 2L & \\
+        Valley 1L & \\
+        \hline
+        Peak 0C & \\
+        \hline
+        Valley 1R & \\
+        Valley 2R & \\
+        Valley 3R & \\
+        \hline
+    \end{tabular}
+    \caption{Positions for either Run 1 or Run 2 ($a = 0.08$ mm)}
+    \label{table.11.pos.12}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        Feature & Position (mm) \\
+        \hline
+        Valley 2L & \\
+        Valley 1L & \\
+        \hline
+        Peak 0C & \\
+        \hline
+        Valley 1R & \\
+        Valley 2R & \\
+        \hline
+    \end{tabular}
+    \caption{Positions for either Run 3 or Run 4 ($a = 0.04$ mm)}
+    \label{table.11.pos.34}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        Feature & Position (mm) \\
+        \hline
+        Valley 5L & \\
+        Valley 4L & \\
+        Valley 3L & \\
+        Valley 2L & \\
+        Valley 1L & \\
+        \hline
+        Peak 0C & \\
+        \hline
+        Valley 1R & \\
+        Valley 2R & \\
+        Valley 3R & \\
+        Valley 4R & \\
+        Valley 5R & \\
+        \hline
+    \end{tabular}
+    \caption{Positions for either Run 5 or Run 6 ($a = 0.16$ mm)}
+    \label{table.11.pos.56}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        Difference & Distance (mm) \\
+        \hline
+        Valley 3L -- Peak 0C & \\
+        Valley 2L -- Peak 0C & \\
+        Valley 1L -- Peak 0C & \\
+        \hline
+        Valley 1R -- Peak 0C & \\
+        Valley 2R -- Peak 0C & \\
+        Valley 3R -- Peak 0C & \\
+        \hline
+    \end{tabular}
+    \caption{Distances for either Run 1 or Run 2 ($a = 0.08$ mm)}
+    \label{tablel.11.dis.12}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        Difference & Distance (mm) \\
+        \hline
+        Valley 2L -- Peak 0C & \\
+        Valley 1L -- Peak 0C & \\
+        \hline
+        Valley 1R -- Peak 0C & \\
+        Valley 2R -- Peak 0C & \\
+        \hline
+    \end{tabular}
+    \caption{Distances for either Run 3 or Run 4 ($a = 0.04$ mm)}
+    \label{tablel.11.dis.34}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        Difference & Distance (mm) \\
+        \hline
+        Valley 5L -- Peak 0C & \\
+        Valley 4L -- Peak 0C & \\
+        Valley 3L -- Peak 0C & \\
+        Valley 2L -- Peak 0C & \\
+        Valley 1L -- Peak 0C & \\
+        \hline
+        Valley 1R -- Peak 0C & \\
+        Valley 2R -- Peak 0C & \\
+        Valley 3R -- Peak 0C & \\
+        Valley 4R -- Peak 0C & \\
+        Valley 5R -- Peak 0C & \\
+        \hline
+    \end{tabular}
+    \caption{Distances for either Run 5 or Run 6 ($a = 0.16$ mm)}
+    \label{tablel.11.dis.56}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|r|r|}
+        \hline
+        $n$ & Observed $x_{n}$ (mm) & Expected $x_{n}$ (mm) & P.D. (\%) \\
+        \hline
+        $-3$ & & & \\
+        $-2$ & & & \\
+        $-1$ & & & \\
+        \hline
+        $+1$ & & & \\
+        $+2$ & & & \\
+        $+3$ & & & \\
+        \hline
+    \end{tabular}
+    \caption{Results for either Run 1 or Run 2 ($a = 0.08$ mm)}
+    \label{table.11.results.12}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|r|r|}
+        \hline
+        $n$ & Observed $x_{n}$ (mm) & Expected $x_{n}$ (mm) & P.D. (\%) \\
+        \hline
+        $-2$ & & & \\
+        $-1$ & & & \\
+        \hline
+        $+1$ & & & \\
+        $+2$ & & & \\
+        \hline
+    \end{tabular}
+    \caption{Results for either Run 3 or Run 4 ($a = 0.04$ mm)}
+    \label{table.11.results.34}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|r|r|}
+        \hline
+        $n$ & Observed $x_{n}$ (mm) & Expected $x_{n}$ (mm) & P.D. (\%) \\
+        \hline
+        $-5$ & & & \\
+        $-4$ & & & \\
+        $-3$ & & & \\
+        $-2$ & & & \\
+        $-1$ & & & \\
+        \hline
+        $+1$ & & & \\
+        $+2$ & & & \\
+        $+3$ & & & \\
+        $+4$ & & & \\
+        $+5$ & & & \\
+        \hline
+    \end{tabular}
+    \caption{Results for either Run 5 or Run 6 ($a = 0.16$ mm)}
+    \label{table.11.results.56}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        Ratio & Value \\
+        \hline
+        $I_{\text{2L}} / I_{\text{0C}}$ & \\
+        $I_{\text{1L}} / I_{\text{0C}}$ & \\
+        \hline
+        $I_{\text{1R}} / I_{\text{0C}}$ & \\
+        $I_{\text{2R}} / I_{\text{0C}}$ & \\
+        \hline
+    \end{tabular}
+    \caption{Intensity ratio for $a = 0.08$ mm slit}
+    \label{table.11.intensity.8}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        Ratio & Value \\
+        \hline
+        $I_{\text{2L}} / I_{\text{0C}}$ & \\
+        $I_{\text{1L}} / I_{\text{0C}}$ & \\
+        \hline
+        $I_{\text{1R}} / I_{\text{0C}}$ & \\
+        $I_{\text{2R}} / I_{\text{0C}}$ & \\
+        \hline
+    \end{tabular}
+    \caption{Intensity ratio for $a = 0.04$ mm slit}
+    \label{table.11.intensity.4}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        Ratio & Value \\
+        \hline
+        $I_{\text{2L}} / I_{\text{0C}}$ & \\
+        $I_{\text{1L}} / I_{\text{0C}}$ & \\
+        \hline
+        $I_{\text{1R}} / I_{\text{0C}}$ & \\
+        $I_{\text{2R}} / I_{\text{0C}}$ & \\
+        \hline
+    \end{tabular}
+    \caption{Intensity ratio for $a = 0.16$ mm slit}
+    \label{table.11.intensity.16}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\FloatBarrier
+\newpage
+\section{Figures}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=0.59]{image/11-diffraction/chart1.pdf}
+	\caption{Intensity for diffraction pattern with $a = 0.08$ mm.}
+	\label{figure.11.chart1}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=0.59]{image/11-diffraction/chart2.pdf}
+	\caption{Intensity for diffraction pattern with $a = 0.04$ mm.}
+	\label{figure.11.chart2}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=0.77]{image/11-diffraction/chart3.pdf}
+	\caption{Intensity for diffraction pattern with $a = 0.16$ mm.}
+	\label{figure.11.chart3}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
