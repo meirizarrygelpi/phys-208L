@@ -12,21 +12,21 @@ A \textbf{slit} is a very thin opening. When light goes through a single slit th
 
 A \textbf{double slit} is characterized by two distances: $a$ (the \textbf{slit width}) and $d$ (the \textbf{separation} between the two slits). When light goes through a double slit, an \textbf{interference pattern} is produced. The interference pattern consist of a series of dark and bright regions, with a very bright region in the center. The dark regions result when two waves oscillating in opposite ways meet at the same point in space (i.e. they can cancel each other, also known as \textbf{destructive} interference). The bright regions result when the two waves are oscillating in the same way (i.e. they can add to each other, also known as \textbf{constructive} interference).
 
-Thinking of the interference pattern itself as a \textbf{wave}, the bright regions would correspond to peaks. The distance from the center of the interference pattern to the $n$-th peak is denoted by $y_{n}$. This distance $y_{n}$ is related to the distance $D$ between the screen and the double slit, the slit separation $d$, and the wavelength of the light $\lambda$ vias the relation
+Thinking of the interference pattern itself as a \textbf{wave}, the bright regions would correspond to peaks. The distance from the center of the interference pattern to the $n$-th peak is denoted by $y_{n}$. This distance $y_{n}$ is related to the distance $L$ between the screen and the double slit, the slit separation $d$, and the wavelength of the light $\lambda$ vias the relation
 \begin{equation}
-	\frac{y_{n} d}{\sqrt{D^{2} + y_{n}^{2}}} = n \lambda
+	\frac{y_{n} d}{\sqrt{L^{2} + y_{n}^{2}}} = n \lambda
 \end{equation}
-Here $n = 0$ corresponds to the central peak, $n = 1$ corresponds to the first peak, and so on. In your experiment you have the distance $D$ being much larger than the distance $y_{n}$, so you can use the following approximation:
+Here $n = 0$ corresponds to the central peak, $n = 1$ corresponds to the first peak, and so on. In your experiment you have the distance $L$ being much larger than the distance $y_{n}$, so you can use the following approximation:
 \begin{equation}
-	\sqrt{D^{2} + y_{n}^{2}} \approx D
+	\sqrt{L^{2} + y_{n}^{2}} \approx L
 \end{equation}
 Hence it follows that the distance to a peak is given by
 \begin{equation}
-	y_{n} \approx \frac{n D \lambda}{d}
+	y_{n} \approx \frac{n L \lambda}{d}
 \end{equation}
 The distance between consecutive peaks is given by
 \begin{equation}
-	\Delta y = y_{n+1} - y_{n} \approx \frac{D \lambda}{d}
+	\Delta y = y_{n+1} - y_{n} \approx \frac{L \lambda}{d}
 	\label{eq.10.y}
 \end{equation}
 Note that this relation does not depend on the slit width $a$. The \textbf{wavelength of the red laser} used in class is 635 nm (recall that 1 nm is equivalent to $10^{-9}$ m) or $6.35 \times 10^{-4}$ mm (recall that 1 mm is equivalent to $10^{-3}$ m). Make sure that you are consistent with the units for distance.
@@ -78,9 +78,9 @@ According to the theoretical expectation, the distance between adjacent peaks is
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Compare to predictions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The data that I have been using so far was obtained with a \textbf{green} laser (you used the \textbf{red} laser). The wavelength of the green laser is 532 nm or $\lambda = 5.32 \times 10^{-4}$ mm. The distance between the slit mount and the sensor is $D = 960$ mm. For this particular run, the double slit used had $a = 0.08$ mm and $d = 0.25$ mm. With this information, the predicted separation between the peaks (\ref{eq.10.y}) takes the following value:
+The data that I have been using so far was obtained with a \textbf{green} laser (you used the \textbf{red} laser). The wavelength of the green laser is 532 nm or $\lambda = 5.32 \times 10^{-4}$ mm. The distance between the slit mount and the sensor is $L = 960$ mm. For this particular run, the double slit used had $a = 0.08$ mm and $d = 0.25$ mm. With this information, the predicted separation between the peaks (\ref{eq.10.y}) takes the following value:
 \begin{equation}
-	\Delta y = \frac{D \lambda}{d} = \frac{(960 \text{ mm}) \times (0.000532 \text{ mm})}{(0.25 \text{ mm})} = 2.04288 \text{ mm}
+	\Delta y = \frac{L \lambda}{d} = \frac{(960 \text{ mm}) \times (0.000532 \text{ mm})}{(0.25 \text{ mm})} = 2.04288 \text{ mm}
 \end{equation}
 You can compare this expected value to the average distance between adjacent peaks found in Table \ref{table.10.disA}. The percent difference is
 \begin{equation}
