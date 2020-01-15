@@ -1,6 +1,6 @@
-% Copyright 2018-2019 Melvin Eloy Irizarry-Gelpí
-\documentclass[letterpaper, 12pt]{report}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copyright 2018-2020 Melvin Eloy Irizarry-Gelpí
+\documentclass[letterpaper]{report}
+%
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{fullpage}
@@ -11,7 +11,10 @@
 \usepackage{graphicx}
 \usepackage{placeins}
 \usepackage{appendix}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{textcomp}
+\usepackage{sourceserifpro}
+\usepackage{sourcecodepro}
+%
 \renewcommand{\chaptername}{Laboratory}
 \newcommand{\red}[1]{{\color{red} #1}}
 \newcommand{\blue}[1]{{\color{blue} #1}}
@@ -21,33 +24,33 @@
 \newcommand{\yellow}[1]{{\color{Dandelion} #1}}
 \newcommand{\black}[1]{{\color{black} #1}}
 \newcommand{\gray}[1]{{\color{Gray} #1}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{\textsc{PHYS 208L Data Analysis Guides}}
-\author{M.E. Irizarry-Gelp\'{i}\\College of Mount Saint Vincent}
+%
+\title{\Huge{PHYS 208L Data Analysis Guides}}
+\author{M.E. Irizarry-Gelp\'{i}, Ph.D.\\Division of Natural Sciences\\College of Mount Saint Vincent}
 \date{Updated: \today}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \maketitle
 \tableofcontents
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \part{Electricity and Magnetism}
-% \input{chapter/01-electro.tex}
-% \input{chapter/02-resistance.tex}
-% \input{chapter/03-serial-parallel.tex}
-% \input{chapter/04-faraday.tex}
+%
+\part{Electricity and Magnetism}
+%
+\input{chapter/00-review.tex}
+\input{chapter/01-electro.tex}
+\input{chapter/02-resistance.tex}
+\input{chapter/03-serial-parallel.tex}
+\input{chapter/04-faraday.tex}
 % \input{chapter/05-DC-circuits.tex}
 % \input{chapter/05-capa-indu.tex}
-% \input{chapter/06-RLC.tex}
-% \part{Optics}
-% \input{chapter/07-mirrors.tex}
-% \input{chapter/08-lenses.tex}
-% \input{chapter/09-aperture.tex}
+\input{chapter/06-RLC.tex}
+%
+\part{Optics}
+%
+\input{chapter/07-mirrors.tex}
+\input{chapter/08-lenses.tex}
+\input{chapter/09-aperture.tex}
 \input{chapter/10-interference.tex}
-% \input{chapter/11-diffraction.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{appendices}
-%     \input{chapter/00-review.tex}
-% \end{appendices}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{chapter/11-diffraction.tex}
+%
 \end{document}
