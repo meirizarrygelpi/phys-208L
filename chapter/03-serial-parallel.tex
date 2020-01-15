@@ -1,11 +1,11 @@
 % Copyright 2018-2020 Melvin Eloy Irizarry-Gelpí
 \setcounter{chapter}{2}
 \chapter{Serial and Parallel Circuits}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In this experiment you will learn about circuits connected in series or in parallel.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Preliminary}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 A \textbf{resistor} is any component in an electric circuit with \textbf{electrical resistance}. Ohm's law is a statement that relates the voltage $V$ across a resistor to the amount of current $I$ leaving (or equivalently, entering) a resistor:
 \begin{equation}
 	V = R I
@@ -17,9 +17,9 @@ Here, $R$ is the amount of electrical resistance. Solving for $R$ gives
 For \textbf{ohmic resistors}, the ratio of voltage and current is fixed (i.e. constant) and \textbf{always} gives the same value. This is \textbf{not true} for \textbf{non-ohmic resistors}.
 
 An electric circuit can contain many components that are connected with wires. The electric properties of the circuit will be depend on how these components are connected. You are going to look at two ways of connecting two components in a circuit to a battery: \textbf{series} and \textbf{parallel}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Circuits in Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 A collection of two resistors in \textbf{series} can be replaced by an \textbf{equivalent resistor} with a resistance given by the sum of the individual resistances:
 \begin{equation} \label{eq.03.RSeries}
 	R_{\text{eq}} = R_{1} + R_{2}
@@ -33,9 +33,9 @@ When two resistors are connected in \textbf{series} to a battery, the \textbf{vo
 	V_{0} = \left| V_{1} + V_{2} \right|
 \end{equation}
 The absolute value is needed because the voltage across each resistor is \textbf{negative} since it correspond to an electric potential drop.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Circuits in Parallel}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 A collection of two resistors in \textbf{parallel} can be replaced by an \textbf{equivalent resistor} with a resistance that satisfies the relation
 \begin{equation}
 	\frac{1}{R_{\text{eq}}} = \frac{1}{R_{1}} + \frac{1}{R_{2}}
@@ -53,9 +53,9 @@ When two resistors are connected in \textbf{parallel} to a battery, the \textbf{
 	V_{0} = \left| V_{1} \right| = \left| V_{2} \right|
 \end{equation}
 Again, remember that the voltage across a resistor is negative because it correspond to a drop in electric potential.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Power}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The power $P$ input or output of a component in an electric circuit can be found by multiplying the voltage $V$ across that component, and the amount of current $I$ leaving that component:
 \begin{equation}
 	P = VI
@@ -64,29 +64,29 @@ The SI unit for power is the watt (W). One watt is equivalent to one joule of en
 \begin{equation}
 	1 \text{ W} = 1 \text{ J/s}
 \end{equation}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Experiment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 There are four experiments. The first two experiments involve using two (ohmic) resistors. The other two experiments use two (non-ohmic) light bulbs.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 1: Resistors in Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In this part, you connect two \textbf{resistors} in \textbf{series} to a battery.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 2: Resistors in Parallel}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In this part, you connect two \textbf{resistors} in \textbf{parallel} to a battery.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 3: Light Bulbs in Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In this part, you connect two \textbf{light bulbs} in \textbf{series} to a battery.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 4: Light Bulbs in Parallel}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In this part, you connect two \textbf{light bulbs} in \textbf{parallel} to a battery.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Analysis}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Each run is a measurement of either \textbf{voltage} (electric potential difference between two points) or \textbf{current}. If the voltage and current sensors were zeroed correctly, then the measurement over time should correspond to the measurement of the desired quantity, and no offset or baseline needs to be taken into account. One way to determine a single value is to take the \textbf{time-average}.
 
 Note that each \textbf{voltage measurement has three decimal figures}, and each \textbf{current measurement has four decimal figures}. You should round your time-averaged values appropriately.
@@ -101,29 +101,29 @@ In each part there are three components: one battery and two resistors (or two l
 	\item Time-averaged current leaving resistor/bulb 2: $I_{2}$
 \end{itemize}
 These six quantities satisfy certain mathematical relations. Note that $V_{1}$ and $V_{2}$ are measured to be negative.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 1: Two Resistors in Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For the two \textbf{resistors in series}, you find the time average for all six quantities above and fill a table similar to Table \ref{table.03.resistors.series}.
 
 You should check that relations (\ref{eq.03.ISeries}) and (\ref{eq.03.VSeries}) hold true. The percent difference between the labeled resistance and the prediction (\ref{eq.03.ROhmLaw}) from Ohm's law should be very small. The resistance of the battery should be very close to the series equivalent resistance in (\ref{eq.03.RSeries}).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 2: Two Resistors in Parallel}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For the two \textbf{resistors in parallel}, you find the time average for all six quantities above and fill a table similar to Table \ref{table.03.resistors.parallel}.
 
 You should check that relations (\ref{eq.03.IParallel}) and (\ref{eq.03.VParallel}) hold true. The percent difference between the labeled resistance and the prediction (\ref{eq.03.ROhmLaw}) from Ohm's law should be very small. The resistance of the battery should be very close to the parallel equivalent resistance in (\ref{eq.03.RParallel}).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 3: Two Light Bulbs in Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For two \textbf{light bulbs in series}, you can find the time average for all six quantities mentioned above, and fill a table similar to Table \ref{table.03.bulbs.series}. Note that the fourth column consist of the ratio of voltage and current for each component. This is a quantity with units of resistance (ohms) but it does not correspond to the actual resistance of the light bulbs. As you will find, the light bulbs are not ohmic, and thus the ratio of the voltage across the light bulb and the current leaving the light bulb is not constant. However, you should find that the relations (\ref{eq.03.ISeries}) and (\ref{eq.03.VSeries}) again hold.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 4: Two Light Bulbs in Parallel}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For two \textbf{light bulbs in parallel}, you can find the time average for all six quantities mentioned above, and table similar to Table \ref{table.03.bulbs.parallel}. Note that the fourth column consist of the ratio of voltage and current for each component. You can verify that the light bulbs are not ohmic by showing that the values in the fourth column in Tables \ref{table.03.bulbs.series} and \ref{table.03.bulbs.parallel} are very different. However, you should find that the relations (\ref{eq.03.IParallel}) and (\ref{eq.03.VParallel}) again hold.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{My Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For parts 1 and 2, I used \textbf{three} resistors, instead of two. The resistances are given by
 \begin{align}
 	R_{1} = 10 \text{ ohm} && R_{2} = 51 \text{ ohm} && R_{3} = 68 \text{ ohm}
@@ -141,9 +141,9 @@ Solving for the equivalent resistance in \textbf{parallel} gives
 	R_{\text{eq}} = \frac{R_{1} R_{2} R_{3}}{R_{1} R_{2} + R_{1} R_{3} + R_{2} R_{3}}
 \end{equation}
 As you can see from my spreadsheet, the results are in good agreement with expectations.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 1: Three Resistors in Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Table \ref{table.03.3resistors.series} has the results for three resistors in series. You can check that the values for the current in the third column are all very close. Indeed,
 \begin{equation}
 	I_{0} \approx I_{1} \approx I_{2} \approx I_{3}
@@ -155,9 +155,9 @@ This is the three-resistor analog of (\ref{eq.03.ISeries}). Also, you can check 
 which is very close to the value of $V_{0}$ (the voltage across the battery). This is the three-resistor analog of (\ref{eq.03.VSeries}).
 
 The last column in Table \ref{table.03.3resistors.series} contains the power generated/consumed by the corresponding component. As you can see, the rate of energy generation for the battery is very close to the sum of the rate of consumption for each resistor. Note that, in \textbf{series}, the resistor with the \textbf{largest} resistance consumes the most energy.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 2: Three Resistors in Parallel}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Table \ref{table.03.3resistors.parallel} has the results for three resistors in parallel. You can check that, ignoring the signs, the values for the voltage in the second column are all very close. Indeed,
 \begin{equation}
 	V_{0} \approx |V_{1}| \approx |V_{2}| \approx |V_{3}|
@@ -171,9 +171,9 @@ which is very close to the value of $I_{0}$ (the current leaving the battery). T
 The last column in Table \ref{table.03.3resistors.parallel} contains the power generated/consumed by the corresponding component. As you can see, the rate of energy generation for the battery is very close to the sum of the rate of consumption for each resistor. Note that, in \textbf{parallel}, the resistor with the \textbf{smallest} resistance consumes the most energy.
 
 One last thing about resistors: proof that they \textbf{are ohmic} (at least for the amount of voltage and current that we used) is that the values in the fourth column in Tables \ref{table.03.3resistors.series} and \ref{table.03.3resistors.parallel} are consistent (except for the first value, because it corresponds to the equivalent resistance). That is, it does not matter if they are connected in series or parallel, the amount of current going through the resistor is proportional to the amount of voltage across the resistor.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 3: Two Light Bulbs in Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The six runs in the text file \texttt{bulbs-serial.txt} are for two light bulbs connected in series.
 \begin{itemize}
 	\item Run 1: measurement of voltage across battery ($V_{0}$).
@@ -184,9 +184,9 @@ The six runs in the text file \texttt{bulbs-serial.txt} are for two light bulbs 
 	\item Run 6: measurement of current leaving round light bulb ($I_{R}$).
 \end{itemize}
 The \textbf{long} light bulb is connected \textbf{first}, and the \textbf{round} light bulb is connected \textbf{second}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Part 4: Two Light Bulbs in Parallel}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The six runs in the text file \texttt{bulbs-parallel.txt} are for two light bulbs connected in parallel.
 \begin{itemize}
 	\item Run 1: measurement of voltage across battery ($V_{0}$).
@@ -196,14 +196,14 @@ The six runs in the text file \texttt{bulbs-parallel.txt} are for two light bulb
 	\item Run 5: measurement of current leaving long light bulb ($I_{L}$).
 	\item Run 6: measurement of current leaving round light bulb ($I_{R}$).
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Your Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 If your data for resistors in series and/or parallel is not good, let me know via email and I will make data available to you.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newpage
 \section{Your Lab Report}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In your lab report you should include:
 \begin{enumerate}
 	\item One table like Table \ref{table.03.resistors.series} for two resistors in series.
@@ -224,10 +224,10 @@ You should also:
 	\item Find which light bulb consumes more power when two light bulbs are connected in series.
 	\item Find which light bulb consumes more power when two light bulbs are connected in parallel.
 \end{enumerate}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newpage
 \section{Tables}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\begin{center}
 		\begin{tabular}{|l|r|r|r|r|r|r|}
@@ -243,7 +243,7 @@ You should also:
 	\caption{Time-averages and resistance for two resistors in series.}
 	\label{table.03.resistors.series}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\begin{center}
 		\begin{tabular}{|l|r|r|r|r|r|r|}
@@ -259,7 +259,7 @@ You should also:
 	\caption{Time-averages and resistance for two resistors in parallel.}
 	\label{table.03.resistors.parallel}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\begin{center}
 		\begin{tabular}{|l|r|r|r|r|}
@@ -275,7 +275,7 @@ You should also:
 	\caption{Time-averages and power for two light bulbs in series.}
 	\label{table.03.bulbs.series}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\begin{center}
 		\begin{tabular}{|l|r|r|r|r|}
@@ -291,7 +291,7 @@ You should also:
 	\caption{Time-averages and power for two light bulbs in parallel.}
 	\label{table.03.bulbs.parallel}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\begin{center}
 		\begin{tabular}{|l|r|r|r|r|r|r|}
@@ -308,7 +308,7 @@ You should also:
 	\caption{Time-averages and resistance for three resistors in series.}
 	\label{table.03.3resistors.series}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\begin{center}
 		\begin{tabular}{|l|r|r|r|r|r|r|}
@@ -325,32 +325,32 @@ You should also:
 	\caption{Time-averages and resistance for three resistors in parallel.}
 	\label{table.03.3resistors.parallel}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \FloatBarrier
 \newpage
 \section{Figures}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/03-serial-parallel/resistor-V.pdf}
 	\caption{Voltage across ohmic resistor}
 	\label{figure.03.resistor.v}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/03-serial-parallel/resistor-I.pdf}
 	\caption{Current through ohmic resistor}
 	\label{figure.03.resistor.i}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/03-serial-parallel/bulb-V.pdf}
 	\caption{Voltage across non-ohmic light bulb}
 	\label{figure.03.bulb.v}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/03-serial-parallel/bulb-I.pdf}

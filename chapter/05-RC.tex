@@ -1,11 +1,11 @@
 % Copyright 2018-2020 Melvin Eloy Irizarry-Gelpí
 \setcounter{chapter}{4}
 \chapter{Capacitors}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 ...
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Preliminary}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Resistance is a property of the components in an electric circuit. You can use units of ohm to measure electric resistance. One ohm of electric resistance is equivalent to
 \begin{equation}
 	1 \text{ ohm} = 1 \text{ V/A}
@@ -33,9 +33,9 @@ During a \textbf{discharging event}, the \textbf{voltage} drops in an exponentia
 	V(t) = V_{0} \exp{\left(- \frac{t}{\tau_{C}} \right)}
 	\label{eq.05C.Vt}
 \end{equation}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Experiment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 There are two kinds of experiments: the charging event and the discharging event. In each experiment you measure the current flowing between the resistor and the capacitor, and the voltage across the capacitor.
 
 For the \textbf{charging event}, the data collection is started with the switch off (i.e. incomplete circuit) and shortly after turned on. You should analyze the \textbf{current} data for such events, as it follows the behavior in (\ref{eq.05C.It}).
@@ -55,9 +55,9 @@ There are 9 runs of data:
 	\item Discharging capacitor with $R = 100 \times 10^{3}$ ohm and $C = 10^{-5}$ F.
 \end{enumerate}
 Each time the resistance or the capacitance changes, the time constant $\tau_{C}$ will also change.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Analysis}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The analysis is pretty simple: you need to make a graph of the desired quantity versus time and then include an \textbf{exponential} fit. The exponential fit is of the form:
 \begin{equation}
 	y = A e^{-Bx}
@@ -73,9 +73,9 @@ The trouble is that it takes some effort to prepare the data in such a way that 
 For the first truncation, just find the time value where the voltage (in discharging events) or the current (in charging events) suddenly jumps. Remove all the values before this time and perhaps one or two events right after the exponential drop begins.
 
 For the second truncation, one good rule of thump is to use the expected value of $\tau_{C}$. You should keep a time region that is about $5\tau_{C}$ long in time, starting from the beginning of the exponential drop.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{My Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In the spreadsheet that I shared with you, there is a sheet called ``Results''. This sheet has a table with eight columns and nine rows. Each of the rows corresponds to one of the nine runs mentioned above. Here are the columns:
 \begin{itemize}
 	\item Column 1: run label.
@@ -92,13 +92,13 @@ For the percent difference, use
 	\text{Percent Difference } = 100 \times (\text{experiment } - \text{ theory}) / \text{theory}
 \end{equation}
 In my case I found mixed agreement, with the largest disagreements not being larger than 20\%.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Your Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Your data is structured in the same way as my data, but the time delay for turning on/off the switch is different.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Your Lab Report}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In your lab report you should include:
 \begin{enumerate}
 	\item One voltage versus time graph. Choose one from runs 2, 4, or 6. Include the exponential fit line, and also the equation.

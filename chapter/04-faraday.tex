@@ -1,11 +1,11 @@
 % Copyright 2018-2020 Melvin Eloy Irizarry-Gelpí
 \setcounter{chapter}{3}
 \chapter{Faraday's Law}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In this experiment you will learn about Faraday's law of induction and a relationship between electric and magnetic phenomena.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Preliminary}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Faraday's law of induction is a statement relating one \textbf{electric} phenomenon to one \textbf{magnetic} phenomenon. It states that a certain amount of voltage $\mathcal{E}$ is equal to the negative rate of change of the magnetic flux $\Phi_{B}$ with time:
 \begin{equation}
 	\mathcal{E} = -\frac{\Delta \Phi_{B}}{\Delta t}
@@ -61,9 +61,9 @@ Thus, according to Faraday's Law, for a solenoid coil you should have
 	\label{eq.04.emf.solenoid}
 \end{equation}
 That is, the EMF associated with the area $a$ is proportional to the rate of change of the electric current with respect to time.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Experiment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The overall goal of the experiment is to check that the EMF behaves like the rate of change of the electric current. To do this you need to measure the EMF voltage and the current. From the current you can estimate the rate of change and confirm that it agrees with the EMF data. You are going to look at \textbf{five ways for the current to change with time}:
 \begin{enumerate}
 	\item \textbf{Sinusoidal}: current will change according to a \textbf{sine or cosine} profile.
@@ -73,25 +73,25 @@ The overall goal of the experiment is to check that the EMF behaves like the rat
 	\item \textbf{Ramp-down}: current will \textbf{decrease linearly}, then \textbf{abruptly rise} to its base value.
 \end{enumerate}
 Each profile for the current leads to different results for the induced EMF.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Rates of Change}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Here is a quick review of rates of change.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Constant Quantity}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The rate of change of a \textbf{constant quantity} is \textbf{zero}. That is, if the quantity is not changing, then no amount is being gained or lost.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Quantity Increasing Linearly}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The rate of change of a \textbf{quantity that increases linearly with time} is a \textbf{constant}. Increasing linearly is the same as being proportional to time. This means that the slope is constant. Moreover, since the quantity is increasing, the \textbf{slope is positive}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Quantity Decreasing Linearly}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The rate of change of a \textbf{quantity that decreases linearly with time} is a \textbf{constant}. Decreasing linearly is the same as being proportional to time. This means that the slope is constant. However, since the quantity is decreasing, the \textbf{slope is negative}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Sinusoidal Change}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The rate of change of the \textbf{sine function} is a cosine function:
 \begin{equation}
 	\frac{\Delta \sin(t)}{\Delta t} = \cos(t)
@@ -105,9 +105,9 @@ Here the sign is not important. What is important is to remember that sine and c
 	\cos(t) = \sin(t + 90^{\circ}), && \sin(t) = \cos(t - 90^{\circ})
 \end{align}
 Thus, if the quantity is sinusoidal, then the rate of change will also be sinusoidal but shifted by 90 deg. In particular, when $\sin(t)$ is at a peak or valley, then $\cos(t)$ is crossing the horizontal axis (i.e. close to zero), and when $\sin(t)$ is crossing the horizontal axis (i.e. close to zero), then $\cos(t)$ is either at a valley or a peak.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Solenoid Coils}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 You are going to use two solenoid coils. The smaller one fits inside the larger one. The smaller one is called the \textbf{secondary coil}. This is the coil used to measure the EMF value. The larger coil is called the \textbf{primary coil}. This coil is the one with the current and the one that produces the magnetic field.
 
 The \textbf{primary coil} has a length of 10 cm and 3,300 turns. Thus,
@@ -127,18 +127,18 @@ This is the amount of \textbf{area-per-loop} in the secondary coil. The \textbf{
 	a = N_{2} a_{\text{loop}} = 150 \times (1.65 \times 10^{-4} \text{ m}^{2}) = 2.48 \times 10^{-2} \text{ m}^{2}
 \end{equation}
 This is the amount of area that you will use to measure the magnetic flux.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Analysis}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 According to (\ref{eq.04.emf.solenoid}), the amount of EMF is directly proportional to the amount of rate of change of the current with time. The constant of proportionality is
 \begin{equation}
 	\frac{\mu_{0} N_{1} a}{L} = 1.03 \times 10^{-3} \text{ V s/A}
 	\label{eq.04.slope}
 \end{equation}
 This is the expected value. In principle, if you could chart $\mathcal{E}$ versus $\Delta I / \Delta t$, the slope should correspond to the negative of this value. You can only do this for the triangular current profile.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Sinusoidal Current Profile}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For the sinusoidal current profile, one way to check the validity of Faraday's law is by comparing the fit parameters for a sinusoidal fit for both current and voltage. A ``sine'' sinusoidal fit for the current is of the form
 \begin{equation}
 	I(t) = A \sin\left(B t + C\right) + D
@@ -171,13 +171,13 @@ If the sensors were zeroed correctly, you should find that both $D$ and $Z$ are 
 	\item The value of $\vert C - Y \vert$ should be very close to $\pi$.
 \end{enumerate}
 Another check, similar to what you did for simple harmonic motion, is to make a \textbf{phase space} chart, with EMF voltage in the vertical axis, and current in the horizontal axis. Just like for the mass on the spring, the phase space chart should have the \textbf{shape of an ellipse}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Square Current Profile}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Since the square current profile consists of segments where the current is almost constant, the rate of change of the current should be almost zero. This will result in an EMF value that is also almost zero. You can confirm this by examining a scatter chart with EMF voltage on the vertical axis and time in the horizontal axis.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Triangular Current Profile}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For the triangular current, the chart of current versus time has regions of increasing current and regions of decreasing current. In the same time regions, the EMF voltage is approximately constant but either positive or negative.
 
 You can isolate a time region of linear increase of current and find the slope. (Use \texttt{=SLOPE(Y,X)} with \texttt{Y} the current and \texttt{X} the time). This slope is a value for the rate of change of current with respect to time ($\Delta I / \Delta t$). The slope should be \textbf{positive} since the current is increasing. In approximately the same time region the EMF voltage is constant (make sure you only include the region where the EMF is approximately flat and not suddenly rising or falling). You can calculate the time-average of the EMF in this time region. This time average value corresponds to the best direct estimate for the EMF ($\mathcal{E}$).
@@ -185,18 +185,18 @@ You can isolate a time region of linear increase of current and find the slope. 
 In a similar way, you can analyze the time regions where the current decreases in a linear way. Now the rate of change of the current will be \textbf{negative}. The EMF should be almost flat and \textbf{positive}.
 
 After finding \textbf{at least six pairs} of EMF and rate of change of current with respect to time, you can plot these quantities to test the relation (\ref{eq.04.emf.solenoid}) and find the slope. Then you can compare this value with the expected slope (\ref{eq.04.slope}). The chart should have two clusters of points. The best-fit line should be connecting these two clusters.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Ramp-Up and Ramp-Down Current Profiles}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For the ramp-up current profile, the current only increases linearly. This means that the rate of change of the current should be a positive constant always. You can repeat the steps followed above with the triangular current and find the rate of change for the current and also the time-average EMF. However, you cannot plot $\mathcal{E}$ and $dI/dt$ anymore, so instead just calculate the ratio
 \begin{equation}
 	\text{ratio } = -\frac{\mathcal{E}}{\Delta I/\Delta t}
 	\label{eq.04.ratio}
 \end{equation}
 This ratio should be somewhat close to the expected value of the slope in (\ref{eq.04.slope}). A similar result holds for the ramp-down current profile.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{My Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 My data consist of five runs:
 \begin{itemize}
 	\item Run 1: Sinusoidal current profile
@@ -206,29 +206,29 @@ My data consist of five runs:
 	\item Run 5: Ramp-down current profile
 \end{itemize}
 Here are some comments from each run.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Run 1}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The analysis for this run is qualitative. Figure \ref{figure.04.run.1.I} contains the current data over time, and Figure \ref{figure.04.run.1.V} contains the EMF voltage data over time. You can see that the EMF voltage behaves like the rate of change of the current because whenever the current is at a peak or valley, the EMF voltage is close to zero, and whenever the current is close to zero, the EMF voltage is at a peak or valley. The phase phase chart in Figure \ref{figure.04.run.1.phase.space} also shows the expected elliptical shape.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Run 2}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The analysis for this run is also qualitative. Figure \ref{figure.04.run.2.I} contains the current data over time, and Figure \ref{figure.04.run.2.V} contains the EMF voltage data over time. As expected, when the square current profile is used, the EMF voltage is zero whenever the current has a fixed value.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Run 3}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The analysis for this run has a quantitative aspect. Figure \ref{figure.04.run.3.I} contains the current data over time, and Figure \ref{figure.04.run.3.V} contains the EMF voltage data over time. Since the current increases or decreases in a linear way, the EMF voltage is expected to be constant but switching signs. That is indeed the case. Furthermore, the slope for the current can be calculated. Table \ref{table.04.run.3.I.V} contains the current slope and the time-average EMF voltage for a six segments. These six segments lead to two clusters in Figure \ref{figure.04.run.3}, where the slope is close to the expected value. The results are summarized in Table \ref{table.04.run.3}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Run 4}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The analysis for this run has a quantitative aspect. Figure \ref{figure.04.run.4.I} contains the current data over time, and Figure \ref{figure.04.run.4.V} contains the EMF voltage data over time. Since the current only increases before abruptly taking the base value, you expect the EMF voltage to be constant and negative. That is indeed the case. The results are in Table \ref{table.04.run.4}, where the last column contains the ratio (\ref{eq.04.ratio}). These values are close to the expected slope.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Run 5}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The analysis for this run has a quantitative aspect. Figure \ref{figure.04.run.5.I} contains the current data over time, and Figure \ref{figure.04.run.5.V} contains the EMF voltage data over time. Since the current only decreases before abruptly taking the base value, you expect the EMF voltage to be constant and positive. That is indeed the case. The results are in Table \ref{table.04.run.5}, where the last column contains the ratio (\ref{eq.04.ratio}). These values are also close to the expected slope.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Your Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 You should have five runs:
 \begin{itemize}
 	\item Run 1: Sinusoidal current profile
@@ -242,10 +242,10 @@ For each run you should have three columns of data: time, voltage (electric pote
 	1 \text{ mV} = 0.001 \text{ V}
 \end{equation}
 Otherwise, agreement with the slope (\ref{eq.04.slope}) will be off by some orders of magnitude.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newpage
 \section{Your Lab Report}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For \textbf{run 1}, your lab report should include:
 \begin{itemize}
 	\item A scatter chart with \textbf{current} in the vertical axis, and time in the horizontal axis.
@@ -273,10 +273,10 @@ For \textbf{run 4} and \textbf{run 5}, your lab report should include:
 	\item A brief argument discussing whether the voltage that you measured behaves \textbf{qualitatively} like the rate of change of current with time.
 	\item A table like Table \ref{table.04.run.4} and Table \ref{table.04.run.5} with at least four values for the current slope, the time-average EMF voltage, and the ratio (\ref{eq.04.ratio}).
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newpage
 \section{Tables}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{|r|r|}
@@ -294,7 +294,7 @@ For \textbf{run 4} and \textbf{run 5}, your lab report should include:
 	\caption{Current slope and EMF time-average results for run 3}
 	\label{table.04.run.3.I.V}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{|r|r|r|}
@@ -307,7 +307,7 @@ For \textbf{run 4} and \textbf{run 5}, your lab report should include:
 	\caption{Results for run 3}
 	\label{table.04.run.3}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{|r|r|r|}
@@ -323,7 +323,7 @@ For \textbf{run 4} and \textbf{run 5}, your lab report should include:
 	\caption{Results for run 4}
 	\label{table.04.run.4}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{|r|r|r|}
@@ -339,88 +339,88 @@ For \textbf{run 4} and \textbf{run 5}, your lab report should include:
 	\caption{Results for run 5}
 	\label{table.04.run.5}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \FloatBarrier
 \newpage
 \section{Figures}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-1-I.pdf}
 	\caption{Run 1: Current}
 	\label{figure.04.run.1.I}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-1-V.pdf}
 	\caption{Run 1: EMF Voltage}
 	\label{figure.04.run.1.V}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-1-phase-space.pdf}
 	\caption{Run 1: Phase Space}
 	\label{figure.04.run.1.phase.space}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-2-I.pdf}
 	\caption{Run 2: Current}
 	\label{figure.04.run.2.I}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-2-V.pdf}
 	\caption{Run 2: EMF Voltage}
 	\label{figure.04.run.2.V}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-3-I.pdf}
 	\caption{Run 3: Current}
 	\label{figure.04.run.3.I}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-3-V.pdf}
 	\caption{Run 3: EMF Voltage}
 	\label{figure.04.run.3.V}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-4-I.pdf}
 	\caption{Run 4: Current}
 	\label{figure.04.run.4.I}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-4-V.pdf}
 	\caption{Run 4: EMF Voltage}
 	\label{figure.04.run.4.V}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-5-I.pdf}
 	\caption{Run 5: Current}
 	\label{figure.04.run.5.I}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-5-V.pdf}
 	\caption{Run 5: EMF Voltage}
 	\label{figure.04.run.5.V}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.74]{image/04-faraday/run-3.pdf}

@@ -1,11 +1,11 @@
 % Copyright 2018-2020 Melvin Eloy Irizarry-Gelpí
 \setcounter{chapter}{4}
 \chapter{Inductors}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 ...
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Preliminary}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Resistance is a property of the components in an electric circuit. You can use units of ohm to measure electric resistance. One ohm of electric resistance is equivalent to
 \begin{equation}
 	1 \text{ ohm} = 1 \text{ V/A}
@@ -38,9 +38,9 @@ The quantity $\Delta$ (``Delta'') has the canonical form of the exponential fit
 	y = A \exp{(-Bx)}
 \end{equation}
 so fitting $\Delta$ gives an estimate of the time constant for voltage.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Experiment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Each experiment consist of using the triggering feature to collect voltage and current data as soon as the switch is turned on.
 
 There are 8 runs of data:
@@ -67,9 +67,9 @@ For runs 7 and 8 you use one 10 ohm resistor and one 68 ohm resistor in parallel
 	R_{\text{eq}} = \frac{10 \times 68}{10 + 68} \text{ ohm} = 8.717948718 \text{ ohm}
 \end{equation}
 Note that the metallic core increases the value of the inductance by an unknown amount, and thus changes the value of the inductive time constant.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Analysis}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Just like for capacitors and RC circuits, the analysis for RL circuits is pretty simple: you need to make a graph of voltage versus time and then include an \textbf{exponential} fit. The exponential fit is of the form:
 \begin{equation}
 	y = A e^{-Bx}
@@ -92,9 +92,9 @@ In order for the exponential fit to be accurate, the data needs to drop to zero.
 	\texttt{=B6 - MIN(B:B)}
 \end{center}
 to calculate the first value of $\Delta$. Apply this to the entire column. The statement \texttt{MIN(B:B)} finds the minimum value in column \texttt{B}. Make sure that your graph is $\Delta$ versus time and not voltage versus time. The exponential fit for the $\Delta$ should be more accurate and appropriate than the exponential fit for voltage.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{My Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In the spreadsheet that I shared with you, there are two results sheets: ``Results 1'' and ``Results 2''. In ``Results 1'' there is a table with ten columns and eight rows. Each of the rows corresponds to one of the eight runs mentioned above. Here are the columns:
 \begin{itemize}
 	\item Column A: run label.
@@ -145,13 +145,13 @@ You can calculate this ratio for runs 1 and 2; runs 3 and 4; runs 5 and 6; and r
 Note that my run 7 and 8 are swapped: run 7 is with the core and run 8 is without the core.
 
 In my spreadsheet I also analyzed the current data and showed that you can also get the time constant. This is in ``Run 1 Current''. You do not have to do this.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Your Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 ...
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Your Lab Report}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In your lab report you should include:
 \begin{enumerate}
 	\item Two voltage versus time graphs. Choose any two of the eight runs. Include the exponential fit line, and also the equation.

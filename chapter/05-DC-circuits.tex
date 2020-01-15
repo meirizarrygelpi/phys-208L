@@ -1,27 +1,27 @@
 % Copyright 2018-2020 Melvin Eloy Irizarry-Gelpí
 \setcounter{chapter}{4}
 \chapter{DC Circuits}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In this experiment you will learn about circuits with DC sources, capacitors, and inductors.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Preliminary}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In a previous experiment you constructed circuits with resistors and a battery. The resistors were connected either in series or in parallel. The battery served as a source producing a steady current. Such a source is called a \textbf{DC source}. Here DC stands for direct current, meaning that the current is always in the same direction along a circuit.
 
 A circuit consisting exclusively of resistors and a DC source is not very interesting. Quantities like current and voltage in this circuit have fixed values over time. That is, when you flip a switch to complete the circuit, the current along the circuit jumps instantly to a non-zero value, and then does not change much. Similarly for the voltage across each resistor.
 
 Besides resistors, you can have other components in a circuit with more complex physical properties like capacitance and inductance.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Resistance and Resistors}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 By now, electrical \textbf{resistance} should be familiar. The \textbf{SI unit} for electrical resistance is the \textbf{ohm}:
 \begin{equation}
 	1 \text{ ohm} = 1\;\Omega = 1 \text{ V/A}
 \end{equation}
 Here, V is volt (voltage) and A is ampere (current). A component in a circuit with a fixed amount of resistance is called a \textbf{resistor}. The mathematical symbol for resistance is $R$.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Capacitance and Capacitors}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Another important property is \textbf{capacitance}. The \textbf{SI unit} for capacitance is the \textbf{farad}:
 \begin{equation}
 	1 \text{ farad} = 1 \text{ F} = 1 \text{ C/V}
@@ -29,9 +29,9 @@ Another important property is \textbf{capacitance}. The \textbf{SI unit} for cap
 Here, C is coulomb (electric charge) and V is volt (voltage). In some ways, capacitance measures the amount of electric charge needed to sustain an electric potential difference (i.e. a voltage). The mathematical symbol for capacitance is $C$.
 
 A component in a circuit with a fixed amount of capacitance is called a \textbf{capacitor}. You can think of a capacitor as two parallel plates of conducting material where equal-but-opposite amounts of electric charge can accumulate.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Inductance and Inductors}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The last property is \textbf{inductance}, which is like a magnetic cousin of capacitance. The \textbf{SI unit} for inductance is the \textbf{henry}:
 \begin{equation}
 	1 \text{ henry} = 1 \text{ H} = 1 \text{ T}\cdot\text{m}^{2}\text{/A}
@@ -47,15 +47,15 @@ Thus, the henry unit is equivalent to:
 In some ways, inductance measures the amount of voltage that arises per unit rate of change of electric current with time. The mathematical symbol for inductance is $L$.
 
 A component in a circuit with a fixed amount of inductance is called an \textbf{inductor}. You can think of an inductor as a solenoid coil with a given amount of loops, with each loop enclosing some amount of area.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Non-Ideal Inductors}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 An \textbf{ideal inductor} is a component in a circuit with \textbf{zero} electrical resistance and a desired amount of inductance. In practice, ideal inductors are usually not available and you usually use non-ideal inductors are used.
 
 A \textbf{non-ideal inductor} is a component in a circuit with \textbf{non-zero} electrical resistance and non-zero amount of inductance. You can think of a non-ideal inductor as a resistor and an ideal inductor connected in series.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Exponential Decay Function}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In a circuit with resistors and capacitors, or in a circuit with resistors and inductors, quantities like current and voltage do not always take steady values. That is because both capacitors and inductors can be thought of as storage containers for electric charge (or changing magnetic flux). These containers do not fill up instantly. Indeed, it can take a few seconds to fill-up a capacitor. The result is a behavior over time similar to an exponential decay curve.
 
 Before discussing the behavior of quantities like current and voltage in circuits with capacitors and inductors in more detail, it will be good to review the \textbf{exponential decay} function:
@@ -89,13 +89,13 @@ Another important combination is shifting vertically by 1, which gives a functio
     h(t) = 1 - \exp(-t) && 0 \leq h(t) < 1 && 0 \leq t < \infty
 \end{align}
 Figures \ref{figure.05.f}, \ref{figure.05.g}, and \ref{figure.05.h} provide charts for these three functions.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Resistor and Capacitor in Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 A circuit with a resistor, a capacitor, and a DC source is called an \textbf{RC circuit}. In the simplest RC circuit, the resistor and capacitor are connected in series to the DC source via a particular switch.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Charging the Capacitor}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 When the switch is on, and the circuit is complete, the DC source pushes charges out into the circuit in the form of a current. This current causes positive electric charges to accumulate on one of the terminals of the capacitor, and negative electric charges on the other terminal of the capacitor. But the amount of electric charge $Q$ on the capacitor does not increase indefinitely: It settles on a maximum value $Q_{\infty}$. The particular manner in which the amount of \textbf{electric charge} on the capacitor increases with time is an example of an \textbf{exponential} increase:
 \begin{equation}
     Q(t) = Q_{\infty} \left[ 1 - \exp\left(-\frac{t}{\tau_{C}}\right) \right]
@@ -136,9 +136,9 @@ You can check that, in fact, by multiplying something with ohm units by somethin
     1 \text{ ohm} \cdot 1 \text{ F} = \left(1 \text{ V}\cdot\text{ s/C}\right) \cdot \left(1 \text{ C/V}\right) = 1 \text{ s}
 \end{equation}
 Since the exponential function is a mathematical function that changes very fast, the current will take noise-level values after a time corresponding to about 5 capacitive time constants.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Discharging the Capacitor}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 After some time with the switch on, the amount of charge on the capacitor becomes almost constant (close to $Q_{\infty}$), the amount of voltage across the capacitor also becomes almost constant (close to $V_{\infty}$), and the current through the circuit becomes almost zero.
 
 Upon opening the circuit by setting the switch off, the DC source stops supporting the charge accumulated on the capacitor, and that amount of charge begins to leave the capacitor. That is, the capacitor now is producing the current! The amount of charge on the capacitor follows a particular manner:
@@ -165,9 +165,9 @@ Just as before, there is a relation between $Q_{0}$, $I_{0}$, and $V_{0}$:
     V_{0} = \frac{Q_{0}}{C} = I_{0} R
 \end{equation}
 The value of $V_{0}$ should correspond to the voltage across the capacitor just before the switch is opened.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Resistor and Inductor in Series}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 A circuit with a resistor, an inductor, and a DC source is called an \textbf{RL circuit}. In the simplest RL circuit, the resistor and inductor are connected in series to the DC source via a particular switch.
 
 An \textbf{ideal inductor} is an inductor that has \textbf{zero electrical resistance}. In practice, the inductors that you will use in these experiments have an amount of resistance that cannot be ignored and has to be taken into account. One way to do this is to think of a \textbf{non-ideal inductor} as consisting of a resistor and an ideal inductor connected in series:
@@ -212,13 +212,13 @@ Instead of $\tau_{C}$, you now have $\tau_{L}$ which corresponds to the \textbf{
     \label{eq.05.tauL}
 \end{equation}
 You can check that, in fact, by dividing something with henry units by something with ohm units you get something with second units.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Experiment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 You did experiments with both RC and RL circuits.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{RC Circuits}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For RC circuits there are two kinds of experiments: the \textbf{charging} event and the \textbf{discharging} event. In each experiment you measured three quantities:
 \begin{itemize}
     \item the \textbf{voltage} across the \textbf{resistor}, $V_{R}(t)$;
@@ -230,17 +230,17 @@ For the \textbf{charging event}, the data collection was started with the switch
 For the \textbf{discharging event}, the data collection was started with the switch on (i.e. complete circuit) and shortly after the switch was turned off. You should analyze the \textbf{voltage across the capacitor} for such events.
 
 There are many resistors and capacitors available. Each time the resistance or the capacitance changes, the time constant $\tau_{C}$ will also change.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Non-Ideal Inductors}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 You need to take into account the electrical resistance of the inductor used because it is non-ideal. In order to obtain the resistance of the inductor, you use a circuit with the inductor and the DC source (an L DC circuit) and measure the current through the circuit and the voltage across the inductor.
 
 The solenoid inductors that are available come with a metallic core that can be inserted inside the solenoid. It is good to check that the resistance of the non-ideal inductor is not affected by using the metallic core.
 
 When two resistors are connected in series, the equivalent resistance is the sum of the individual resistances. In a similar way, you can check that connecting two non-ideal inductors in series yields an equivalent non-ideal inductor with a resistance corresponding to the sum of the resistances of each non-ideal inductor.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{RL Circuits}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 For RL circuits, all the experiments involved closing the switch after the data collection was started. You measured
 \begin{itemize}
     \item the \textbf{voltage} across the resistor, $V_{R}(t)$;
@@ -252,9 +252,9 @@ Because the inductive time constants are so small, the data acquisition needs to
 The inductors come with a \textbf{metallic core}. Each experiment is done twice: Once without the core, and once with the core. The effect of the core is to change the inductance of the inductor.
 
 There are many resistors, and many ways to connect inductors of the same type. Each time the resistance or the inductance changes, the time constant $\tau_{L}$ will also change.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Analysis}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 The common feature of $f(t)$, $g(t)$, and $h(t)$ above is that they all settle on steady values for infinite time after $t = 0$. In an experiment, you do not have an infinite amount of time, so a relevant question is: how long corresponds to infinite time? Since you are using imperfect sensors to measure current and voltage, after some time of decreasing values towards zero, there will be a point where measurements are not distinguishable from noise.
 
 Consider the following function:
@@ -286,35 +286,35 @@ That is, about 2\% of the starting value. After five units of $\tau$ you have:
     A(5\tau) = A_{0} \exp\left(-5\right) = 0.0067 \cdot A_{0}
 \end{equation}
 That is, about 0.67\% of the starting value. Five units of $\tau$ is a good rule of thumb. In principle, the quantity that is being measured will continue decreasing in value, but in practice those small values cannot be reliably measured. If you have an estimate of the amount of $\tau$, then from the time the decay begins you should keep data until after $5 \tau$ of time has passed.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
 \subsection{RC Circuits: Charging Events}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In a charging even both the voltage across the resistor and the current decay exponentially. Here are some steps to follow:
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Visualize $V_{R}$ and $I$}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Make two scatter charts:
 \begin{itemize}
     \item Voltage across the resistor in the vertical axis, and time in the horizontal axis.
     \item Current in the vertical axis, and time in the horizontal axis.
 \end{itemize}
 You might want to add exponential fits, although at this stage they would most likely not be appropriate. See Figure \ref{figure.05.run.1.vR.full} for an example.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Truncate the part before closing circuit}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Before the exponential fit can be made meaningful, you need to truncate the part of the data before the switch is closed. Looking at the columns, it should be obvious when the values for $V_{R}$ and $I$ suddenly take large values. See Figure \ref{figure.05.run.1.vR.truncated} for an example after truncation.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Truncate the long tail}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 It is very likely that after removing the part of the data before closing the circuit, the exponential fit might still not be appropriate. If the decay is relatively quick, and the voltage or current has a long segment where it is just zero, that long tail section will skew the fit process and render incorrect results. For this reason, it is good to only keep a time segment that is about $5\tau_{C}$ long. For example, after truncation in Figure \ref{figure.05.run.1.vR.truncated}, the decay begins around $t = 1.85$ seconds. For this particular run, the expected value of the time constant is $\tau_{C} = 0.250$ seconds. Thus,
 \begin{equation}
     1.85 \text{ s} + 5 \tau_{C} = 3.10 \text{ s}
 \end{equation}
 All the data after $t = 3.10$ seconds should be truncated also. For good measure, I am keeping everything up to $t = 3.20$ seconds. See Figure \ref{figure.05.run.1.vR.no.tail} for an example.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Extract the experimental value of $\tau_{C}$}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 After truncating the initial and long tail parts, the exponential fit should be appropriate for the data. The exponential fit is given in the form
 \begin{equation}
     a \exp(-bx)
@@ -328,9 +328,9 @@ Thus, the observed value of the time constant follows from the inverse of $b$:
     \text{Observed } \tau_{C} = \frac{1}{b}
 \end{equation}
 You should get a value from the $V_{R}$ chart, and another value from the $I$ chart. Both values should be consistent with each other.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{RC Circuits: Discharging Events}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 In the discharging event, only the voltage across the capacitor follows an exponential decay. The steps are similar:
 \begin{enumerate}
     \item Visualize the data with a scatter chart with the voltage across the capacitor in the vertical axis, and time in the horizontal axis.
@@ -339,9 +339,9 @@ In the discharging event, only the voltage across the capacitor follows an expon
     \item Extract the experimental value of $\tau_{C}$ from the fit equation.
 \end{enumerate}
 The value of $\tau_{C}$ for the discharging even should be consistent with the values for the charging event.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{RL Circuits: Resistance of Inductors}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 Before dealing with the inductive time constant experiments, you have to determine how much electrical resistance does the non-ideal inductors that are available have. Just like for resistors, in order to obtain resistance you measure current and voltage data over time. Using
 \begin{equation}
     r = \frac{V_{r}(t)}{I(t)}
@@ -353,23 +353,23 @@ For two non-ideal inductors in series, you should find that the resistance is cl
     R_{\text{eq}} = R_{1} + R_{2}
 \end{equation}
 For a single non-ideal inductor, you should find a resistance close to 4.2 ohms. For two non-ideal inductors, you should find a resistance close to 8.5 ohms.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{My Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 ...
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \section{Your Data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 ...
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newpage
 \section{Your Report}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 ...
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newpage
 \section{Tables}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht!]
     \begin{center}
         \begin{tabular}{|l|r|r|r|r|r|}
@@ -387,7 +387,7 @@ For a single non-ideal inductor, you should find a resistance close to 4.2 ohms.
     \end{center}
     \caption{Results for $\tau_{C}$ from $V_{R}$ (charging)}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht!]
     \begin{center}
         \begin{tabular}{|l|r|r|r|r|r|}
@@ -403,7 +403,7 @@ For a single non-ideal inductor, you should find a resistance close to 4.2 ohms.
     \end{center}
     \caption{Results for $\tau_{C}$ from $I$ (charging)}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht!]
     \begin{center}
         \begin{tabular}{|l|r|r|r|r|r|}
@@ -421,7 +421,7 @@ For a single non-ideal inductor, you should find a resistance close to 4.2 ohms.
     \end{center}
     \caption{Results for $\tau_{C}$ from $V_{C}$ (discharging)}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht!]
     \begin{center}
         \begin{tabular}{|l|r|}
@@ -437,7 +437,7 @@ For a single non-ideal inductor, you should find a resistance close to 4.2 ohms.
     \end{center}
     \caption{Results for resistance of non-ideal inductors}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht!]
     \begin{center}
         \begin{tabular}{|l|r|r|r|r|r|}
@@ -453,7 +453,7 @@ For a single non-ideal inductor, you should find a resistance close to 4.2 ohms.
     \end{center}
     \caption{Results for $\tau_{L}$ from $V_{L}$ (without metallic core)}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{table}[ht!]
     \begin{center}
         \begin{tabular}{|l|r|r|r|}
@@ -469,45 +469,45 @@ For a single non-ideal inductor, you should find a resistance close to 4.2 ohms.
     \end{center}
     \caption{Results for $\tau_{L}$ from $V_{L}$ (with metallic core)}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newpage
 \section{Figures}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.74]{image/05-RC-RL/f.pdf}
     \caption{Function $f(t)$}
     \label{figure.05.f}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.74]{image/05-RC-RL/g.pdf}
     \caption{Function $g(t)$}
     \label{figure.05.g}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.74]{image/05-RC-RL/h.pdf}
     \caption{Function $h(t)$}
     \label{figure.05.h}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.74]{image/05-RC-RL/run-1-vR-full.pdf}
     \caption{Run 1: $V_{R}(t)$}
     \label{figure.05.run.1.vR.full}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.74]{image/05-RC-RL/run-1-vR-truncated.pdf}
     \caption{Run 1: $V_{R}(t)$}
     \label{figure.05.run.1.vR.truncated}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.74]{image/05-RC-RL/run-1-vR-no-tail.pdf}
