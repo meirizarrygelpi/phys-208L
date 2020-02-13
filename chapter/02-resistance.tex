@@ -10,15 +10,15 @@ At the microscopic level, the sources of electric charge are inside atoms. You h
 
 How easy it is for electrons to jump between atoms depends on how the atoms in a solid are arranged, and on how tightly the atom is holding on to the electron cloud. Depending on your goal, you might want to use a material that allows charges to move more easily (e.g. if you want to add wiring to your home). Electrical \textbf{resistance} and \textbf{resistivity} are two quantities that allow you to quantify and compare the ease of electric charge flow through a material. Before introducing the units used to measure these two quantities, it is useful to briefly mention other important electrical quantities.
 
-Recall that the SI unit for \textbf{electric charge} is the coulomb (C). The coulomb is a fundamental unit that cannot be defined in terms of other SI units.
+Recall that the SI unit for \textbf{electric charge} is the \textbf{coulomb} (C). The coulomb is a derived unit that is defined in terms of other SI units, like the ampere and the second.
 %
 \subsection{Electric Potential and Voltage}
 %
-The Coulomb force can turn electric potential energy into work. The SI unit for energy is the joule (J). The amount of electric potential energy per unit of electric charge is known as the \textbf{electric potential}. Since energy is in J and electric charge is in C, the unit for electric potential is J/C. This combination of units is known as a \textbf{volt} (symbol is V):
+The Coulomb force can turn electric potential energy into work. The SI unit for \textbf{energy} is the \textbf{joule} (J). The amount of electric potential energy per unit of electric charge is known as the \textbf{electric potential}. Since energy is in J and electric charge is in C, the unit for electric potential is J/C. This combination of units is known as a \textbf{volt} (symbol is V):
 \begin{equation}
-	1 \text{ volt} = 1 \text{ V} = 1 \text{ J/C} = 1 \text{ joule per coulomb}
+	1 \ \text{volt} = 1 \ \text{V} = 1 \ \text{J/C} = 1 \ \text{joule per coulomb}
 \end{equation}
-The volt is the \textbf{SI unit} for electric potential. Electric potential, like energy, does not have a direction associated to it. Every point in space has a value of electric potential. If point 1 in space has an electric potential of $V_{1}$ and point 2 in space has an electric potential of $V_{2}$, then we say that there is a voltage $\Delta V$ given by
+The volt is the \textbf{SI unit} for electric \textbf{potential}. Electric potential, like energy, does not have a direction associated to it. Every point in space has a value of electric potential. If point 1 in space has an electric potential of $V_{1}$ and point 2 in space has an electric potential of $V_{2}$, then we say that there is a voltage $\Delta V$ given by
 \begin{equation}
 	\Delta V = V_{2} - V_{1}
 \end{equation}
@@ -28,9 +28,9 @@ The mathematical symbol for electric potential is $V$.
 %
 \subsection{Electric Current}
 %
-Another important quantity is \textbf{electric current}. Electric current quantifies the rate of flow (through a point in space) of electric charge with respect to time. Since electric charge is in coulombs and time is in seconds, the SI unit for electric current is C/s. This combination of units is known as an \textbf{ampere} (symbol is A):
+Another important quantity is \textbf{electric current}. Electric current quantifies the rate of flow (through a point in space) of electric charge with respect to time. Since electric charge is in coulombs and time is in seconds, the \textbf{SI unit} for electric \textbf{current} is C/s. This combination of units is known as an \textbf{ampere} (symbol is A):
 \begin{equation}
-	1 \text{ A} = 1 \text{ C/s}
+	1 \ \text{A} = 1 \ \text{C/s}
 \end{equation}
 Although flow of charge in space suggests a direction is involved, the electric current is \textbf{not a vector} quantity.
 
@@ -38,11 +38,11 @@ The mathematical symbol for electric current is $I$.
 %
 \subsection{Electrical Resistance}
 %
-After introducing electric potential and electric current, and the units used to measure these quantities, you are ready to formally discuss \textbf{electric resistance}. The point of electric resistance is to quantify how easy it is for a current to flow through a particular material. The \textbf{SI unit} for electrical resistance is the \textbf{ohm} (symbol is $\Omega$, the uppercase Greek letter omega). Electric resistance is not a fundamental quantity. The ohm unit can be stated in terms of volts and amps:
+After introducing electric potential and electric current, and the units used to measure these quantities, you are ready to formally discuss \textbf{electric resistance}. The point of electric resistance is to quantify how easy it is for a current to flow through a particular material. The \textbf{SI unit} for electrical \textbf{resistance} is the \textbf{ohm} (symbol is $\Omega$, the uppercase Greek letter omega). Electric resistance is not a fundamental quantity. The ohm unit can be stated in terms of volts and amps:
 \begin{equation}
-	1 \text{ ohm} = 1 \text{ V/A}
+	1 \ \text{ohm} = 1 \ \text{V/A}
 \end{equation}
-This result suggests that electrical resistance can be found by taking an electric potential value, and dividing it by an electric current value. This is not always the case.
+This result suggests that electrical resistance can be found by taking an electric potential value, and dividing it by an electric current value.
 
 When a piece of material has a large value of electrical resistance, it means that it is harder to get an electric current to flow through that piece of material. Small values of electrical resistance mean that it is easier for electric current to flow.
 
@@ -54,12 +54,12 @@ Many materials, but not all of them, satisfy \textbf{Ohm's law}: the amount of e
 \begin{equation}
 	V = IR
 \end{equation}
-As you can see, the slope in this relation is a quantity with units of electrical resistance, and indeed corresponds to the electric resistance of the material. When such a relation holds, the material is said to be \textbf{ohmic}. For ohmic materials, the electrical resistance $R$ can be calculated from the amount of electric potential difference $V$ and electric current $I$ via
+As you can see, the factor of proportionality in this relation is a quantity with units of electrical resistance, and indeed corresponds to the electric resistance of the material. When such a relation holds, the material is said to be \textbf{ohmic}. For ohmic materials, the electrical resistance $R$ can be found from the slope of the voltage versus current chart. In general, if you know the current and voltage values, you can calculate resistance via
 \begin{equation}
 	R = \frac{V}{I}
 	\label{eq.02.ohms.law}
 \end{equation}
-Not all materials are ohmic. That means that not all ratios of the form $V/I$ can be interpreted as electrical resistance.
+Not all materials are ohmic.
 %
 \subsection{Geometry of a Cylinder}
 %
@@ -74,19 +74,19 @@ Here $d$ is the \textbf{diameter} of the circular base. Recall that the diameter
 %
 \subsection{Electrical Resistivity}
 %
-For convenience, it is useful to introduce a quantity called \textbf{electrical resistivity} that is similar to electrical resistance, but does not depend on the geometrical aspects of the particular piece of material. In this way, electrical resistivity is \textbf{more intrinsic} than electrical resistance. The \textbf{SI unit} for electrical resistivity is the ohm$\cdot$meter (i.e. ohm multiply by meter).
+For convenience, it is useful to introduce a quantity called \textbf{electrical resistivity} that is similar to electrical resistance, but does not depend on the geometrical aspects of the particular piece of material. In this way, electrical resistivity is \textbf{more intrinsic} than electrical resistance. The \textbf{SI unit} for electrical resistivity is the ohm{ }\textperiodcentered{ }meter (i.e. ohm multiply by meter).
 
 The mathematical symbol for electrical resistivity is $\rho$ (the lowercase Greek letter rho).
 %
 \section{Experiment}
 %
-The main goal of this experiment is to study and understand how the electrical resistance $R$ of a cylindrical wire depends on the length $l$ of the wire, and the area $A$ of the cross-section of the wire. In principle, you would measure $R$, $l$, and $A$, and then make a chart. In practice you cannot measure $R$ directly. Instead you measure electric potential and electric current directly, and then use Ohm's law (\ref{eq.02.ohms.law}) to calculate $R$.
+The main goal of this experiment is to study and understand how the electrical resistance $R$ of a cylindrical wire depends on the length $l$ of the wire, and the area $A$ of the cross-section of the wire. In principle, you would measure $R$, $l$, and $A$, and then make a chart. In practice you cannot measure $R$ directly. Instead you measure electric potential and electric current directly, and then use Equation (\ref{eq.02.ohms.law}) to calculate $R$.
 
 You have eight different rods. Four of them are made of brass (but these four brass rods have different diameter), the other four are made of other materials (but these four rods have the same diameter).
 %
 \subsection{Part 1: Effect of Length}
 %
-In the first part you keep the material and the area fixed, and consider different lengths:
+In the first part you keep the material and the cross-sectional area fixed, and consider different lengths:
 \begin{itemize}
 	\item Run 1: Brass, $d = 3.18$ mm
 \end{itemize}
@@ -94,7 +94,7 @@ You should consider about six different length values.
 %
 \subsection{Part 2: Effect of Material}
 %
-In the second part you change the material, but keep the area fixed, and consider different lengths for each material:
+In the second part you change the material, but keep the cross-sectional area fixed, and consider different lengths for each material:
 \begin{itemize}
 	\item Run 2: Copper, $d = 3.18$ mm
 	\item Run 3: Music Wire, $d = 3.18$ mm
@@ -103,9 +103,9 @@ In the second part you change the material, but keep the area fixed, and conside
 \end{itemize}
 For each material you should consider six different length values.
 %
-\subsection{Part 3: Effect of Area}
+\subsection{Part 3: Effect of Cross-Sectional Area}
 %
-In the third part you keep the material fixed, and consider different areas:
+In the third part you keep the material fixed, and consider different cross-sectional areas:
 \begin{itemize}
 	\item Run 6: Brass, $d = 2.38$ mm
 	\item Run 6: Brass, $d = 3.97$ mm
@@ -123,9 +123,9 @@ Many \textbf{non-SI units} are used in this experiment, mostly for convenience r
 \end{itemize}
 Recall that
 \begin{align}
-	1 \text{ cm} = 0.01 \text{ m} && 1 \text{ mm} = 0.001 \text{ m} && 1 \text{ mV} = 0.001 \text{ V}
+	1 \ \text{cm} = 0.01 \ \text{m} && 1 \ \text{mm} = 0.001 \ \text{m} && 1 \ \text{mV} = 0.001 \ \text{V}
 \end{align}
-It is very important that SI units are used before any calculations, so that the resistance comes out in ohm units and the resistivity comes out in ohm$\cdot$meter units.
+It is very important that SI units are used before any calculations, so that the resistance comes out in ohm units and the resistivity comes out in ohm{ }\textperiodcentered{ }meter units.
 %
 \subsection{Part 1 and Part 2: Length}
 %
@@ -133,7 +133,7 @@ Here is what to do for runs 1, 2, 3, 4, and 5.
 %
 \subsubsection{Convert the units of potential to SI units}
 %
-The LabQuest device will measure the electric potential in units of millivolts (mV). In a separate column, convert these values to units of volts (V) by multiplying each millivolt value by a factor of $0.001$.
+The LabQuest device will measure the electric potential in units of millivolts (mV). In a separate column, convert these values to units of volts (V) by multiplying each millivolt value by a factor of 0.001.
 %
 \subsubsection{Calculate the resistance in ohms}
 %
@@ -141,21 +141,21 @@ With the current in amps, and the potential in volts, you can calculate the resi
 %
 \subsubsection{Convert the units of length to SI units}
 %
-You used the centimeter (cm) marks to measure the length along the rod where the electric potential measurement was taken. In a separate column, convert these values to units of meters (m) by multiplying each centimeter value by a factor of $0.01$.
+You used the centimeter (cm) marks to measure the length along the rod where the electric potential measurement was taken. In a separate column, convert these values to units of meters (m) by multiplying each centimeter value by a factor of 0.01.
 %
 \subsubsection{Make a chart of $R$ versus $l$}
 %
-It is time to visualize the data. Make a scatter chart with resistance in the vertical axis, and length in the horizontal axis. Label both axes and add a title to each chart that includes the run number, the material being used, and the value of the diameter.
+It is time to visualize the data. Make a \textbf{scatter chart} with resistance in the vertical axis, and length in the horizontal axis. Label both axes and add a title to each chart that includes the run number, the material being used, and the value of the diameter.
 %
 \subsubsection{Calculate the slope of the best-fit line}
 %
-If the shape of the data is linear, include a \textbf{best-fit line}. In a separate cell, use \texttt{SLOPE} to calculate the value of the slope. If the linear fit is appropriate, this suggest that the amount of resistance $R$ is directly proportional to the amount of length $l$:
+If the shape of the data is linear, include a \textbf{best-fit line}. In a separate cell, use the \texttt{SLOPE} function to calculate the value of the slope. If the linear fit is appropriate, this suggest that the amount of resistance $R$ is directly proportional to the amount of length $l$:
 \begin{equation}
 	R = a_{1} l + b_{1}
 \end{equation}
 Here, $a_{1}$ is the slope and $b_{1}$ is the intercept. The slope $a_{1}$ should have ohm/m units, and the intercept $b_{1}$ should have ohm units.
 
-Note that the area $A$ was kept constant.
+Note that the cross-sectional area $A$ was kept constant.
 %
 \subsection{Part 3: Area}
 %
@@ -163,17 +163,17 @@ For runs 6, 7, and 8 you should do the same steps as those for the previous runs
 %
 \subsubsection{Convert the units of diameter to SI units}
 %
-The diameter of each rod is given in units of millimeters (mm). In a separate column, convert these values to units of meter (m) by multiplying each millimeter value by a factor of $0.001$.
+The diameter of each rod is given in units of millimeters (mm). In a separate column, convert these values to units of meter (m) by multiplying each millimeter value by a factor of 0.001.
 %
-\subsubsection{Calculate the area in m$^{2}$}
+\subsubsection{Calculate the area in m\textsuperscript{2}}
 %
 With the diameter in meter units, you can calculate the area using (\ref{eq.02.area}). For $\pi$ you can use \texttt{PI()} instead of writing the value by hand.
 %
-\subsubsection{Calculate the inverse area in 1/m$^{2}$}
+\subsubsection{Calculate the inverse area in m\textsuperscript{\textminus 2}}
 %
 It is going to be important to calculate the inverse area. In a separate column, calculate the reciprocal inverse of each area value.
 %
-\subsubsection{Make a chart of $R$ versus $1/A$}
+\subsubsection{Make a chart of resistance versus inverse area}
 %
 Choose a length value, then gather the corresponding resistance value from runs 1, 6, 7, and 8. You should have resistance for four different areas (or inverse areas).
 
@@ -185,7 +185,7 @@ A linear shape suggests that $R$ is directly proportional to $1/A$:
 \begin{equation}
 	R = \frac{a_{2}}{A} + b_{2}
 \end{equation}
-Here $a_{2}$ is the slope and $b_{2}$ is the intercept. The slope $a_{2}$ should have ohm$\cdot$m$^{2}$ units, and the intercept $b_{2}$ should have ohm units.
+Here $a_{2}$ is the slope and $b_{2}$ is the intercept. The slope $a_{2}$ should have ohm{ }\textperiodcentered{ }m\textsuperscript{2} units, and the intercept $b_{2}$ should have ohm units.
 
 Note that the length $l$ was kept constant.
 %
@@ -199,11 +199,11 @@ Keeping the length fixed and letting the area vary yielded the following linear 
 \begin{equation}
 	R = \frac{a_{2}}{A} + b_{2}
 \end{equation}
-Ignoring the intercepts, this suggests a relation of the form:
+Ignoring the intercepts, the two previous equations suggest a relation between resistance, length, and cross-sectional area of the form:
 \begin{equation}
 	R = a_{3} \frac{l}{A}
 \end{equation}
-Here $a_{3}$ has ohm$\cdot$m units, the same units as resistivity. This suggests that $a_{3}$ corresponds to the resistivity.
+Here $a_{3}$ has ohm{ }\textperiodcentered{ }m units, the same units as resistivity. This suggests that $a_{3}$ corresponds to the resistivity.
 
 You can now go back to your results and compute the resistivity from the $a_{1}$ value by multiplying it by the corresponding area:
 \begin{equation}
@@ -221,13 +221,13 @@ Your experimental results for the electrical resistivity can be compared to esta
 %
 \section{My Data}
 %
-Keeping the area fixed, you can find the electrical resistivity for each of the eight runs. Table \ref{table.02.experimental.area} contains my results. Each resistivity is found by multiplying the value of the slope from the best-fit line by the corresponding area. For example, Figure \ref{figure.02.run.1} has the data for run 1. The slope is $4.97 \times 10^{-3}$ ohm/m. The diameter is 3.18 mm, giving an area of $7.96 \times 10^{-6}$ m$^{2}$. The resistivity is
+Keeping the area fixed, you can find the electrical resistivity for each of the eight runs. Table \ref{table.02.experimental.area} contains my results. Each resistivity is found by multiplying the value of the slope from the best-fit line by the corresponding area. For example, Figure \ref{figure.02.run.1} has the data for run 1. The slope is 4.97{ }\texttimes{ }10\textsuperscript{\textminus 3} ohm/m. The diameter is 3.18 mm, giving an area of 7.96{ }\texttimes{ }10\textsuperscript{\textminus 6} m\textsuperscript{2}. The resistivity is
 \begin{equation}
-	\rho = \left(4.97 \times 10^{-3} \text{ ohm/m}\right) \left(7.96 \times 10^{-6} \text{ m}^{2}\right) = 7.35 \times 10^{-8} \text{ ohm}\cdot\text{m}
+	\rho = \left(4.97 \times 10^{-3} \ \text{ohm/m}\right) \left(7.96 \times 10^{-6} \ \text{m}^{2}\right) = 7.35 \times 10^{-8} \ \text{ohm{ }\textperiodcentered{ }m}
 \end{equation}
-From the $R$ versus $1/A$ charts, you have to divide the slope by the length to obtain the resistivity. For example, Figure \ref{figure.02.20cm} has the data for brass, keeping the length fixed at 20 cm. The slope is $1.58 \times 10^{-8}$ ohm$\cdot$m$^{2}$. The length is 0.2 m. The resistivity is
+From the $R$ versus $1/A$ charts, you have to divide the slope by the length to obtain the resistivity. For example, Figure \ref{figure.02.20cm} has the data for brass, keeping the length fixed at 20 cm. The slope is 1.58{ }\texttimes{ }10\textsuperscript{\textminus 8} ohm{ }\textperiodcentered{ }m\textsuperscript{2}. The length is 0.2 m. The resistivity is
 \begin{equation}
-	\rho = \frac{1.58 \times 10^{-8} \text{ ohm}\cdot\text{m}^{2}}{0.2 \text{ m}} = 7.50 \times 10^{-8} \text{ ohm}\cdot\text{m}
+	\rho = \frac{1.58 \times 10^{-8} \ \text{ohm{ }\textperiodcentered{ }m\textsuperscript{2}}}{0.2 \ \text{m}} = 7.50 \times 10^{-8} \ \text{ohm{ }\textperiodcentered{ }m}
 \end{equation}
 You expect the value of the resistivity to be independent on how it is calculated. Indeed, both of the values above are very close and consistent.
 %
@@ -256,7 +256,7 @@ In your laboratory report you should include the following:
 	\centering
 	\begin{tabular}{|l|r|}
 		\hline
-		Material & Resistivity (ohm$\cdot$m) \\
+		Material & Resistivity (ohm{ }\textperiodcentered{ }m) \\
 		\hline
 		Brass & $6 \times 10^{-8}$ to $9 \times 10^{-8}$ \\
 		Copper & $1.7 \times 10^{-8}$ \\
@@ -273,7 +273,7 @@ In your laboratory report you should include the following:
 	\centering
 	\begin{tabular}{|l|r|r|r|}
 		\hline
-		Run & Material & Diameter (mm) & Resistivity (ohm$\cdot$m) \\
+		Run & Material & Diameter (mm) & Resistivity (ohm{ }\textperiodcentered{ }m) \\
 		\hline
 		1 & Brass & 3.18 & $7.35 \times 10^{-8}$ \\
 		2 & Copper & 3.18 & $1.59 \times 10^{-8}$ \\
@@ -293,7 +293,7 @@ In your laboratory report you should include the following:
 	\centering
 	\begin{tabular}{|l|r|}
 		\hline
-		Length (cm) & Resistivity (ohm$\cdot$m) \\
+		Length (cm) & Resistivity (ohm{ }\textperiodcentered{ }m) \\
 		\hline
 		10 & $7.46 \times 10^{-8}$ \\
 		15 & $7.56 \times 10^{-8}$ \\
