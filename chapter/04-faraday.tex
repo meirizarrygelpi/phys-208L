@@ -17,40 +17,40 @@ The \textbf{magnetic flux} is defined as the product of the amount of \textbf{ma
 \begin{equation}
 	\Phi_{B} = B a
 \end{equation}
-The \textbf{SI unit} for magnetic field is the tesla (T). The \textbf{SI unit} for area is the square meter (m$^{2}$). Thus, magnetic flux is measured in units of T$\cdot$m$^{2}$.
+The \textbf{SI unit} for magnetic field is the tesla (T). The \textbf{SI unit} for area is the square meter (m$^{2}$). Thus, magnetic flux is measured in units of T{ }\textperiodcentered{ }m\textsuperscript{2}.
 
-In this experiment you are going to keep the \textbf{area fixed} and let the \textbf{magnetic field change with time}. In this setting, the rate of change of the magnetic flux with time is proportional to the rate of change of the magnetic field with time:
-\begin{equation}
-	\frac{\Delta \Phi_{B}}{\Delta t} = \left(\frac{\Delta B}{\Delta t}\right) a
+A non-zero EMF $\mathcal{E}$ requires the magnetic flux $\Phi_{B}$ to change with time. In this experiment you are going to keep the \textbf{area fixed} and let the \textbf{magnetic field change with time}. In this setting, the rate of change of the magnetic flux with time is proportional to the rate of change of the magnetic field with time:
+\begin{align}
+	\Phi_{B} = B a && \Longrightarrow && \frac{\Delta \Phi_{B}}{\Delta t} = \left(\frac{\Delta B}{\Delta t}\right) a
 	\label{eq.04.flux.rate}
-\end{equation}
-The rate of change of magnetic flux is measured in units of T$\cdot$m$^{2}$/s. But according to Faraday's law, these units are the same as the units for EMF (volts), so you must have the equivalence:
+\end{align}
+The rate of change of magnetic flux is measured in units of T{ }\textperiodcentered{ }m\textsuperscript{2}/s. But according to Faraday's law, these units are the same as the units for EMF (volts), so you must have the equivalence:
 \begin{equation}
-	1 \text{ V} = 1 \text{ T} \cdot \text{m}^{2}\text{/s}
+	1 \ \text{V} = 1 \ \text{T{ }\textperiodcentered{ }m\textsuperscript{2}/s}
 \end{equation}
-This allows you to define the tesla in terms of volts, meters, and seconds:
+This allows you to define the tesla unit in terms of volts, meters, and seconds:
 \begin{equation}
-	1 \text{ T} = 1 \text{ V} \cdot \text{s/m}^2
+	1 \ \text{T} = 1 \ \text{V{ }\textperiodcentered{ }s/m\textsuperscript{2}}
 \end{equation}
 
-Wires with electric current produce magnetic fields. You are going to use a particular wire called a \textbf{solenoid coil}. The \textbf{magnetic field} inside the cylindrical space of a solenoid coil is (almost) uniform and the amount of field is directly proportional to the amount of current flowing through the coil:
+Wires with electric current produce magnetic fields. You are going to use a particular wire called a \textbf{solenoid coil}. The \textbf{magnetic field} $B$ inside the cylindrical space of a solenoid coil is (almost) uniform and the amount of field is directly proportional to the amount of current $I$ flowing through the coil:
 \begin{equation}
-	B = \frac{\mu_{0} N_{1} I}{L}
+	B = \left(\frac{\mu_{0} N_{1}}{L}\right) I
 	\label{eq.04.B.coil}
 \end{equation}
 Here
 \begin{itemize}
-	\item $B$ is the amount of magnetic field (unit: T)
-	\item $\mu_{0} = 4 \pi \times 10^{-7}$ T$\cdot$m/A  is a universal physical constant
-	\item $N_{1}$ is the number of turns in the (primary) coil (no units)
-	\item $L$ is the length of the (primary) coil (unit: m)
-	\item $I$ is the amount of electric current through the (primary) coil (unit: A)
+	\item $B$ is the amount of \textbf{magnetic field} (unit: T)
+	\item $\mu_{0} = 4 \pi \times 10^{-7}$ T{ }\textperiodcentered{ }m/A  is a universal physical \textbf{constant}
+	\item $N_{1}$ is the \textbf{number of turns} in the (primary) coil (no units)
+	\item $L$ is the \textbf{length} of the (primary) coil (unit: m)
+	\item $I$ is the amount of \textbf{electric current} through the (primary) coil (unit: A)
 \end{itemize}
-For a given coil you are going to keep the number of turns $N_{1}$ fixed, and the length $L$ fixed, but you are going to use a current that changes with time. In this case, the rate of change of the magnetic field with time is proportional to the rate of change of the current with time:
-\begin{equation}
-	\frac{\Delta B}{\Delta t} = \left( \frac{\mu_{0} N_{1}}{L} \right) \frac{\Delta I}{\Delta t}
+For a given coil you are going to keep the \textbf{number of turns fixed}, and the \textbf{length fixed}, but you are going to use a \textbf{current that changes with time}. In this case, the rate of change of the magnetic field with time is proportional to the rate of change of the current with time:
+\begin{align}
+	B = \left(\frac{\mu_{0} N_{1}}{L}\right) I && \Longrightarrow && \frac{\Delta B}{\Delta t} = \left( \frac{\mu_{0} N_{1}}{L} \right) \frac{\Delta I}{\Delta t}
 	\label{eq.04.B.rate}
-\end{equation}
+\end{align}
 Using (\ref{eq.04.B.rate}) in (\ref{eq.04.flux.rate}) gives
 \begin{equation}
 	\frac{\Delta \Phi_{B}}{\Delta t} = \left( \frac{\mu_{0} N_{1} a}{L} \right) \frac{\Delta I}{\Delta t}
@@ -102,7 +102,7 @@ Similarly, the rate of change of the \textbf{cosine function} is proportional to
 \end{equation}
 Here the sign is not important. What is important is to remember that sine and cosine are very similar functions and that a cosine is the same as a sine function shifted by 90 deg (or $\pi/2$ rad):
 \begin{align}
-	\cos(t) = \sin(t + 90^{\circ}), && \sin(t) = \cos(t - 90^{\circ})
+	\cos(t) = \sin(t + 90\text{\textdegree}), && \sin(t) = \cos(t - 90\text{\textdegree})
 \end{align}
 Thus, if the quantity is sinusoidal, then the rate of change will also be sinusoidal but shifted by 90 deg. In particular, when $\sin(t)$ is at a peak or valley, then $\cos(t)$ is crossing the horizontal axis (i.e. close to zero), and when $\sin(t)$ is crossing the horizontal axis (i.e. close to zero), then $\cos(t)$ is either at a valley or a peak.
 %
@@ -110,21 +110,21 @@ Thus, if the quantity is sinusoidal, then the rate of change will also be sinuso
 %
 You are going to use two solenoid coils. The smaller one fits inside the larger one. The smaller one is called the \textbf{secondary coil}. This is the coil used to measure the EMF value. The larger coil is called the \textbf{primary coil}. This coil is the one with the current and the one that produces the magnetic field.
 
-The \textbf{primary coil} has a length of 10 cm and 3,300 turns. Thus,
+The \textbf{primary coil} has a length of 10 cm and 3300 turns. Thus,
 \begin{align}
-	L = 10 \text{ cm} = 0.1 \text{ m}, && N_{1} = 3,300
+	L = 10 \ \text{cm} = 0.1 \ \text{m,} && N_{1} = 3300
 \end{align}
 The \textbf{secondary coil} has 150 turns and an outer diameter of 1.8 cm. The inner diameter I measured it to be close to 1.1 cm. The average of these two diameters correspond to the diameter half-way between these two. This average is 1.45 cm. Since the wire was very thick, I think it is more accurate to use the average of the diameters to calculate the area of each loop. Thus,
 \begin{align}
-	d = 1.45 \text{ cm} = 0.0145 \text{ m}, && N_{2} = 150
+	d = 1.45 \ \text{cm} = 0.0145 \ \text{m,} && N_{2} = 150
 \end{align}
 The area enclosed by a circular loop with diameter $d$ is given by
 \begin{equation}
-	a_{\text{loop}} = \frac{1}{4} \pi d^{2} = \frac{1}{4} \pi (0.0145 \text{ m})^2 = 1.65 \times 10^{-4} \text{ m}^{2}
+	a_{\text{loop}} = \frac{1}{4} \pi d^{2} = \frac{1}{4} \pi \left(0.0145 \ \text{m}\right)^2 = 1.65 \times 10^{-4} \ \text{m\textsuperscript{2}}
 \end{equation}
 This is the amount of \textbf{area-per-loop} in the secondary coil. The \textbf{total amount of area} $a$ is the area-per-loop $a_{\text{loop}}$ multiplied by the number of loops $N_{2}$ in the secondary coil:
 \begin{equation}
-	a = N_{2} a_{\text{loop}} = 150 \times (1.65 \times 10^{-4} \text{ m}^{2}) = 2.48 \times 10^{-2} \text{ m}^{2}
+	a = N_{2} a_{\text{loop}} = 150 \times \left(1.65 \times 10^{-4} \ \text{m\textsuperscript{2}}\right) = 2.48 \times 10^{-2} \ \text{m\textsuperscript{2}}
 \end{equation}
 This is the amount of area that you will use to measure the magnetic flux.
 %
@@ -132,7 +132,7 @@ This is the amount of area that you will use to measure the magnetic flux.
 %
 According to (\ref{eq.04.emf.solenoid}), the amount of EMF is directly proportional to the amount of rate of change of the current with time. The constant of proportionality is
 \begin{equation}
-	\frac{\mu_{0} N_{1} a}{L} = 1.03 \times 10^{-3} \text{ V s/A}
+	\frac{\mu_{0} N_{1} a}{L} = 1.03 \times 10^{-3} \ \text{V{ }\textperiodcentered{ }s/A} = 1.03 \ \text{mV{ }\textperiodcentered{ }s/A}
 	\label{eq.04.slope}
 \end{equation}
 This is the expected value. In principle, if you could chart $\mathcal{E}$ versus $\Delta I / \Delta t$, the slope should correspond to the negative of this value. You can only do this for the triangular current profile.
@@ -239,7 +239,7 @@ You should have five runs:
 \end{itemize}
 For each run you should have three columns of data: time, voltage (electric potential), and current. Note that the voltage column is in mV and should be converted to volts:
 \begin{equation}
-	1 \text{ mV} = 0.001 \text{ V}
+	1 \text{ mV} = 0.001 \ \text{V}
 \end{equation}
 Otherwise, agreement with the slope (\ref{eq.04.slope}) will be off by some orders of magnitude.
 %
@@ -279,16 +279,15 @@ For \textbf{run 4} and \textbf{run 5}, your lab report should include:
 %
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{|r|r|}
+	\begin{tabular}{r|r}
+		\textbf{Current Slope} (A/s) & \textbf{Time-Average EMF Voltage} (mV) \\
 		\hline
-		Current Slope (A/s) & Time-Average EMF Voltage (V) \\
-		\hline
-		$-2.247$ & $2.65 \times 10^{-3}$ \\
-		2.274 & $-2.67 \times 10^{-3}$ \\
-		$-2.266$ & $2.66 \times 10^{-3}$ \\
-		2.243 & $-2.67 \times 10^{-3}$ \\
-		$-2.280$ & $2.66 \times 10^{-3}$ \\
-		2.275 & $-2.68 \times 10^{-3}$ \\
+		\textminus 2.247 & 2.65 \\
+		2.274 & \textminus 2.67 \\
+		\textminus 2.266 & 2.66 \\
+		2.243 & \textminus 2.67 \\
+		\textminus 2.280 & 2.66 \\
+		2.275 & \textminus 2.68 \\
 		\hline
 	\end{tabular}
 	\caption{Current slope and EMF time-average results for run 3}
@@ -297,11 +296,10 @@ For \textbf{run 4} and \textbf{run 5}, your lab report should include:
 %
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{|r|r|r|}
+	\begin{tabular}{r|r|r}
+		\textbf{Expected Slope} (mV$\cdot$s/A) & \textbf{Observed Slope} (mV$\cdot$s/A) & \textbf{P.D.} (\%) \\
 		\hline
-		Expected Slope (V$\cdot$s/A) & Experimental Slope (V$\cdot$s/A) & P.D. (\%) \\
-		\hline
-		$1.03 \times 10^{-3}$ & $1.18 \times 10^{-3}$ & 14.55 \\
+		\textminus 1.03 & \textminus 1.18 & 14.55 \\
 		\hline
 	\end{tabular}
 	\caption{Results for run 3}
@@ -310,14 +308,13 @@ For \textbf{run 4} and \textbf{run 5}, your lab report should include:
 %
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{|r|r|r|}
+	\begin{tabular}{r|r|r}
+		\textbf{Current Slope} (A/s) & \textbf{Time-Average EMF Voltage} (mV) & \textbf{Ratio} (mV$\cdot$s/A) \\
 		\hline
-		Current Slope (A/s) & Time-Average EMF Voltage (V) & Ratio (V$\cdot$s/A) \\
-		\hline
-		0.507 & $-6.07 \times 10^{-4}$ & $1.20 \times 10^{-3}$ \\
-		0.516 & $-6.12 \times 10^{-4}$ & $1.19 \times 10^{-3}$ \\
-		0.505 & $-5.99 \times 10^{-4}$ & $1.19 \times 10^{-3}$ \\
-		0.505 & $-6.00 \times 10^{-4}$ & $1.19 \times 10^{-3}$ \\
+		0.507 & \textminus 0.607 & \textminus 1.20 \\
+		0.516 & \textminus 0.612 & \textminus 1.19 \\
+		0.505 & \textminus 0.599 & \textminus 1.19 \\
+		0.505 & \textminus 0.600 & \textminus 1.19 \\
 		\hline
 	\end{tabular}
 	\caption{Results for run 4}
@@ -326,14 +323,13 @@ For \textbf{run 4} and \textbf{run 5}, your lab report should include:
 %
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{|r|r|r|}
+	\begin{tabular}{r|r|r}
+		\textbf{Current Slope} (A/s) & \textbf{Time-Average EMF Voltage} (mV) & \textbf{Ratio} (mV$\cdot$s/A) \\
 		\hline
-		Current Slope (A/s) & Time-Average EMF Voltage (V) & Ratio (V$\cdot$s/A) \\
-		\hline
-		$-0.507$ & $5.96 \times 10^{-4}$ & $1.17 \times 10^{-3}$ \\
-		$-0.516$ & $5.96 \times 10^{-4}$ & $1.17 \times 10^{-3}$ \\
-		$-0.505$ & $6.00 \times 10^{-4}$ & $1.19 \times 10^{-3}$ \\
-		$-0.505$ & $6.01 \times 10^{-4}$ & $1.18 \times 10^{-3}$ \\
+		\textminus 0.507 & 0.596 & \textminus 1.17 \\
+		\textminus 0.516 & 0.596 & \textminus 1.17 \\
+		\textminus 0.505 & 0.600 & \textminus 1.19 \\
+		\textminus 0.505 & 0.601 & \textminus 1.18 \\
 		\hline
 	\end{tabular}
 	\caption{Results for run 5}
