@@ -12,7 +12,7 @@ A given component in an electric circuit can have many physical properties. Amon
 %
 By now, electrical \textbf{resistance} should be familiar. The \textbf{SI unit} for electrical resistance is the \textbf{ohm}:
 \begin{equation}
-	1 \text{ ohm} = 1\;\Omega = 1 \text{ V/A}
+	1 \ \text{ohm} = 1 \ \text{V/A}
 \end{equation}
 Here, V is volt (voltage) and A is ampere (current). A component in a circuit with a fixed amount of resistance is called a \textbf{resistor}. The mathematical symbol for resistance is $R$.
 %
@@ -20,7 +20,7 @@ Here, V is volt (voltage) and A is ampere (current). A component in a circuit wi
 %
 Another important property is \textbf{capacitance}. The \textbf{SI unit} for capacitance is the \textbf{farad}:
 \begin{equation}
-	1 \text{ farad} = 1 \text{ F} = 1 \text{ C/V}
+	1 \ \text{farad} = 1 \ \text{F} = 1 \ \text{C/V}
 \end{equation}
 Here, C is coulomb (electric charge) and V is volt (voltage). In some ways, capacitance measures the amount of electric charge needed to sustain an electric potential difference (i.e. a voltage). The mathematical symbol for capacitance is $C$.
 
@@ -30,15 +30,15 @@ A component in a circuit with a fixed amount of capacitance is called a \textbf{
 %
 The last property is \textbf{inductance}, which is like a magnetic cousin of capacitance. The \textbf{SI unit} for inductance is the \textbf{henry}:
 \begin{equation}
-	1 \text{ henry} = 1 \text{ H} = 1 \text{ T}\cdot\text{m}^{2}\text{/A}
+	1 \ \text{henry} = 1 \ \text{H} = 1 \ \text{T{ }\textperiodcentered{ }m\textsuperscript{2}/A}
 \end{equation}
-Here, T is tesla (magnetic field), m$^{2}$ is square meter (area), and A is ampere (current). Recall that the tesla unit is equivalent to
+Here, T is tesla (magnetic field), m\textsuperscript{2} is square meter (area), and A is ampere (current). Recall that the tesla unit is equivalent to
 \begin{equation}
-    1 \text{ T} = 1 \text{ V} \cdot \text{s/m}^{2}
+    1 \ \text{T} = 1 \ \text{V{ }\textperiodcentered{ }s/m\textsuperscript{2}}
 \end{equation}
 Thus, the henry unit is equivalent to:
 \begin{equation}
-    1 \text{ H} = 1 \text{ V}\cdot\text{s/A}
+    1 \ \text{H} = 1 \ \text{V{ }\textperiodcentered{ }s/A} = 1 \ \text{ohm{ }\textperiodcentered{ }s}
 \end{equation}
 In some ways, inductance measures the amount of voltage that arises per unit rate of change of electric current with time. The mathematical symbol for inductance is $L$.
 
@@ -80,16 +80,16 @@ Figures \ref{figure.05.f}, \ref{figure.05.g}, and \ref{figure.05.h} provide char
 %
 \subsection{Resistor and Capacitor in Series}
 %
-A circuit with a resistor, a capacitor, and a direct-current (DC) source is called an \textbf{RC circuit}. In the simplest RC circuit, the resistor and capacitor are connected in series to the DC source via a particular switch.
+A circuit with a resistor, a capacitor, and a direct-current (DC) EMF source is called an \textbf{RC circuit}. In the simplest RC circuit, the resistor and capacitor are connected in series to the DC EMF source via a particular switch.
 %
 \subsubsection{Charging the Capacitor}
 %
-When the switch is on, and the circuit is complete, the DC source pushes charges out into the circuit in the form of a current. This current causes positive electric charges to accumulate on one of the terminals of the capacitor, and negative electric charges on the other terminal of the capacitor. But the amount of electric charge $Q$ on the capacitor does not increase indefinitely: It settles on a maximum value $Q_{\infty}$. The particular manner in which the amount of \textbf{electric charge} on the capacitor increases with time is an example of an \textbf{exponential} increase:
+When the switch is on, and the circuit is complete, the DC EMF source pushes charges out into the circuit in the form of a current. This current causes positive electric charges to accumulate on one of the terminals of the capacitor, and negative electric charges on the other terminal of the capacitor. But the amount of electric charge $Q$ on the capacitor does not increase indefinitely: It settles on a maximum value $Q_{\infty}$. The particular manner in which the amount of \textbf{electric charge} on the capacitor increases with time is an example of an \textbf{exponential} increase:
 \begin{equation}
     Q(t) = Q_{\infty} \left[ 1 - \exp\left(-\frac{t}{\tau_{C}}\right) \right]
     \label{eq.05.RC.q.charging}
 \end{equation}
-Here $Q_{\infty}$ is the amount of charge accumulated on the capacitor after an infinite amount of time, and $t$ correspond to the amount of time after the switch has been opened (the switch is opened at $t = 0$). The amount of \textbf{current} corresponds to the rate of change of the electric charge with time:
+Here $Q_{\infty}$ is the amount of charge accumulated on the capacitor after an infinite amount of time, and $t$ corresponds to the amount of time after the switch has been opened (the switch is opened at $t = 0$). The amount of \textbf{current} corresponds to the rate of change of the electric charge with time:
 \begin{equation}
     I(t) = I_{0} \exp\left(-\frac{t}{\tau_{C}}\right)
     \label{eq.05.RC.i.charging}
@@ -108,22 +108,22 @@ Here, $V_{\infty}$ is related to $Q_{\infty}$ and/or $I_{0}$ via
 \begin{eqnarray}
     V_{\infty} = \frac{Q_{\infty}}{C} = I_{0} R
 \end{eqnarray}
-The value of $V_{\infty}$ should correspond to the steady voltage across the DC source.
+The value of $V_{\infty}$ should correspond to the steady voltage across the DC EMF source.
 
-As you can see from (\ref{eq.05.RC.q.charging}), (\ref{eq.05.RC.i.charging}), and (\ref{eq.05.RC.vC.charging}), the amount of charge, current and voltage related to a capacitor all involve exponential functions. The constant $\tau_{C}$ is known as the \textbf{capacitive time constant}. It has units of time (seconds). The value of $\tau_{C}$ sets a time scale for the change in values to occur. The same time scale appears in all three quantities. In an RC circuit, the value of $\tau_{C}$ depends on how much resistance $R$ and capacitance $C$ you have:
+As you can see from (\ref{eq.05.RC.q.charging}), (\ref{eq.05.RC.i.charging}), and (\ref{eq.05.RC.vC.charging}), the amount of charge, current and voltage related to a capacitor all involve exponential functions. The constant $\tau_{C}$ is known as the \textbf{capacitive time constant}. It has units of time (seconds). The value of $\tau_{C}$ sets a time scale for the change in values of charge, voltage, and current to occur. The same time scale appears in all three quantities. In an RC circuit, the value of $\tau_{C}$ depends on how much resistance $R$ and capacitance $C$ you have:
 \begin{equation}
     \tau_{C} = R C
     \label{eq.05.tauC}
 \end{equation}
 You can check that, in fact, by multiplying something with ohm units by something with farad units you get something with second units:
 \begin{equation}
-    1 \text{ ohm} \cdot 1 \text{ F} = \left(1 \text{ V}\cdot\text{ s/C}\right) \cdot \left(1 \text{ C/V}\right) = 1 \text{ s}
+    1 \ \text{ohm} \cdot 1 \ \text{F} = \left(1 \ \text{V{ }\textperiodcentered{ }s/C}\right) \cdot \left(1 \ \text{ C/V}\right) = 1 \ \text{s}
 \end{equation}
 Since the exponential function is a mathematical function that changes very fast, the current will take noise-level values after a time corresponding to about 5 capacitive time constants.
 %
 \subsubsection{Discharging the Capacitor}
 %
-After some time with the switch on, the amount of charge on the capacitor becomes almost constant (close to $Q_{\infty}$), the amount of voltage across the capacitor also becomes almost constant (close to $V_{\infty}$), and the current through the circuit becomes almost zero. Upon opening the circuit by setting the switch off, the DC source stops supporting the charge accumulated on the capacitor, and that amount of charge begins to leave the capacitor. The amount of charge on the capacitor follows a particular manner:
+After some time with the switch on, the amount of charge on the capacitor becomes almost constant (close to $Q_{\infty}$), the amount of voltage across the capacitor also becomes almost constant (close to $V_{\infty}$), and the current through the circuit becomes almost zero. Upon opening the circuit by setting the switch off, the DC EMF source stops supporting the charge accumulated on the capacitor, and that amount of charge begins to leave the capacitor. The amount of charge on the capacitor follows a particular manner:
 \begin{equation}
     Q(t) = Q_{0} \exp\left(-\frac{t}{\tau_{C}}\right)
     \label{eq.05.RC.q.discharging}
@@ -150,13 +150,13 @@ The value of $V_{0}$ should correspond to the voltage across the capacitor just 
 %
 \subsection{Resistor and Inductor in Series}
 %
-A circuit with a resistor, an inductor, and a DC source is called an \textbf{RL circuit}. In the simplest RL circuit, the resistor and inductor are connected in series to the DC source via a particular switch.
+A circuit with a resistor, an inductor, and a DC EMF source is called an \textbf{RL circuit}. In the simplest RL circuit, the resistor and inductor are connected in series to the DC EMF source via a particular switch.
 
 An \textbf{ideal inductor} is an inductor that has \textbf{zero electrical resistance}. In practice, the inductors that you will use in these experiments have a non-negligible amount of resistance that cannot be ignored and has to be taken into account. One way to do this is to think of a \textbf{non-ideal inductor} as consisting of a resistor and an ideal inductor connected in series:
 \begin{equation}
     \text{non-ideal inductor} = \text{resistor} + \text{ideal inductor in series}
 \end{equation}
-Thus, an RL circuit with one resistor with resistance $R$ and one non-ideal inductor with resistance $r$ and inductance $L$ in series is equivalent to an RL circuit with \textbf{two} resistors and one ideal inductor in series. Let $V_{0}$ correspond to the EMF voltage produced by the DC source in the RL circuit. Then, since the circuit is in series, the amount of EMF voltage from the DC source must be equivalent to the sum of voltages across the two resistors and the ideal inductor:
+Thus, an RL circuit with one resistor with resistance $R$ and one non-ideal inductor with resistance $r$ and inductance $L$ in series is equivalent to an RL circuit with \textbf{two} resistors and one ideal inductor in series. Let $V_{0}$ correspond to the EMF voltage produced by the DC EMF source in the RL circuit. Then, since the circuit is in series, the amount of EMF voltage from the DC EMF source must be equivalent to the sum of voltages across the two resistors and the ideal inductor:
 \begin{equation}
     V_{0} = V_{R} + V_{r} + V_{L}
 \end{equation}
@@ -193,7 +193,10 @@ Instead of $\tau_{C}$, you now have $\tau_{L}$ which corresponds to the \textbf{
     \tau_{L} = \frac{L}{R + r}
     \label{eq.05.tauL}
 \end{equation}
-You can check that in fact, by dividing something with henry units by something with ohm units you get something with second units.
+You can check that in fact, by dividing something with henry units by something with ohm units you get something with second units:
+\begin{equation}
+    \frac{1 \ \text{H}}{1 \ \text{ohm}} = \frac{1 \ \text{ohm{ }\textperiodcentered{ }s}}{1 \ \text{ohm}} = 1 \ \text{s}
+\end{equation}
 %
 \section{Experiment}
 %
@@ -219,7 +222,7 @@ For RL circuits, all the experiments involved closing the switch after the data 
 \begin{itemize}
     \item the voltage across the resistor, $V_{R}(t)$;
     \item the current flowing between the resistor and the non-ideal inductor, $I(t)$; and
-    \item the voltage across the non-ideal inductor. $V_{r}(t) + V_{L}(t)$.
+    \item the voltage across the non-ideal inductor, $V_{r}(t) + V_{L}(t)$.
 \end{itemize}
 Because the inductive time constants are so small, the data acquisition needs to be activated with the trigger feature.
 
@@ -263,7 +266,7 @@ That is, about 0.67\% of the starting value. Five units of $\tau$ is a good rule
 %
 \subsection{RC Circuits: Charging Events}
 %
-In a charging even both the voltage across the resistor and the current decay exponentially. Here are some steps to follow:
+In a charging event, both the voltage across the resistor and the current decay exponentially. Here are some steps to follow:
 %
 \subsubsection{Visualize $V_{R}$ and $I$}
 %
@@ -298,7 +301,7 @@ The value of $b$ corresponds to the inverse of the time constant:
 \end{equation}
 Thus, the observed value of the time constant follows from the inverse of $b$:
 \begin{equation}
-    \text{Observed } \tau_{C} = \frac{1}{b}
+    \text{Observed} \ \tau_{C} = \frac{1}{b}
 \end{equation}
 You should get a value from the $V_{R}$ chart, and another value from the $I$ chart. Both values should be consistent with each other.
 %
@@ -311,7 +314,7 @@ In the discharging event, only the voltage across the capacitor follows an expon
     \item Truncate the long tail and keep close to $5\tau_{C}$ after the time the decay begins.
     \item Extract the experimental value of $\tau_{C}$ from the fit equation.
 \end{enumerate}
-The value of $\tau_{C}$ for the discharging even should be consistent with the value for the charging event.
+The value of $\tau_{C}$ for the discharging event should be consistent with the value for the charging event.
 %
 \subsection{RL Circuits: Resistance of Inductors}
 %
