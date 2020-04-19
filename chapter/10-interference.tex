@@ -6,13 +6,13 @@ In this experiment you will learn about interference in light from a laser due t
 %
 \section{Preliminary}
 %
-In the previous three experiments you studied phenomena like reflection and refraction that can be explained with the \textbf{ray} model of light. Interference and diffraction are two phenomena that are easier to explain with the \textbf{wave} model of light. Both of these have to do with light passing throw an opening or openings. But unlike the apertures you used before, the openings in this experiment and the next one are much smaller in size.
+In the previous three experiments you studied phenomena like reflection and refraction that can be explained with the \textbf{ray} model of light. Interference and diffraction are two phenomena that are easier to explain with the \textbf{wave} model of light. Both interference and diffraction have to do with light passing throw an opening or openings. But unlike the apertures you used before, the openings in this experiment and the next one are much smaller in size.
 
 A \textbf{slit} is a very thin opening. When light goes through a single slit that is particularly narrow, a \textbf{diffraction pattern} is produced. You are going to cover diffraction in more detail in the next experiment.
 
 A \textbf{double slit} is characterized by two distances: $a$ (the \textbf{slit width}) and $d$ (the \textbf{separation} between the two slits). When light goes through a double slit, an \textbf{interference pattern} is produced. The interference pattern consist of a series of dark and bright regions, with a very bright region in the center. The dark regions result when two waves oscillating in opposite ways meet at the same point in space (i.e. they can cancel each other, also known as \textbf{destructive} interference). The bright regions result when the two waves are oscillating in the same way (i.e. they can add to each other, also known as \textbf{constructive} interference).
 
-Thinking of the interference pattern itself as a \textbf{wave}, the bright regions would correspond to peaks. The distance from the center of the interference pattern to the $n$-th peak is denoted by $y_{n}$. This distance $y_{n}$ is related to the distance $L$ between the screen and the double slit, the slit separation $d$, and the wavelength of the light $\lambda$ vias the relation
+Thinking of the interference pattern itself as a \textbf{wave}, the bright regions would correspond to \textbf{peaks}. The \textbf{distance from the center of the interference pattern} to the $n$-th peak is denoted by $y_{n}$. This distance $y_{n}$ is related to the distance $L$ between the screen and the double slit, the slit separation $d$, and the wavelength of the light $\lambda$ vias the relation
 \begin{equation}
 	\frac{y_{n} d}{\sqrt{L^{2} + y_{n}^{2}}} = n \lambda
 \end{equation}
@@ -29,7 +29,11 @@ The distance between consecutive peaks is given by
 	\Delta y = y_{n+1} - y_{n} \approx \frac{L \lambda}{d}
 	\label{eq.10.y}
 \end{equation}
-Note that this relation does not depend on the slit width $a$. The \textbf{wavelength of the red laser} used in class is 635 nm (recall that 1 nm is equivalent to $10^{-9}$ m) or $6.35 \times 10^{-4}$ mm (recall that 1 mm is equivalent to $10^{-3}$ m). Make sure that you are consistent with the units for distance.
+Note that this relation does not depend on the slit width $a$. The \textbf{wavelength of the red laser} used in class
+\begin{equation}
+	\lambda_{\text{red}} = 635 \ \text{nm} = 6.35 \times 10^{-7} \ \text{m} = 6.35 \times 10^{-4} \ \text{mm}
+\end{equation}
+Make sure that you are consistent with the units for distance.
 %
 \section{Experiment}
 %
@@ -80,13 +84,13 @@ According to the theoretical expectation, the distance between adjacent peaks is
 %
 The data that I have been using so far was obtained with a \textbf{green} laser (you used the \textbf{red} laser). The wavelength of the green laser is 532 nm or $\lambda = 5.32 \times 10^{-4}$ mm. The distance between the slit mount and the sensor is $L = 960$ mm. For this particular run, the double slit used had $a = 0.08$ mm and $d = 0.25$ mm. With this information, the predicted separation between the peaks (\ref{eq.10.y}) takes the following value:
 \begin{equation}
-	\Delta y = \frac{L \lambda}{d} = \frac{(960 \text{ mm}) \times (0.000532 \text{ mm})}{(0.25 \text{ mm})} = 2.04288 \text{ mm}
+	\Delta y = \frac{L \lambda}{d} = \frac{(960 \ \text{mm}) \times (0.000532 \ \text{mm})}{(0.25 \ \text{mm})} = 2.043 \ \text{mm}
 \end{equation}
 You can compare this expected value to the average distance between adjacent peaks found in Table \ref{table.10.disA}. The percent difference is
 \begin{equation}
-	\text{Percent Difference} = 100 \times \frac{2.0215 \text{ mm} - 2.04288 \text{ mm}}{2.04288 \text{ mm}} = -1.046561717 \%
+	\text{Percent Difference} = 100 \times \frac{2.022 \ \text{mm} - 2.043 \ \text{mm}}{2.043 \ \text{mm}} = -1.05 \%
 \end{equation}
-However, for this particular run, the distance between adjacent peaks in Table \ref{table.10.disA} varies considerably. One thing you can do is to compare the position of the peaks in Table \ref{table.10.pos} with the expected position given by multiples of the theoretical distance $\Delta y$. These results are in Table.
+However, for this particular run, the distance between adjacent peaks in Table \ref{table.10.disA} varies considerably. One thing you can do is to compare the position of the peaks in Table \ref{table.10.pos} with the expected position given by multiples of the theoretical distance $\Delta y$.
 %
 \section{My Data}
 %
@@ -96,8 +100,9 @@ Tables \ref{table.10.part1.single} and \ref{table.10.part1.double} have the data
 	\item Run 11 and 12: $a = 0.04$ mm and $d = 0.25$ mm
 	\item Run 13 and 14: $a = 0.08$ mm and $d = 0.50$ mm
 \end{itemize}
-The shared spreadsheet has the analysis for runs 9 through 14. The run that I used in the text above is run 1.
+The shared spreadsheet has the analysis for runs 9 through 14. I used run 1 in the text above.
 %
+\newpage
 \section{Your Data}
 %
 In part 1 you have six distance measurements. Three measurements are for the \textbf{single slit} with $a = 0.08$ mm:
@@ -115,26 +120,26 @@ In part 2 you have six intensity measurements:
 	\item Two runs for the $a = 0.08$ and $d = 0.50$ double slit (runs 5 and 6).
 \end{itemize}
 %
-\newpage
-\section{Your Lab Report}
-%
-In your lab report you should include:
-\begin{itemize}
-	\item Tables like \ref{table.10.part1.single} and \ref{table.10.part1.double} with the results for part 1.
-	\item An intensity versus position chart for either run 1 or run 2.
-	\item An intensity versus position chart for either run 3 or run 4.
-	\item An intensity versus position chart for either run 5 or run 6.
-	\item A table like Table \ref{table.10.disA} for each double slit configuration. That is, either run 1 or run 2, either run 3 or run 4, and either run 5 or run 6.
-	\item A table like Table \ref{table.10.results} with the average peak distance, the expected value, and the percent difference, for each of the three double slit configurations.
-\end{itemize}
-You should also answer the following questions:
-\begin{enumerate}
-	\item How do the distance measurements for the single slit and double slits in part 1 compare?
-	\item Confirm that the peak separation does not depend on the slit width $a$ by comparing your results for run 1/2 and run 3/4. What happens to the average peak separation?
-	\item Confirm that the peak separation depends on the slit separation $d$ by comparing your results for run 1/2 and run 5/6. What happens to the average peak separation?
-	\item What do you think would happen to the interference pattern if you use a triple slit instead of a double slit?
-	\item In general, are the values in your tables like Table \ref{table.10.disA} symmetric between left or right? That is, are both sides almost equally accurate? Or is one side closer to the expected values than the other?
-\end{enumerate}
+% \newpage
+% \section{Your Lab Report}
+% %
+% In your lab report you should include:
+% \begin{itemize}
+% 	\item Tables like \ref{table.10.part1.single} and \ref{table.10.part1.double} with the results for part 1.
+% 	\item An intensity versus position chart for either run 1 or run 2.
+% 	\item An intensity versus position chart for either run 3 or run 4.
+% 	\item An intensity versus position chart for either run 5 or run 6.
+% 	\item A table like Table \ref{table.10.disA} for each double slit configuration. That is, either run 1 or run 2, either run 3 or run 4, and either run 5 or run 6.
+% 	\item A table like Table \ref{table.10.results} with the average peak distance, the expected value, and the percent difference, for each of the three double slit configurations.
+% \end{itemize}
+% You should also answer the following questions:
+% \begin{enumerate}
+% 	\item How do the distance measurements for the single slit and double slits in part 1 compare?
+% 	\item Confirm that the peak separation does not depend on the slit width $a$ by comparing your results for run 1/2 and run 3/4. What happens to the average peak separation?
+% 	\item Confirm that the peak separation depends on the slit separation $d$ by comparing your results for run 1/2 and run 5/6. What happens to the average peak separation?
+% 	\item What do you think would happen to the interference pattern if you use a triple slit instead of a double slit?
+% 	\item In general, are the values in your tables like Table \ref{table.10.disA} symmetric between left or right? That is, are both sides almost equally accurate? Or is one side closer to the expected values than the other?
+% \end{enumerate}
 %
 \newpage
 \section{Tables}
@@ -192,11 +197,11 @@ You should also answer the following questions:
 		Run & Average peak separation (mm) & Expected peak separation (mm) & P.D. (\%) \\
 		\hline
 		1 & 2.413 & 2.413 & 0 \\
-		2 & 2.404 & 2.413 & $-0.373$ \\
-		3 & 2.387 & 2.413 & $-1.077$ \\
-		4 & 2.384 & 2.413 & $-1.202$ \\
-		5 & 1.194 & 1.2065 & $-1.036$ \\
-		6 & 1.198 & 1.2065 &  $-0.705$\\
+		2 & 2.404 & 2.413 & \textminus 0.373 \\
+		3 & 2.387 & 2.413 & \textminus 1.077 \\
+		4 & 2.384 & 2.413 & \textminus 1.202 \\
+		5 & 1.194 & 1.2065 & \textminus 1.036 \\
+		6 & 1.198 & 1.2065 & \textminus 0.705 \\
 		\hline
 	\end{tabular}
 	\caption{Results}
