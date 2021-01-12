@@ -1,4 +1,4 @@
-% Copyright 2018-2020 Melvin Eloy Irizarry-Gelpí
+% Copyright 2018-2021 Melvin Eloy Irizarry-Gelpí
 \documentclass[letterpaper,11pt]{report}
 %
 \usepackage{amsmath}
@@ -14,6 +14,7 @@
 \usepackage{textcomp}
 \usepackage{sourceserifpro}
 \usepackage{sourcecodepro}
+\usepackage[us,12hr]{datetime}
 %
 \renewcommand{\chaptername}{Laboratory}
 \newcommand{\red}[1]{{\color{red} #1}}
@@ -29,11 +30,12 @@
 %
 \title{\Huge{PHYS 208L Data Analysis Guides}}
 \author{M.E. Irizarry-Gelp\'{i}, Ph.D. \\ Division of Natural Sciences \\ College of Mount Saint Vincent}
-\date{Updated: \today}
+\date{Spring 2021 \\ Last updated: \today{ }\currenttime}
 %
 \maketitle
 \tableofcontents
 %
+\input{chapter/preamble.tex}
 \input{chapter/00-review.tex}
 %
 \part{Electricity and Magnetism}
