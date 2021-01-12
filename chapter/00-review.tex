@@ -6,7 +6,7 @@ This experiment is intended as a review of using spreadsheets to analyze and vis
 %
 \section{Preliminary}
 %
-The result of most of the experiments that you will do is data. Sometimes, lots and lots of it. Spreadsheets are a very useful tool to work with data. With Google Sheets and/or Microsoft Excel you can organize, analyze, and visualize numerical data. Here are some best-practices.
+The result of most of the experiments that you will do is a collection of \textbf{data sets}. Spreadsheets are a very useful tool to work with data. With \textbf{Google Sheets} and/or \textbf{Microsoft Excel} you can organize, analyze, and visualize numerical data. Here are some best-practices.
 %
 \subsection{Name your spreadsheet file}
 %
@@ -31,12 +31,13 @@ is a good name for a spreadsheet file. The following are \textbf{very bad} sprea
 %
 \subsection{Import the data}
 %
-Google Sheets will organize the data in the form of columns. Each column corresponds to a different physical quantity. In order to bring experimental data into the spreadsheet, you have to \textbf{import the text file} containing the data. Do not copy-and-paste the data, as this will likely result in a single column of values separated by spaces, instead of multiple columns with values.
+Google Sheets will organize the data in the form of \textbf{columns}. Each column corresponds to a different \textbf{physical quantity}. In order to bring experimental data into the spreadsheet, you have to \textbf{import the text file} containing the data. \textbf{Do not copy-and-paste} the data, as this will likely result in a single column of values separated by spaces, instead of multiple columns with values.
 
 From the top menu, you can \textbf{import data} via
 \begin{equation}
     \texttt{File > Import...}
 \end{equation}
+If the import was successful, you should see multiple columns with values.
 %
 \subsection{Label the columns}
 %
@@ -50,11 +51,11 @@ Equivalently,
 \end{equation}
 In this case, it is clear that the column correspond to values associated to a time quantity.
 
-The data files will usually contain a row with labels. The only thing you have to do is make sure that you do not delete this row.
+The data files will usually contain a row with labels. The only thing you have to do is make sure that you \textbf{do not delete this} row.
 %
 \subsection{Include units}
 %
-Besides the name or symbol, each column should have \textbf{units} associated to it. In the above example, the units are seconds (s). Units provide context of the scale use to measure a quantity.
+Besides the name or symbol, each column should have \textbf{units} associated to it. In the above example, the units are seconds (s). Units provide \textbf{context} of the scale use to measure a quantity.
 %
 \subsection{Visualize the data with a chart}
 %
@@ -70,7 +71,11 @@ A common mistake is to not add a horizontal axis to the chart. This will lead Go
 %
 \subsection{Include a title for each chart}
 %
-Each chart in a spreadsheet should have a \textbf{title}. This title should include the \textbf{data run number}, and/or \textbf{other information} that provides context to the content of the chart. Most of the time, a title like ``y versus x'' is not necessarily helpful.
+Each chart in a spreadsheet should have a \textbf{title}. This title should include the \textbf{data run number}, and/or \textbf{other information} that provides context to the content of the chart. For example,
+\begin{equation}
+    \text{Run 1: Velocity (downhill motion only)}
+\end{equation}
+provides the context that the chart is for run 1 and includes downhill motion only. Most of the time, a title like ``y versus x'' is not necessarily helpful.
 %
 \subsection{Label both axes for each chart}
 %
@@ -78,7 +83,7 @@ Both the vertical and horizontal axes need \textbf{labels}. An \textbf{axis labe
 %
 \subsection{Include an appropriate fit curve}
 %
-Sometimes you will need to find the equation for the best-fit curve that describe a given data set. It is important to make sure that the curve is represented with a \textbf{color} that is clearly distinguishable from the color used for the data points. For example, I will usually use blue for data and red for fit.
+Sometimes you will need to find the equation for the \textbf{best-fit curve} that describe a given data set. It is important to make sure that the curve is represented with a \textbf{color} that is \textbf{clearly distinguishable} from the color used for the data points. For example, I will usually use blue for data and red for fit. You are welcome to pick your own colors, but please, \textbf{no yellow on white backgrounds}.
 
 Most of the time, the data will have a \textbf{linear shape}. In that case, a \textbf{linear fit} should be used. You can add a linear fit by going to \texttt{Edit chart...}. This will open the ``Chart editor'' menu. Then
 \begin{equation}
@@ -87,6 +92,10 @@ Most of the time, the data will have a \textbf{linear shape}. In that case, a \t
 At the bottom of this menu you will see three boxes. Checking the box called ``Trendline'' will add a best-fit curve, which by default is a linear fit. You can change the color with ``Line color''. You can see the equation of the best-fit curve changing the value of ``Label'' from ``None'' to ``Use Equation''.
 
 Make sure that the fit used is appropriate. Sometimes, fits other than linear need to be used. The type of the fit can be change with ``Type''.
+%
+\subsection{Be as clear as possible}
+%
+The main purpose of a scientific text is to \textbf{communicate} a result to a community. It is important to keep this in mind when working on your worksheet. You want to make sure that your results are \textbf{easy to read and clear}.
 %
 \section{Experiment}
 %
@@ -116,8 +125,8 @@ Here is what to do:
     \item Visualize the raw data set with a scatter chart with the $t$ column in the horizontal axis, and the $q$ column in the vertical axis. Make sure to label each axis.
     \item This data set is a simulation of a ``long'' measurement over time. The data collection was started, with the sensor first measuring low values and then the sensor readings suddenly jumping to larger (but consistent) values. You are going to see measurements like this one later in the semester. One thing you can do is figure out what was the measurement value before and after the sudden jump. To do this you can use a time average and the \texttt{AVERAGE} function.
     \item Scan over the values in the $q$ column and determine approximately where the jump in values occurs.
-    \item Compute the average of the $q$ column from the start of the experiment to just before the jump. This is the \textbf{before average}.
-    \item Compute the average of the $q$ column from just after the jump to the end of the experiment. This is the \textbf{after average}.
+    \item Compute the average of the $q$ column from the start of the experiment to just before the jump in values. This is the \textbf{before average}.
+    \item Compute the average of the $q$ column from just after the jump in values to the end of the experiment. This is the \textbf{after average}.
     \item Compute the \textbf{change} during the jump:
     \begin{equation}
         \text{change} = \text{after average} - \text{before average}
@@ -152,7 +161,7 @@ Here is what to do:
     \begin{equation}
         y = a e^{-bx}
     \end{equation}
-    where $e$ is the natural base:
+    where $e$ is the \textbf{natural base}:
     \begin{equation*}
         e = 2.71828...
     \end{equation*}
@@ -206,13 +215,12 @@ The values are different, but the size and format are the same. You can find the
 \vspace{\stretch{1}}
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|l|r|r|}
+    \begin{tabular}{l|r|r|r}
+        \textbf{Name} & \textbf{Observed value} & \textbf{Expected value} & \textbf{P.D.} \\
         \hline
-        Name & Observed Value & Expected Value \\
-        \hline
-        Before average (C) & 0.0037 & 0.0000 \\
-        After average (C) & 5.4308 & 5.4321 \\
-        Change (C) & 5.4271 & 5.4321 \\
+        Before average (C) & 0.0037 & 0.0000 & N.A. \\
+        After average (C) & 5.4308 & 5.4321 & \textminus 0.024\% \\
+        Change (C) & 5.4271 & 5.4321 & \textminus 0.092\% \\
         \hline
     \end{tabular}
     \caption{Results for part 1}
@@ -221,12 +229,11 @@ The values are different, but the size and format are the same. You can find the
 %
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|l|r|r|}
+    \begin{tabular}{l|r|r|r}
+        \textbf{Name} & \textbf{Observed value} & \textbf{Expected value} & \textbf{P.D.} \\
         \hline
-        Name & Observed Value & Expected Value \\
-        \hline
-        Slope (C/s) & 3.1538 & 3.1400 \\
-        Intercept (C) & -0.0340 & 0.0000 \\
+        Slope (C/s) & 3.1538 & 3.1400 & 0.44\% \\
+        Intercept (C) & -0.0340 & 0.0000 & N.A. \\
         \hline
     \end{tabular}
     \caption{Results for part 2}
@@ -235,12 +242,11 @@ The values are different, but the size and format are the same. You can find the
 %
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|l|r|r|}
+    \begin{tabular}{l|r|r|r}
+        \textbf{Name} & \textbf{Observed value} & \textbf{Expected value} & \textbf{P.D.} \\
         \hline
-        Name & Observed Value & Expected Value \\
-        \hline
-        $a$ (C) & 10.3 & 11 \\
-        $b$ (1/s) & 0.281 & 0.321 \\
+        $a$ (C) & 10.3 & 11.0 & \textminus 6.36\% \\
+        $b$ (1/s) & 0.281 & 0.321 & \textminus 12.46\% \\
         \hline
     \end{tabular}
     \caption{Results for part 3}
