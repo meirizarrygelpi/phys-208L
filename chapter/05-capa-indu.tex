@@ -1,6 +1,6 @@
 % Copyright 2018-2021 Melvin Eloy Irizarry-Gelpí
 \setcounter{chapter}{4}
-\chapter{Capacitors and Inductors}
+\chapter{Circuits with Capacitors and Inductors}
 %
 In this experiment you will learn about circuits with capacitors and inductors.
 %
@@ -14,7 +14,7 @@ By now, electrical \textbf{resistance} should be familiar. The \textbf{SI unit} 
 \begin{equation}
 	1 \ \text{ohm} = 1 \ \text{V/A}
 \end{equation}
-Here, V is volt (voltage) and A is ampere (current). A component in a circuit with a fixed amount of resistance is called a \textbf{resistor}. The mathematical symbol for resistance is $R$.
+Here, V is volt (voltage) and A is ampere (current). A component in a circuit with a fixed amount of resistance is called a \textbf{resistor}. The \textbf{mathematical symbol} for resistance is $R$.
 %
 \subsection{Capacitance and Capacitors}
 %
@@ -22,7 +22,7 @@ Another important property is \textbf{capacitance}. The \textbf{SI unit} for cap
 \begin{equation}
 	1 \ \text{farad} = 1 \ \text{F} = 1 \ \text{C/V}
 \end{equation}
-Here, C is coulomb (electric charge) and V is volt (voltage). In some ways, capacitance measures the amount of electric charge needed to sustain an electric potential difference (i.e. a voltage). The mathematical symbol for capacitance is $C$.
+Here, C is coulomb (electric charge) and V is volt (voltage). In some ways, capacitance measures the amount of electric charge needed to sustain an electric potential difference (i.e. a voltage). The \textbf{mathematical symbol} for capacitance is $C$.
 
 A component in a circuit with a fixed amount of capacitance is called a \textbf{capacitor}. For practical purposes, you can think of a capacitor as two parallel plates of conducting material where equal but opposite amounts of electric charge can accumulate.
 %
@@ -30,17 +30,17 @@ A component in a circuit with a fixed amount of capacitance is called a \textbf{
 %
 The last property is \textbf{inductance}, which is like a magnetic cousin of capacitance. The \textbf{SI unit} for inductance is the \textbf{henry}:
 \begin{equation}
-	1 \ \text{henry} = 1 \ \text{H} = 1 \ \text{T{ }\textperiodcentered{ }m\textsuperscript{2}/A}
+	1 \ \text{henry} = 1 \ \text{H} = 1 \ \text{T {\textperiodcentered} m\textsuperscript{2}/A}
 \end{equation}
 Here, T is tesla (magnetic field), m\textsuperscript{2} is square meter (area), and A is ampere (current). Recall that the tesla unit is equivalent to
 \begin{equation}
-    1 \ \text{T} = 1 \ \text{V{ }\textperiodcentered{ }s/m\textsuperscript{2}}
+    1 \ \text{T} = 1 \ \text{V {\textperiodcentered} s/m\textsuperscript{2}}
 \end{equation}
 Thus, the henry unit is equivalent to:
 \begin{equation}
-    1 \ \text{H} = 1 \ \text{V{ }\textperiodcentered{ }s/A} = 1 \ \text{ohm{ }\textperiodcentered{ }s}
+    1 \ \text{H} = 1 \ \text{V {\textperiodcentered} s/A} = 1 \ \text{ohm {\textperiodcentered} s}
 \end{equation}
-In some ways, inductance measures the amount of voltage that arises per unit rate of change of electric current with time. The mathematical symbol for inductance is $L$.
+In some ways, inductance measures the amount of voltage that arises per unit rate of change of electric current with time. The \textbf{mathematical symbol} for inductance is $L$.
 
 A component in a circuit with a fixed amount of inductance is called an \textbf{inductor}. You can think of an inductor as a solenoid coil with a given amount of loops, with each loop enclosing some amount of area.
 %
@@ -110,14 +110,14 @@ Here, $V_{\infty}$ is related to $Q_{\infty}$ and/or $I_{0}$ via
 \end{eqnarray}
 The value of $V_{\infty}$ should correspond to the steady voltage across the DC EMF source.
 
-As you can see from (\ref{eq.05.RC.q.charging}), (\ref{eq.05.RC.i.charging}), and (\ref{eq.05.RC.vC.charging}), the amount of charge, current and voltage related to a capacitor all involve exponential functions. The constant $\tau_{C}$ is known as the \textbf{capacitive time constant}. It has units of time (seconds). The value of $\tau_{C}$ sets a time scale for the change in values of charge, voltage, and current to occur. The same time scale appears in all three quantities. In an RC circuit, the value of $\tau_{C}$ depends on how much resistance $R$ and capacitance $C$ you have:
+As you can see from Equation (\ref{eq.05.RC.q.charging}), Equation (\ref{eq.05.RC.i.charging}), and Equation (\ref{eq.05.RC.vC.charging}), the amount of charge, current and voltage related to a capacitor all involve exponential functions. The constant $\tau_{C}$ is known as the \textbf{capacitive time constant}. It has units of time (seconds). The value of $\tau_{C}$ sets a time scale for the change in values of charge, voltage, and current to occur. The same time scale appears in all three quantities. In an RC circuit, the value of $\tau_{C}$ depends on how much resistance $R$ and capacitance $C$ you have:
 \begin{equation}
     \tau_{C} = R C
     \label{eq.05.tauC}
 \end{equation}
 You can check that, in fact, by multiplying something with ohm units by something with farad units you get something with second units:
 \begin{equation}
-    1 \ \text{ohm} \cdot 1 \ \text{F} = \left(1 \ \text{V{ }\textperiodcentered{ }s/C}\right) \cdot \left(1 \ \text{ C/V}\right) = 1 \ \text{s}
+    1 \ \text{ohm} \cdot 1 \ \text{F} = \left(1 \ \text{V {\textperiodcentered} s/C}\right) \cdot \left(1 \ \text{ C/V}\right) = 1 \ \text{s}
 \end{equation}
 Since the exponential function is a mathematical function that changes very fast, the current will take noise-level values after a time corresponding to about 5 capacitive time constants.
 %
@@ -195,7 +195,7 @@ Instead of $\tau_{C}$, you now have $\tau_{L}$ which corresponds to the \textbf{
 \end{equation}
 You can check that in fact, by dividing something with henry units by something with ohm units you get something with second units:
 \begin{equation}
-    \frac{1 \ \text{H}}{1 \ \text{ohm}} = \frac{1 \ \text{ohm{ }\textperiodcentered{ }s}}{1 \ \text{ohm}} = 1 \ \text{s}
+    \frac{1 \ \text{H}}{1 \ \text{ohm}} = \frac{1 \ \text{ohm {\textperiodcentered} s}}{1 \ \text{ohm}} = 1 \ \text{s}
 \end{equation}
 %
 \section{Experiment}
@@ -403,47 +403,46 @@ For the RL circuits, your data will consist of the following runs:
     \item Run 8: Two $R = 10$ ohm resistors in parallel, and two inductors in series with metallic core.
 \end{itemize}
 %
-\newpage
-\section{Your Lab Report}
-%
-Your report should include the following:
-\begin{itemize}
-    \item A table like Table \ref{table.05.results.tauC.VR} with the results for $\tau_{C}$ from the voltage across the resistor for charging events.
-    \item A table like Table \ref{table.05.results.tauC.I} with the results for $\tau_{C}$ from the current for charging events.
-    \item A table like Table \ref{table.05.results.tauC.VC} with the results for $\tau_{C}$ from the voltage across the capacitor for discharging events.
-    \item For a charging event, one chart with the voltage across the resistor in the vertical axis, and time in the horizontal axis. Like in Figure \ref{figure.05.run.1.vR.no.tail}, include the exponential fit, the equation for the fit, and remove the head and tail parts of the data.
-    \item For a charging event, one chart with the current in the vertical axis, and time in the horizontal axis. Include the exponential fit, the equation for the fit, and remove the head and tail parts of the data.
-    \item For a discharging event, one chart with the voltage across the capacitor in the vertical axis, and time in the horizontal axis. Include the exponential fit, the equation for the fit, and remove the head and tail parts of the data.
-    \item A table like Table \ref{table.05.results.tauL.VL} with the results for $\tau_{L}$ from the voltage across the ideal inductor.
-    \item One chart with the voltage across the ideal inductor in the vertical axis, and time in the horizontal axis. Include the exponential fit, the equation for the fit, and remove the long tail part of the data.
-\end{itemize}
-You should answer the following questions:
-\begin{enumerate}
-    \item Are the experimental values of $\tau_{C}$ from $V_{R}(t)$ and $I(t)$ consistent in a charging event?
-    \item Is the value of $\tau_{C}$ from $V_{C}(t)$ in a discharging event consistent with the values obtained in the charging event with same resistor and capacitor?
-    \item Why is the current data not usable when the resistors with thousands of ohms worth of resistance used?
-    \item What is the resistance value for one non-ideal inductor?
-    \item Does the metallic core change substantially the value of the resistance of a non-ideal inductor?
-    \item What happens to the value of $\tau_{L}$ when the metallic core is used?
-    \item What happens to the value of $\tau_{L}$ when the two resistors are connected in series, but one inductor is used?
-    \item What happens to the value of $\tau_{L}$ when one resistor is used, but the two inductors are connected in series?
-\end{enumerate}
+% \newpage
+% \section{Your Lab Report}
+% %
+% Your report should include the following:
+% \begin{itemize}
+%     \item A table like Table \ref{table.05.results.tauC.VR} with the results for $\tau_{C}$ from the voltage across the resistor for charging events.
+%     \item A table like Table \ref{table.05.results.tauC.I} with the results for $\tau_{C}$ from the current for charging events.
+%     \item A table like Table \ref{table.05.results.tauC.VC} with the results for $\tau_{C}$ from the voltage across the capacitor for discharging events.
+%     \item For a charging event, one chart with the voltage across the resistor in the vertical axis, and time in the horizontal axis. Like in Figure \ref{figure.05.run.1.vR.no.tail}, include the exponential fit, the equation for the fit, and remove the head and tail parts of the data.
+%     \item For a charging event, one chart with the current in the vertical axis, and time in the horizontal axis. Include the exponential fit, the equation for the fit, and remove the head and tail parts of the data.
+%     \item For a discharging event, one chart with the voltage across the capacitor in the vertical axis, and time in the horizontal axis. Include the exponential fit, the equation for the fit, and remove the head and tail parts of the data.
+%     \item A table like Table \ref{table.05.results.tauL.VL} with the results for $\tau_{L}$ from the voltage across the ideal inductor.
+%     \item One chart with the voltage across the ideal inductor in the vertical axis, and time in the horizontal axis. Include the exponential fit, the equation for the fit, and remove the long tail part of the data.
+% \end{itemize}
+% You should answer the following questions:
+% \begin{enumerate}
+%     \item Are the experimental values of $\tau_{C}$ from $V_{R}(t)$ and $I(t)$ consistent in a charging event?
+%     \item Is the value of $\tau_{C}$ from $V_{C}(t)$ in a discharging event consistent with the values obtained in the charging event with same resistor and capacitor?
+%     \item Why is the current data not usable when the resistors with thousands of ohms worth of resistance used?
+%     \item What is the resistance value for one non-ideal inductor?
+%     \item Does the metallic core change substantially the value of the resistance of a non-ideal inductor?
+%     \item What happens to the value of $\tau_{L}$ when the metallic core is used?
+%     \item What happens to the value of $\tau_{L}$ when the two resistors are connected in series, but one inductor is used?
+%     \item What happens to the value of $\tau_{L}$ when one resistor is used, but the two inductors are connected in series?
+% \end{enumerate}
 %
 \newpage
 \section{Tables}
 %
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|l|r|r|r|r|r|}
+    \begin{tabular}{l|r|r|r|r|r}
+        \textbf{Run} & $R$ (ohm) & $C$ (F) & \textbf{Expected} $\tau_{C}$ (s) & \textbf{Observed} $\tau_{C}$ (s) & \textbf{P.D.} (\%) \\
         \hline
-        Run & $R$ (ohm) & $C$ (F) & Expected $\tau_{C}$ (s) & Observed $\tau_{C}$ (s) & P.D. (\%) \\
-        \hline
-        1 & 10 & $2.5 \times 10^{-2}$ & 0.250 & 0.298 & 19.05 \\
-        3 & 51 & $2.5 \times 10^{-2}$ & 1.275 & 1.416 & 11.09 \\
-        5 & 68 & $2.5 \times 10^{-2}$ & 1.700 & 1.848 & 8.73 \\
-        7 & $4.7 \times 10^{4}$ & $10^{-5}$ & 0.470 & 0.606 & 28.95 \\
-        9 & $10^{5}$ & $10^{-5}$ & 1.000 & 1.238 & 23.76 \\
-        11 & $2.2 \times 10^{4}$ & $10^{-5}$ & 0.220 & 0.253 & 15.07 \\
+        1 & 10 & 2.5 {\texttimes} 10\textsuperscript{\textminus 2} & 0.250 & 0.298 & 19.05 \\
+        3 & 51 & 2.5 {\texttimes} 10\textsuperscript{\textminus 2} & 1.275 & 1.416 & 11.09 \\
+        5 & 68 & 2.5 {\texttimes} 10\textsuperscript{\textminus 2} & 1.700 & 1.848 & 8.73 \\
+        7 & 4.7 {\texttimes} 10\textsuperscript{4} & 10\textsuperscript{\textminus 5} & 0.470 & 0.606 & 28.95 \\
+        9 & 10\textsuperscript{5} & 10\textsuperscript{\textminus 5} & 1.000 & 1.238 & 23.76 \\
+        11 & 2.2 {\texttimes} 10\textsuperscript{4} & 10\textsuperscript{\textminus 5} & 0.220 & 0.253 & 15.07 \\
         \hline
     \end{tabular}
     \caption{Results for $\tau_{C}$ from $V_{R}$}
@@ -452,13 +451,12 @@ You should answer the following questions:
 %
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|l|r|r|r|r|r|}
+    \begin{tabular}{l|r|r|r|r|r}
+        \textbf{Run} & $R$ (ohm) & $C$ (F) & \textbf{Expected} $\tau_{C}$ (s) & \textbf{Observed} $\tau_{C}$ (s) & \textbf{P.D.} (\%) \\
         \hline
-        Run & $R$ (ohm) & $C$ (F) & Expected $\tau_{C}$ (s) & Observed $\tau_{C}$ (s) & P.D. (\%) \\
-        \hline
-        1 & 10 & $2.5 \times 10^{-2}$ & 0.250 & 0.298 & 19.05 \\
-        3 & 51 & $2.5 \times 10^{-2}$ & 1.275 & 1.403 & 10.00 \\
-        5 & 68 & $2.5 \times 10^{-2}$ & 1.700 & 1.842 & 8.33 \\
+        1 & 10 & 2.5 {\texttimes} 10\textsuperscript{\textminus 2} & 0.250 & 0.298 & 19.05 \\
+        3 & 51 & 2.5 {\texttimes} 10\textsuperscript{\textminus 2} & 1.275 & 1.403 & 10.00 \\
+        5 & 68 & 2.5 {\texttimes} 10\textsuperscript{\textminus 2} & 1.700 & 1.842 & 8.33 \\
         \hline
     \end{tabular}
     \caption{Results for $\tau_{C}$ from $I$}
@@ -467,16 +465,15 @@ You should answer the following questions:
 %
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|l|r|r|r|r|r|}
+    \begin{tabular}{l|r|r|r|r|r}
+        \textbf{Run} & $R$ (ohm) & $C$ (F) & \textbf{Expected} $\tau_{C}$ (s) & \textbf{Observed} $\tau_{C}$ (s) & \textbf{P.D.} (\%) \\
         \hline
-        Run & $R$ (ohm) & $C$ (F) & Expected $\tau_{C}$ (s) & Observed $\tau_{C}$ (s) & P.D. (\%) \\
-        \hline
-        2 & 10 & $2.5 \times 10^{-2}$ & 0.250 & 0.264 & 5.54 \\
-        4 & 51 & $2.5 \times 10^{-2}$ & 1.275 & 1.366 & 7.15 \\
-        6 & 68 & $2.5 \times 10^{-2}$ & 1.700 & 1.792 & 5.42 \\
-        8 & $4.7 \times 10^{4}$ & $10^{-5}$ & 0.470 & 0.559 & 18.86 \\
-        10 & $10^{5}$ & $10^{-5}$ & 1.000 & 1.193 & 19.33 \\
-        12 & $2.2 \times 10^{4}$ & $10^{-5}$ & 0.220 & 0.259 & 17.76 \\
+        2 & 10 & 2.5 {\texttimes} 10\textsuperscript{\textminus 2} & 0.250 & 0.264 & 5.54 \\
+        4 & 51 & 2.5 {\texttimes} 10\textsuperscript{\textminus 2} & 1.275 & 1.366 & 7.15 \\
+        6 & 68 & 2.5 {\texttimes} 10\textsuperscript{\textminus 2} & 1.700 & 1.792 & 5.42 \\
+        8 & 4.7 {\texttimes} 10\textsuperscript{4} & 10\textsuperscript{\textminus 5} & 0.470 & 0.559 & 18.86 \\
+        10 & 10\textsuperscript{5} & 10\textsuperscript{\textminus 5} & 1.000 & 1.193 & 19.33 \\
+        12 & 2.2 {\texttimes} 10\textsuperscript{4} & 10\textsuperscript{\textminus 5} & 0.220 & 0.259 & 17.76 \\
         \hline
     \end{tabular}
     \caption{Results for $\tau_{C}$ from $V_{C}$}
@@ -485,14 +482,13 @@ You should answer the following questions:
 %
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|l|r|r|r|r|r|}
+    \begin{tabular}{l|r|r|r|r|r}
+        \textbf{Run} & $R + r$ (ohm) & $L$ (H) & \textbf{Expected} $\tau_{L}$ (s) & \textbf{Observed} $\tau_{L}$ (s) & \textbf{P.D.} (\%) \\
         \hline
-        Run & $R + r$ (ohm) & $L$ (H) & Expected $\tau_{L}$ (s) & Observed $\tau_{L}$ (s) & P.D. (\%) \\
-        \hline
-        1 & $10 + 4.17$ & $5 \times 10^{-3}$ & $3.53 \times 10^{-4}$ & $3.50 \times 10^{-4}$ & $-0.74$ \\
-        2 & $10 + 4.17$ & N.A. & N.A. & $1.59 \times 10^{-3}$ & N.A. \\
-        3 & $5 + 4.17$ & $5 \times 10^{-3}$ & $5.45 \times 10^{-4}$ & $5.48 \times 10^{-4}$ & $0.49$ \\
-        4 & $5 + 4.17$ & N.A. & N.A. & $2.36 \times 10^{-3}$ & N.A. \\
+        1 & 10 + 4.17 & 5 {\texttimes} 10\textsuperscript{\textminus 3} & 3.53 {\texttimes} 10\textsuperscript{\textminus 4} & 3.50 {\texttimes} 10\textsuperscript{\textminus 4} & \textminus 0.74 \\
+        2 & 10 + 4.17 & N.A. & N.A. & 1.59 {\texttimes} 10\textsuperscript{\textminus 3} & N.A. \\
+        3 & 5 + 4.17 & 5 {\texttimes} 10\textsuperscript{\textminus 3} & 5.45 {\texttimes} 10\textsuperscript{\textminus 4} & 5.48 {\texttimes} 10\textsuperscript{\textminus 4} & 0.49 \\
+        4 & 5 + 4.17 & N.A. & N.A. & 2.36 {\texttimes} 10\textsuperscript{\textminus 3} & N.A. \\
         \hline
     \end{tabular}
     \caption{Results for $\tau_{L}$ from $V_{L}$}
